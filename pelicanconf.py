@@ -7,7 +7,7 @@ THEME = 'pelican-themes/alchemy/alchemy/'
 
 AUTHOR = u'Chris Patti'
 SITENAME = u'Blind Not Dumb'
-SITEURL = 'http://feoh.org'
+SITEURL = 'http://feoh.github.io/blindnotdumb'
 
 PATH = 'content'
 
@@ -46,5 +46,5 @@ DEFAULT_PAGINATION = 10
 
 TWITTER_ADDRESS='feoh'
 GITHUB_ADDRESS='http://www.github.com/feoh'
-EMAIL_ADDRESS='cpatti@gmail.com'
+EMAIL_ADDRESS='feoh@feoh.org'
 GOOGLEPLUS_ADDRESS='https://plus.google.com/+ChrisPatti'
