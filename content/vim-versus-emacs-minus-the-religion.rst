@@ -2,6 +2,7 @@ Vim Versus Emacs - Minus the Religion
 #####################################
 :date: 2015-07-15 00:00
 :author: cpatti
+:category: Geekery
 :tags: editors, emacs, programming, technology, text, vim
 :slug: vim-versus-emacs-minus-the-religion
 :status: published

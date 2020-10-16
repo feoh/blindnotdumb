@@ -2,7 +2,6 @@ Oh yeah! Laurie Anderson is coming to Boston!
 #############################################
 :date: 2008-02-06 11:59
 :author: cpatti
-:category: Music
 :tags: art, boston, concert, homeland, laurie anderson, music, performance, privacy, rock
 :slug: oh-yeah-laurie-anderson-is-coming-to-boston
 :status: published

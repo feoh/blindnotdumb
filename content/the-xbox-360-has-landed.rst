@@ -2,7 +2,7 @@ The Xbox 360 has landed!
 ########################
 :date: 2008-08-04 15:13
 :author: cpatti
-:category: Personal
+:category: Video Games
 :tags: fun, games, internet, media, tv, video games, xbox, xbox360
 :slug: the-xbox-360-has-landed
 :status: published

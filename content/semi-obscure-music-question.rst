@@ -2,7 +2,6 @@ Semi obscure music question
 ###########################
 :date: 2007-12-21 02:50
 :author: cpatti
-:category: Music
 :tags: art, hebrew, judaica, music, Phish, religion, rock
 :slug: semi-obscure-music-question
 :status: published
