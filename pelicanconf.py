@@ -18,6 +18,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+DISQUS_SITENAME='blindnotdumb'
 
 # Blogroll
 LINKS = (('Podcast.__init__', 'http://www.podcastinit.com/'),
