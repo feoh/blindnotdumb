@@ -2,7 +2,6 @@ The Three Rs
 ############
 :date: 2016-07-09 00:00
 :author: cpatti
-:category: Uncategorized
 :tags: principles, software, success, teams
 :slug: the-three-rs
 :status: published

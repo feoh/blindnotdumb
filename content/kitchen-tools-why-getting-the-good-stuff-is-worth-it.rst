@@ -2,7 +2,6 @@ Kitchen tools: Why getting the good stuff is worth it.
 ######################################################
 :date: 2008-01-11 09:06
 :author: cpatti
-:category: Food
 :tags: beginner, cooking, food, kitchen, knives, pans, pots, tools
 :slug: kitchen-tools-why-getting-the-good-stuff-is-worth-it
 :status: published

@@ -2,7 +2,6 @@ The Zen of Shaving (Safety Razor Edition)
 #########################################
 :date: 2016-09-06 00:00
 :author: cpatti
-:category: Uncategorized
 :tags: grooming, razors, shaving, zen
 :slug: the-zen-of-shaving-safety-razor-edition
 :status: published

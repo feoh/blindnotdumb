@@ -1,8 +1,0 @@
-No title [20]
-#############
-:date: 2017-01-25 02:35
-:author: cpatti
-:slug: 20
-:status: published
-
-

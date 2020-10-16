@@ -2,7 +2,6 @@ Bacon + Microwave = Jerky :)
 ############################
 :date: 2016-05-24 10:47
 :author: cpatti
-:category: Uncategorized
 :tags: food
 :slug: bacon-microwave-jerky
 :status: published

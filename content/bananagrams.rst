@@ -2,7 +2,6 @@ Bananagrams!
 ############
 :date: 2010-01-05 09:54
 :author: cpatti
-:category: games
 :tags: board, fun, word
 :slug: bananagrams
 :status: published

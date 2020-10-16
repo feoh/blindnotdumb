@@ -5,6 +5,7 @@ AUTHOR = 'Chris Patti'
 SITENAME = 'Blind Not Dumb'
 SITEURL = 'https://www.feoh.org'
 
+
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
@@ -28,13 +29,11 @@ SOCIAL = (('Me @ Everywhere :)', 'http://about.me/feoh'),)
 
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
 
 # Yay typography enhancements. Requires the python Typography module be installed.
 TYPOGRIFY = True
 
-DISPLAY_CATEGORIES_ON_MENU = False
 
 TWITTER_ADDRESS='feoh'
-GITHUB_ADDRESS='http://www.github.com/feoh'
 EMAIL_ADDRESS='feoh@feoh.org'

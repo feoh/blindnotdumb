@@ -2,7 +2,6 @@ Democratic Primary 2016: I'm committed to Bernie, but concerned.
 ################################################################
 :date: 2016-02-08 00:00
 :author: cpatti
-:category: Uncategorized
 :tags: democratic, election, politics, primary
 :slug: primary2016-committed-concerned
 :status: published
