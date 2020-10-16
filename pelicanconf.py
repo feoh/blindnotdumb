@@ -26,13 +26,14 @@ LINKS = (('Podcast.__init__', 'http://www.podcastinit.com/'),
 # Social widget
 SOCIAL = (('Me @ Everywhere :)', 'http://about.me/feoh'),)
 
-DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # Yay typography enhancements. Requires the python Typography module be installed.
 TYPOGRIFY = True
+
+DISPLAY_CATEGORIES_ON_MENU = False
 
 TWITTER_ADDRESS='feoh'
 GITHUB_ADDRESS='http://www.github.com/feoh'

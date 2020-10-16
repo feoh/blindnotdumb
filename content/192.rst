@@ -2,7 +2,6 @@ The Sentimental Nature of Things and Going Digital
 ##################################################
 :date: 2013-02-05 11:05
 :author: cpatti
-:category: Uncategorized
 :slug: 192
 :status: draft
 

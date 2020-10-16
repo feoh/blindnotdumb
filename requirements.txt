@@ -1,6 +1,7 @@
 appnope==0.1.0
 argcomplete==1.11.1
 backcall==0.2.0
+beautifulsoup4==4.9.3
 blinker==1.4
 Click==7.0
 decorator==4.4.2
@@ -14,6 +15,7 @@ Markdown==3.1.1
 MarkupSafe==1.1.1
 parso==0.7.1
 pelican==4.5.0
+pelican-seo==1.0.0
 pexpect==4.8.0
 pickleshare==0.7.5
 pipx==0.15.1.2
@@ -24,6 +26,7 @@ python-dateutil==2.8.1
 pytz==2020.1
 six==1.15.0
 smartypants==2.0.1
+soupsieve==2.0.1
 traitlets==5.0.4
 typogrify==2.0.7
 Unidecode==1.1.1

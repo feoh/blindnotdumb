@@ -2,7 +2,7 @@ Amazon is doing itself a dis-service by killing Stanza
 ######################################################
 :date: 2011-11-01 13:25
 :author: cpatti
-:category: Books, Rants
+:category: Books
 :slug: amazon-is-doing-itself-a-dis-service-by-killing-stanza
 :status: published
 

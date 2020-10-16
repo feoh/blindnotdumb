@@ -2,7 +2,7 @@ Plus ça change, plus c'est la même chose
 ########################################
 :date: 2020-06-26 18:54
 :author: cpatti
-:category: Geekery, Rants, Uncategorized
+:category: Geekery
 :tags: business, career, cloud, industry, technology
 :slug: plus-ca-change-plus-cest-la-meme-chose
 :status: published

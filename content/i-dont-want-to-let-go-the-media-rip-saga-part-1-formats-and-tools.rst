@@ -2,7 +2,7 @@ I don't WANT to let go! The Media Rip Saga - Part 1: Formats and Tools.
 #######################################################################
 :date: 2018-03-22 09:59
 :author: cpatti
-:category: Geekery, Personal
+:category: Geekery
 :tags: FLAC, formats, Matroska, music, NAS, reference, rip, tools, video
 :slug: i-dont-want-to-let-go-the-media-rip-saga-part-1-formats-and-tools
 :status: published

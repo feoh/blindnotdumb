@@ -2,7 +2,6 @@ I love you Pelican, but I'm struggling.
 #######################################
 :date: 2017-01-23 00:00
 :author: cpatti
-:category: Uncategorized
 :tags: blogging, infrastructure, pelican, publishing, wordpress
 :slug: i-love-you-pelican-but-im-struggling
 :status: published

@@ -2,7 +2,6 @@ Tech Workers of the World - Unite! And then...  Profit?
 #######################################################
 :date: 2019-05-05 04:02
 :author: cpatti
-:category: Uncategorized
 :slug: 551
 :status: draft
 

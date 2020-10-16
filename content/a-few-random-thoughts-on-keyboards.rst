@@ -2,7 +2,6 @@ A few random thoughts on keyboards
 ##################################
 :date: 2015-07-28 00:00
 :author: cpatti
-:category: Uncategorized
 :tags: ergonomics, input, keyboards, typing
 :slug: a-few-random-thoughts-on-keyboards
 :status: published

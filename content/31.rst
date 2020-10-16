@@ -2,7 +2,6 @@ Hey Kids - Stop Bashing E-mail!
 ###############################
 :date: 2019-01-11 19:45
 :author: cpatti
-:category: Uncategorized
 :slug: 31
 :status: draft
 
