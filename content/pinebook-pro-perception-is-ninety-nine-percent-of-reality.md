@@ -1,10 +1,11 @@
 Title: The Pinebook Pro - Perception is 99% of Reality
 Date: 2020-10-28 
 Category: Geekery
+Status: published
 Tags: hardware, software, arm, floss, laptop
 Authors: Chris Patti
 
-![Pinebook Pro Picture](images/pinebook_pro_pic.jpg)
+![Pinebook Pro Picture]({static}/images/pinebook_pro_smol.jpg)
 
 # Intro
 
@@ -33,6 +34,7 @@ All that is indeed pretty awesome, but why am I only giving a qualified yes? Bec
 I should say that I think PINE64 is an awesome company, and they've been very clear that they're making these laptops at cost as a service to the community,
 
 So, let's get to the real-talk portion of this discussion:
+
 * There are serious QC problems in manufacturing, and those are even worse during the pandemic.
   * My laptop and every unit in the batch I ordered from have an improperly positioned lid magnet. [the procedure](https://wiki.pine64.org/index.php?ngtitle=Pinebook_Pro_Troubleshooting_Guide#Lid_Magnet_Repositioning_Step-by-Step) for fixing this is incredibly daunting and while my wife and I attempted it (I'm partially blind and she's fully coordinated and totally non technical but super sweet!) but ultimately decided that we had exactly zero confidence that we would be able to rebuild the machine after tearing its throbbing innards out as prescribed. Humor aside, I think it's totally unreasonable for PINE64 to view this as a user serviceable repair. I'd be happy to ship my laptop back at cost and have them fix it for a fee even, but for now I'm just dealing with the malfunction, which leads me to the next bullet.
 * Sleep doesn't work. At all.
