@@ -61,3 +61,11 @@ target/
 
 # Blog output
 output/
+
+# Python venv
+bin/
+pyvenv.cfg
+lib64
+share/
+seo_report.html
+
