@@ -1,7 +1,7 @@
 Title: The Pinebook Pro - Perception is 99% of Reality
 Date: 2020-10-28 
 Category: Geekery
-Status: published
+Status: draft
 Tags: hardware, software, arm, floss, laptop
 Authors: Chris Patti
 
@@ -12,6 +12,10 @@ Authors: Chris Patti
 Since I received my Pinebook Pro a bit less than 3 months ago I've gotten a ton of
 questions from interested people wondering what my impressions and experiences with
 the device.
+
+|
+|
+|
 
 To be honest, I don't think initial impressions are all that useful, and besides, there are umpteen
 "Pinebook Pro - First Impressions" blog posts and Youtube videos.
