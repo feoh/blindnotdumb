@@ -21,7 +21,7 @@ pickleshare==0.7.5
 pipx==0.15.1.2
 prompt-toolkit==3.0.7
 ptyprocess==0.6.0
-Pygments==2.7.1
+Pygments==2.7.4
 python-dateutil==2.8.1
 pytz==2020.1
 six==1.15.0
