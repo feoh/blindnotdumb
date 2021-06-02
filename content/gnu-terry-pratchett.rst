@@ -2,7 +2,7 @@ GNU Terry Pratchett
 ###################
 :date: 2015-03-24 09:42
 :author: cpatti
-:category: Books
+:category: Art
 :tags: books, fandom, fantasy, geeks, memorial, technology
 :slug: gnu-terry-pratchett
 :status: published

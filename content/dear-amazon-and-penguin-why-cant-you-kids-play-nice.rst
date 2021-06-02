@@ -2,7 +2,7 @@ Dear Amazon and Penguin - Why Can't You Kids Play Nice?
 #######################################################
 :date: 2010-04-07 15:01
 :author: cpatti
-:category: Books
+:category: Art
 :tags: amazon, books, dresden files, jim butcher, kindle, pricing, stupid, urban fantasy
 :slug: dear-amazon-and-penguin-why-cant-you-kids-play-nice
 :status: published
