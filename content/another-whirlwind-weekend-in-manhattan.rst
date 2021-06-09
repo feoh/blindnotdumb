@@ -2,7 +2,7 @@ Another whirlwind weekend in Manhattan
 ######################################
 :date: 2008-04-15 08:14
 :author: cpatti
-:category: Personal
+:category: personal
 :slug: another-whirlwind-weekend-in-manhattan
 :status: published
 

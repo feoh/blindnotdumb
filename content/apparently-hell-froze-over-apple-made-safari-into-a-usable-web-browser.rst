@@ -2,7 +2,7 @@ Apparently hell froze over - Apple made Safari into a usable web browser!
 #########################################################################
 :date: 2008-03-18 11:37
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: apple, browser, css, DOM, html, javascript, Macintosh, safari, standards, web
 :slug: apparently-hell-froze-over-apple-made-safari-into-a-usable-web-browser
 :status: published

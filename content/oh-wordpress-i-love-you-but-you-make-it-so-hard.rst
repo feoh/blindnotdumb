@@ -2,7 +2,7 @@ Oh Wordpress, I love you but you make it so hard...
 ###################################################
 :date: 2015-05-21 11:16
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: blogging, blogs, IPad, mobile, pelican, wordpress, writing
 :slug: oh-wordpress-i-love-you-but-you-make-it-so-hard
 :status: published

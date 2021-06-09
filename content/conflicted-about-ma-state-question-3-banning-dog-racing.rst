@@ -2,7 +2,7 @@ Conflicted about MA state Question 3: Banning dog racing
 ########################################################
 :date: 2008-10-24 13:08
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: 3, ballot, ban, dogs, greyhound, politics, questions, racing
 :slug: conflicted-about-ma-state-question-3-banning-dog-racing
 :status: published

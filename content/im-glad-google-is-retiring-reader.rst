@@ -2,7 +2,7 @@ I'm Glad Google Is Retiring Reader.
 ###################################
 :date: 2013-04-15 12:35
 :author: cpatti
-:category: Personal
+:category: personal
 :tags: articles, feedly, feeds, google, information, productivity, reader, rss
 :slug: im-glad-google-is-retiring-reader
 :status: published

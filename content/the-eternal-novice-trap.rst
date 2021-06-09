@@ -2,7 +2,7 @@ The Eternal Novice Trap
 #######################
 :date: 2019-12-27 01:23
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: career, practice, programming, skills, software
 :slug: the-eternal-novice-trap
 :status: published

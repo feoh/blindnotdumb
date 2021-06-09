@@ -2,7 +2,7 @@ The anti-political correctness backlash
 #######################################
 :date: 2009-12-18 17:30
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: backlash, correct, cranky, customs, greetings, holidays, politically, social, society
 :slug: the-anti-political-correctness-backlash
 :status: published

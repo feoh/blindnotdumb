@@ -2,7 +2,7 @@ What This Election Means To Me
 ##############################
 :date: 2012-09-15 13:28
 :author: cpatti
-:category: Politics
+:category: politics
 :tags: administration, democratic, election, president
 :slug: what-this-election-means-to-me
 :status: published

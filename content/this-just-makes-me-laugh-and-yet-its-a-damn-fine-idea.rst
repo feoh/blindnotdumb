@@ -2,7 +2,7 @@ This just makes me laugh, and yet it's a damn fine idea.
 ########################################################
 :date: 2008-01-14 11:27
 :author: cpatti
-:category: Art
+:category: art
 :tags: eaching, education, english, hip hop, language, music, rap
 :slug: this-just-makes-me-laugh-and-yet-its-a-damn-fine-idea
 :status: published

@@ -2,7 +2,7 @@ IOS 11 Makes the iPad Pro Sing!
 ###############################
 :date: 2017-10-14 11:25
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: ios, IPad, mobility, work
 :slug: ios-11-makes-the-ipad-pro-sing
 :status: published

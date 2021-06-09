@@ -2,7 +2,7 @@ With all this rain we've been getting...
 ########################################
 :date: 2008-07-23 20:48
 :author: cpatti
-:category: Personal
+:category: personal
 :tags: boating, lakes, memories, outdoors
 :slug: with-all-this-rain-weve-been-getting
 :status: published

@@ -2,7 +2,7 @@ Oh Swype, Where Have You Been All My Life?
 ##########################################
 :date: 2015-03-21 10:40
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: blogging, input, ios, IPad, mobile, Swype, text
 :slug: oh-swype-where-have-you-been-all-my-life
 :status: published

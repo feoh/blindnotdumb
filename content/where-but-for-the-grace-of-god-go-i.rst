@@ -2,7 +2,7 @@ Where but for the grace of god go I.
 ####################################
 :date: 2008-03-05 14:03
 :author: cpatti
-:category: Art
+:category: art
 :tags: Alan Furst, books, bulgaria, espionage, europe, fiction, history, kgb, nkvd, reading, russia, russian, spies, spying, war, WWII
 :slug: where-but-for-the-grace-of-god-go-i
 :status: published

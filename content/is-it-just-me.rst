@@ -2,7 +2,7 @@ Is it just me...
 ################
 :date: 2009-11-13 14:18
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: clojure, computers, development, factor, go, invention, languages, programming, scala, technology
 :slug: is-it-just-me
 :status: published

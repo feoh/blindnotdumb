@@ -2,7 +2,7 @@ FEAR THE IMPENDING SNOW-POCALYPSE!
 ##################################
 :date: 2008-12-19 11:16
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: new england, snow, weather, winter
 :slug: fear-the-impending-snow-pocalypse
 :status: published

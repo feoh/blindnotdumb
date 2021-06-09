@@ -2,7 +2,7 @@ Why Apple's Mac App Store will be good for the Mac
 ##################################################
 :date: 2011-06-21 14:19
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: app, apple, geeks, ios, Macintosh, macos, osx, rants, store
 :slug: why-apples-mac-app-store-will-be-good-for-the-mac
 :status: published

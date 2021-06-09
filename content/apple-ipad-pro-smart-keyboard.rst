@@ -2,7 +2,7 @@ Apple IPad Pro Smart Keyboard
 #############################
 :date: 2017-03-04 23:50
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: hardware, IPad, keyboards, mobile, technology
 :slug: apple-ipad-pro-smart-keyboard
 :status: published

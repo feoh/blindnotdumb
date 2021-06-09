@@ -2,7 +2,7 @@ The Joy of DevOps (Or, Return of the Living Generalist!)
 ########################################################
 :date: 2013-07-31 16:09
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: career, development, devops, engineering, generalist, releng, sysadmin, work
 :slug: the-joy-of-devops-or-return-of-the-living-generalist
 :status: published

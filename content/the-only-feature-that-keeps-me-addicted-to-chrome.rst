@@ -2,7 +2,7 @@ The One Feature that Keeps Me Addicted to Chrome
 ################################################
 :date: 2015-06-21 00:06
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: browsers, chrome, features, firefox, personal, work
 :slug: the-only-feature-that-keeps-me-addicted-to-chrome
 :status: published

@@ -2,7 +2,7 @@ Green Mountains on My Mind
 ##########################
 :date: 2010-10-14 17:19
 :author: cpatti
-:category: Personal
+:category: personal
 :tags: artisans, arts, beer, crafts, fairs, food, green mountains, mountains, outdoors, scenery, travel, trees, vacation, Vermont, woods
 :slug: green-mountains-on-my-mind
 :status: published

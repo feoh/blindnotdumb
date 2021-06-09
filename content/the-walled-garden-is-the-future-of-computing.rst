@@ -2,7 +2,7 @@ The walled garden is the future of computing.
 #############################################
 :date: 2012-08-15 21:32
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: apple, code, computers, cryptography, future, signing
 :slug: the-walled-garden-is-the-future-of-computing
 :status: published

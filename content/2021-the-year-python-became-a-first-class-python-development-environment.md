@@ -1,7 +1,7 @@
 Title: 2021 - The Year Windows Became a First Class Python Development Environment
 Date: 02021-06-02 17:54
 Modified: 02021-06-08 22:12
-Category: Geekery
+Category: geekery
 Tags: python,programming,development,desktop,tools
 Authors: Chris Patti
 Summary: Windows makes for a compelling choice for Python developers in 2021.

@@ -2,7 +2,7 @@ Why Many Hard Core Science Fiction / Fantasy Fans Hate Harry Potter
 ###################################################################
 :date: 2010-12-08 11:53
 :author: cpatti
-:category: Art
+:category: art
 :tags: analysis, books, fans, fantasy, fiction, magic, stories, wands, wizards
 :slug: why-hard-core-science-fiction-fantasy-fans-hate-harry-potter
 :status: published

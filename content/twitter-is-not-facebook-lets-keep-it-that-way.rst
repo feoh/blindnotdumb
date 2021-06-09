@@ -2,7 +2,7 @@ Twitter is not Facebook, let's keep it that way.
 ################################################
 :date: 2009-06-18 11:38
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: communication, customs, facebook, friends, games, morees, social-networking, twitter
 :slug: twitter-is-not-facebook-lets-keep-it-that-way
 :status: published

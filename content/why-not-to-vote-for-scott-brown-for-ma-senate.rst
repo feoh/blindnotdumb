@@ -2,7 +2,7 @@ Why NOT to vote for Scott Brown for MA Senate
 #############################################
 :date: 2010-01-18 12:51
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: civil rights, gay rights, marriage, massachusetts, politics, same sex, senate
 :slug: why-not-to-vote-for-scott-brown-for-ma-senate
 :status: published

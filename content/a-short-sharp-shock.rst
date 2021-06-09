@@ -2,7 +2,7 @@ A Short, Sharp Shock
 ####################
 :date: 2009-02-19 04:20
 :author: cpatti
-:category: Personal
+:category: personal
 :tags: Broad, career, job, layoff, MIT, search
 :slug: a-short-sharp-shock
 :status: published

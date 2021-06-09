@@ -2,7 +2,7 @@ Don't buy early access (MEAP) books from Manning Press.
 #######################################################
 :date: 2011-02-27 09:11
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: customer service, early access, ebooks, manning, meap, publishing, technical
 :slug: dont-buy-early-access-meap-books-from-manning-press
 :status: published

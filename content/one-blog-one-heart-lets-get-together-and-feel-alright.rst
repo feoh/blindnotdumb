@@ -2,7 +2,7 @@ One Blog, One Heart (Let's get together and feel alright!)
 ##########################################################
 :date: 2007-12-19 08:29
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: blog, change, feeds, livejournal, typo, wordpress
 :slug: one-blog-one-heart-lets-get-together-and-feel-alright
 :status: published

@@ -2,7 +2,7 @@ Dear Mayor Menino
 #################
 :date: 2008-03-17 10:40
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: ban, boston, city, crime, gaming, laws, murder, problems, society, video games, violence, youth
 :slug: dear-mayor-menino
 :status: published

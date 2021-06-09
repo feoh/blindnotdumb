@@ -2,7 +2,7 @@ Usage peeves I have no business having
 ######################################
 :date: 2008-01-15 14:25
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: english, language, memes, peeves, usage
 :slug: usage-peeves-i-have-no-business-having
 :status: published

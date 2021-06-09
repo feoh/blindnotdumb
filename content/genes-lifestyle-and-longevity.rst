@@ -2,7 +2,7 @@ Genes, lifestyle, and longevity
 ###############################
 :date: 2008-03-11 16:15
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: aging, diet, exercise, family, genetics, health, lifestyle
 :slug: genes-lifestyle-and-longevity
 :status: published

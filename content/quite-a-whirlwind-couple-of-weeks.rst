@@ -2,7 +2,7 @@ Quite a whirlwind couple of weeks.
 ##################################
 :date: 2008-09-29 13:03
 :author: cpatti
-:category: Personal
+:category: personal
 :tags: 40, age, birthday, friends, growth, life, thoughts, time
 :slug: quite-a-whirlwind-couple-of-weeks
 :status: published

@@ -2,7 +2,7 @@ Civility is...
 ##############
 :date: 2017-07-13 02:27
 :author: cpatti
-:category: Politics
+:category: politics
 :tags: civility, discourse, politics, society
 :slug: civility-is
 :status: published

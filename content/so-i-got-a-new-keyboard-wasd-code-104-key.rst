@@ -2,7 +2,7 @@ So I got a new keyboard (WASD Code 104 Key)
 ###########################################
 :date: 2017-02-23 03:00
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: keyboards, Macintosh, mechanical
 :slug: so-i-got-a-new-keyboard-wasd-code-104-key
 :status: published

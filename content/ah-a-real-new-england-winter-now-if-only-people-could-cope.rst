@@ -2,7 +2,7 @@ Ah, a real New England Winter.  Now if only people could cope.
 ##############################################################
 :date: 2007-12-19 14:18
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: cities, community, elderly, new england, side walks, snow, winter
 :slug: ah-a-real-new-england-winter-now-if-only-people-could-cope
 :status: published

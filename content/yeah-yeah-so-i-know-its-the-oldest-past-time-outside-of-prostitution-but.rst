@@ -2,7 +2,7 @@ Yeah yeah, so I know it's the oldest past time outside of prostitution but...
 #############################################################################
 :date: 2008-08-08 00:51
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: complaints, lightning, rain, thunder, vacation, weather
 :slug: yeah-yeah-so-i-know-its-the-oldest-past-time-outside-of-prostitution-but
 :status: published

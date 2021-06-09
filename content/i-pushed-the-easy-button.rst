@@ -2,7 +2,7 @@ I Pushed the "Easy" Button :)
 #############################
 :date: 2017-02-19 02:38
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: blogging, life, pelican
 :slug: i-pushed-the-easy-button
 :status: published

@@ -2,7 +2,7 @@ So, I landed in China Town!
 ###########################
 :date: 2009-06-12 19:15
 :author: cpatti
-:category: Personal
+:category: personal
 :tags: boston, Chinatown, downtown, job, life, work
 :slug: so-i-landed-in-china-town
 :status: published

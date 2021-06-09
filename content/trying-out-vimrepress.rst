@@ -2,7 +2,7 @@ Trying out VimRepress
 #####################
 :date: 2012-02-09 16:48
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: blog, blogging, editors, vim
 :slug: trying-out-vimrepress
 :status: published

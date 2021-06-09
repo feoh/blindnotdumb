@@ -2,7 +2,7 @@ Ungagged!
 #########
 :date: 2013-02-21 15:13
 :author: cpatti
-:category: Politics
+:category: politics
 :tags: politics, work
 :slug: ungagged
 :status: published

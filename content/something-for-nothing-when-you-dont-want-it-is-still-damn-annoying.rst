@@ -2,7 +2,7 @@ Something for nothing when you don't *WANT IT* is still damn annoying.
 ######################################################################
 :date: 2008-10-02 11:02
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: annoyances, free, Installers, Java, OpenOffice, software, Sun, Windows
 :slug: something-for-nothing-when-you-dont-want-it-is-still-damn-annoying
 :status: published

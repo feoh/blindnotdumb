@@ -2,7 +2,7 @@ DEAD is dead!
 #############
 :date: 2008-08-18 05:47
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: articles, behavior, blogs, gaming, meta, pc
 :slug: dead-is-dead
 :status: published

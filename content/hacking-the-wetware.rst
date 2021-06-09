@@ -2,7 +2,7 @@ Hacking the Wetware
 ###################
 :date: 2018-02-11 21:32
 :author: cpatti
-:category: Personal
+:category: personal
 :tags: exercise, health, life, work
 :slug: hacking-the-wetware
 :status: published

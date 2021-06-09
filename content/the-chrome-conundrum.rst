@@ -2,7 +2,7 @@ The Chrome Conundrum
 ####################
 :date: 2013-10-21 13:16
 :author: cpatti
-:category: Geekery
+:category: geekery
 :tags: browsers, bugs, design, osx
 :slug: the-chrome-conundrum
 :status: published

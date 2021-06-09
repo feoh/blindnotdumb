@@ -2,7 +2,7 @@ You fought the good fight, Hillary, now it's time to hang up the skates.
 ########################################################################
 :date: 2008-03-26 07:19
 :author: cpatti
-:category: Rants
+:category: rants
 :tags: 2008, clinton, democratic, election, hillary, parties, party, politics, president
 :slug: you-fought-the-good-fight-hillary-now-its-time-to-hang-up-the-skates
 :status: published
