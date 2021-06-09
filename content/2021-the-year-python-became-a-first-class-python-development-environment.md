@@ -1,10 +1,13 @@
 Title: 2021 - The Year Windows Became a First Class Python Development Environment
 Date: 02021-06-02 17:54
+Modified: 02021-06-08 22:12
 Category: Geekery
 Tags: python,programming,development,desktop,tools
 Authors: Chris Patti
 Summary: Windows makes for a compelling choice for Python developers in 2021.
 
+
+_[06/08/2021 Update: Added a bit about Windows Terminal. Dunno how I forgot that the first time around!]_
 
 As I've written about previously and elsewhere, I felt so badly burned by Apple's laptop
 hardware design decisions of a few years ago that I've rather fallen out of love with that platform for my personal work. The latest hardware is much better, but I feel like the message has been sent and received, so I'm not rushing back any time soon.
@@ -31,6 +34,14 @@ You can see that I get all kinds of nice status like exit code of last command, 
 While Powershell is indeed a totally different beast from the UNIX shell I'm used to, its built in help for **every** command and understandable syntax make the learning curve feel rather shallow indeed.
 
 Another gripe most UNIX users have when coming to Windows is that everything requires mousing around and futzing with a GUI, and it can feel like you're trapped in an endless series of installer screens to get even your basic working tools installed. Modern Windows obviates all that with [winget](https://www.slashgear.com/microsofts-winget-1-0-released-for-real-heres-why-you-want-it-01675425/) a full fat package manager with tons of common applications already in there. Just ```winget install git``` and you're off to the races :)
+
+## Before The Command Line, There Was The Terminal ##
+
+As anyone who's worked with Windows for a long time could tell you, in the old days, the Windows Console was pretty primitive. You were basically dealing with MS-DOS CMD.EXE with the barest modicum of window dressing. Needless to say, this is 2021 and that's just not cutting it.
+
+Thankfully, there is a superlative alternative that's really come into its own in 2021 - [Windows Terminal](https://github.com/microsoft/terminal). Finally all the features anyone who's been working in the UNIX world have come to expect over the last 30 years are available on Windows as well. Multiple tabs, excellent terminal emulation, great theming and color support, and the ability to seamlessly handle different shells per tab. I regularly keep a Powershell and a WSL tab open for my work.
+
+If you've ever struggled along with the old CMD.EXE, fighting for every cut, paste or insert, this really is a game changer.
 
 ## I Hate Meeces To Pieces! (Really, Don't Make Me Use the Mouse!)
 
