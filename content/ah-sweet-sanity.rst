@@ -13,7 +13,7 @@ Much as I love Ruby, I am still clueless about Rails and truthfully, even web de
 
 WordPress does everything I need with a modicum of hassle, so that's the direction I'm moving in now.
 
-This does mean you'll need to update your RSS links. The new link is here: http://www.feoh.org/?feed=rss2
+This does mean you'll need to update your RSS links. The new link is here: https://www.feoh.org/?feed=rss2
 
 However being Wordpress, it also supports Atom, and a bunch of others.
 

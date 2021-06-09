@@ -39,7 +39,7 @@ But...
 | I'm also very concerned. I fear that the Sanders campaign has thus
 | far only been exposed to the relative softballs lobbed their way by
 | the Clinton campaign. And I'm
-| `not alone <http://www.vox.com/2016/2/3/10903404/gop-campaign-against-sanders>`__.
+| `not alone <https://www.vox.com/2016/2/3/10903404/gop-campaign-against-sanders>`__.
 
 | The take-away here *is not* that we should all vote for Hillary
 | because Bernie is unelectable, but that the Sanders campaign needs to

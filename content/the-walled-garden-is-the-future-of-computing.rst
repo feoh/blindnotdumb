@@ -32,8 +32,8 @@ Simply put, geeks need to get over themselves. Computing has become such a part 
 .. container::
    :name: blogsy_footer
 
-   `|Posted with Blogsy|\ Posted with Blogsy <http://blogsyapp.com>`__
+   `|Posted with Blogsy|\ Posted with Blogsy <https://blogsyapp.com>`__
 
-.. |Posted with Blogsy| image:: http://blogsyapp.com/images/blogsy_footer_icon.png
+.. |Posted with Blogsy| image:: https://blogsyapp.com/images/blogsy_footer_icon.png
    :width: 20px
    :height: 20px

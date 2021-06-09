@@ -14,7 +14,7 @@ I know it's out there somewhere because I've heard it multiple times, I just can
 
  **Update**
 
-The answer is that it's not the mourner's kaddish, but is instead a Jewish funerary song called "Jerusalem, City of Gold" and is included at the end of the song "Demand" on Phish's "Hoist" album.  View most of the details over  `here. <http://feoh.livejournal.com/82847.html?view=193951#t193951>`__
+The answer is that it's not the mourner's kaddish, but is instead a Jewish funerary song called "Jerusalem, City of Gold" and is included at the end of the song "Demand" on Phish's "Hoist" album.  View most of the details over  `here. <https://feoh.livejournal.com/82847.html?view=193951#t193951>`__
 
  
 

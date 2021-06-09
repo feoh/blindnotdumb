@@ -6,17 +6,17 @@ The Zen of Shaving (Safety Razor Edition)
 :slug: the-zen-of-shaving-safety-razor-edition
 :status: published
 
-So as I think I've mentioned before here, I co-host a `podcast <http://www.pythonpodcast.com/>`__.
+So as I think I've mentioned before here, I co-host a `podcast <https://www.pythonpodcast.com/>`__.
 
 Each week on the show we do what we call "picks" - we each showcase two or three things we like and can recommend. It could be a book, software, beer, whatever we feel like.
 
-That week in particular Tobias picked a safety razor, the `Viking Blade Chieftan <http://vikingsblade.com/product/the-chieftain-safety-razor>`__.
+That week in particular Tobias picked a safety razor, the `Viking Blade Chieftan <https://vikingsblade.com/product/the-chieftain-safety-razor>`__.
 
 I'd started shaving my head a few weeks back (my hair has always been a liability for me - one way to handle that is to simply cut it off :).
 
 I was using a disposable razor, and that worked mostly OK, but the results were uneven and I ended up with a bunch of nicks.
 
-So I bought the `Viking Blade Godfather <http://vikingsblade.com/product/vikings-blade-godfather-safety-razor>`__ and decided to give it a whirl.
+So I bought the `Viking Blade Godfather <https://vikingsblade.com/product/vikings-blade-godfather-safety-razor>`__ and decided to give it a whirl.
 
 To be honest, I still don't know if I'm sold on shaving my head with a safety razor - finding the right cutting angle for the more difficult spots can be rather tricky.
 

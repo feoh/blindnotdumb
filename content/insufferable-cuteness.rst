@@ -20,6 +20,6 @@ Happily, my wife is also an easy mark for such a big adorable fluff ball, so I m
 
 Time to go take our after dinner walk.
 
-.. |Buddy Visit| image:: http://www.feoh.org/wp-content/uploads/2008/10/buddy-visit.jpg
+.. |Buddy Visit| image:: https://www.feoh.org/wp-content/uploads/2008/10/buddy-visit.jpg
    :width: 600px
    :height: 800px

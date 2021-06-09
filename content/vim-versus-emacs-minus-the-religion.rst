@@ -10,7 +10,7 @@ Vim Versus Emacs - Minus the Religion
 Vim Versus Emacs - Minus the Religion
 =====================================
 
-**[Note: I originally wrote this for**\ `Quora <http://www.quora.com/Text-Editors/Which-is-better-Vim-or-Emacs-Why/answer/Christopher-Patti>`__\ **but am reposting it here with slight embelishment.**
+**[Note: I originally wrote this for**\ `Quora <https://www.quora.com/Text-Editors/Which-is-better-Vim-or-Emacs-Why/answer/Christopher-Patti>`__\ **but am reposting it here with slight embelishment.**
 
 Introduction
 ------------
@@ -66,7 +66,7 @@ Vi/Vim
 | It's bundled by default on just about every UNIX system on the planet,
 | and that's definitely worth noting.
 
-| A great resource for Vim users is `Vimcasts <http://www.vimcasts.com>`__
+| A great resource for Vim users is `Vimcasts <https://www.vimcasts.com>`__
 | and Drew Neil's excellent book `Practical Vim <https://pragprog.com/book/dnvim/practical-vim>`__.
 
 Emacs
@@ -104,7 +104,7 @@ Emacs
 | an operating system!" and I say they're right, but they're also
 | missing the point :)
 
-| Excellent starter resources for Emacs users are - `Pragmatic Emacs <http://pragmaticemacs.com/>`__ and
+| Excellent starter resources for Emacs users are - `Pragmatic Emacs <https://pragmaticemacs.com/>`__ and
 | the book / website (both stellar) `Mastering Emacs <https://www.masteringemacs.org/>`__.
 
 Summary
@@ -131,5 +131,5 @@ Summary
 
 Tools are just tools, use what makes sense.
 
-[ **Update 07/16/2015: My astute readers reminded me of**\ `evil-mode <http://www.emacswiki.org/emacs/Evil>`__\ **
+[ **Update 07/16/2015: My astute readers reminded me of**\ `evil-mode <https://www.emacswiki.org/emacs/Evil>`__\ **
 which can be seen as letting you have your cake and eat it too :) It provides startlingly complete vim compatibility inside emacs. It works great, I used it initially when I was making the transition from vi to emacs and can recommend it heartily.** ]

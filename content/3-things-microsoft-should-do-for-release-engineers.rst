@@ -17,9 +17,9 @@ For the last year or so I've been working at a 100% Windows based enterprise dev
 
 The Windows installation landscape has been a bleak one indeed for a very long time.  Tools like Installshield with their own proprietary languages like InstallScript make installer development unnecessarily painful and baroque.  Is there **really** any reason I should be programming in a language with no real data structures to speak of in 2010?  Even flow of control is handled in a way I can only describe as baroque.  There are methods/functions, but the main body of your installer's code has to jump around everywhere using goto.  What a mess.
 
-There is hope on this front, in the form of `WiX <http://wix.sourceforge.net/>`__, the Windows Installer XML toolkit, which allows developers to iteratively build and design their installer along with the regular development process.  Right now however the learning curve seems incredibly steep.  Perhaps Visual Studio could generate a template WiX project to get people started?
+There is hope on this front, in the form of `WiX <https://wix.sourceforge.net/>`__, the Windows Installer XML toolkit, which allows developers to iteratively build and design their installer along with the regular development process.  Right now however the learning curve seems incredibly steep.  Perhaps Visual Studio could generate a template WiX project to get people started?
 
-I'd also love to see some thought given to simplifying the deployment model for things like `COM+ <http://msdn.microsoft.com/en-us/library/ms685978%28VS.85%29.aspx>`__ - which feels to me like a magic black box with myriad buttons and levers, all of which are a bear to get right at install time.
+I'd also love to see some thought given to simplifying the deployment model for things like `COM+ <https://msdn.microsoft.com/en-us/library/ms685978%28VS.85%29.aspx>`__ - which feels to me like a magic black box with myriad buttons and levers, all of which are a bear to get right at install time.
 
 2. Builds/SCM
 -------------
@@ -33,6 +33,6 @@ In the 'credit where credit is due' department, the TFS team has been incredibly
 
 As of right now, there are a thousand different interfaces to accomplish the same thing, and for complex configuration tasks like configuring IIS at install time, the possibilities can be dizzying.  I would like to see Microsoft choose **one** mechanism for run-time system/software configuration and document the heck out of it.
 
-Kudos to the `PowerShell <http://blogs.msdn.com/powershell/>`__ team and `The Scripting Guys <http://technet.microsoft.com/en-us/scriptcenter/dd901334.aspx>`__ for making great strides in this area.  PowerShell is a really nice environment for all kinds of scripting, and I look forward to the day when we can eliminate VBScript from our installers entirely in its favor, but we're not there yet sadly.  The object pipeline is one of the more powerful concepts in the modern scripting milieu, and I think Apple and the UNIX world could take a page from PowerShell's book in this regard.
+Kudos to the `PowerShell <https://blogs.msdn.com/powershell/>`__ team and `The Scripting Guys <https://technet.microsoft.com/en-us/scriptcenter/dd901334.aspx>`__ for making great strides in this area.  PowerShell is a really nice environment for all kinds of scripting, and I look forward to the day when we can eliminate VBScript from our installers entirely in its favor, but we're not there yet sadly.  The object pipeline is one of the more powerful concepts in the modern scripting milieu, and I think Apple and the UNIX world could take a page from PowerShell's book in this regard.
 
 Being a release engineer in a Windows world presents some very interesting and different challenges for someone coming from a UNIX background like myself, and with a little bit of emphasis and effort on Microsoft's part, surmounting them could be a whole lot less painful.

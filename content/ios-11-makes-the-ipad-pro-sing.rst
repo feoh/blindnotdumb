@@ -21,7 +21,7 @@ With IOS 11, Apple has finally reconciled itself to the fact that people tend to
 
 To wit - The new “Files” application. To their credit, this isn’t your ordinary file manager - it presents a unified view of your files whether they’re on your iPad or a cloud service like Dropbox, Amazon Drive, etc.
 
-They’ve also added the ability to drag and drop files between applications! Finally I can write a document using my favorite editor - `Editorial <http://omz-software.com/editorial/>`__, and check it into source control using `Working Copy <https://workingcopyapp.com>`__.
+They’ve also added the ability to drag and drop files between applications! Finally I can write a document using my favorite editor - `Editorial <https://omz-software.com/editorial/>`__, and check it into source control using `Working Copy <https://workingcopyapp.com>`__.
 
 The implications of this are huge. IOS has always had an incredibly rich ecosystem of very rich, high powered applications, but until now wrangling data between them was an exercise in gymnastics I could do without.
 

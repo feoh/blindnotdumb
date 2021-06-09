@@ -7,7 +7,7 @@ Oh Swype, Where Have You Been All My Life?
 :slug: oh-swype-where-have-you-been-all-my-life
 :status: published
 
-For years my Android using friends have been revving about `Swype <http://www.swype.com>`__.
+For years my Android using friends have been revving about `Swype <https://www.swype.com>`__.
 
 When tablets and smartphones first appeared on the scene, many of us were so awash in the glow of our shiny new toys that we overlooked a glaring weak point - text input.
 
@@ -17,7 +17,7 @@ The result seems like a regular keyboard, but bereft of the comparative elegance
 
 With Swype, one simply glides one's finger from letter to letter spelling our words. Swype handles tedious details like putting spaces between words or after periods.
 
-I could keep babbling, but suffice it to say it has been a life changer for me. Paired with `Blogsy <http://blogsyapp.com>`__, my iPad blogging ttyl of choice, you may be hearing from me more often!
+I could keep babbling, but suffice it to say it has been a life changer for me. Paired with `Blogsy <https://blogsyapp.com>`__, my iPad blogging ttyl of choice, you may be hearing from me more often!
 
  
 
@@ -28,8 +28,8 @@ I could keep babbling, but suffice it to say it has been a life changer for me. 
 .. container::
    :name: blogsy_footer
 
-   `|Posted with Blogsy|\ Posted with Blogsy <http://blogsyapp.com>`__
+   `|Posted with Blogsy|\ Posted with Blogsy <https://blogsyapp.com>`__
 
-.. |Posted with Blogsy| image:: http://blogsyapp.com/images/blogsy_footer_icon.png
+.. |Posted with Blogsy| image:: https://blogsyapp.com/images/blogsy_footer_icon.png
    :width: 20px
    :height: 20px

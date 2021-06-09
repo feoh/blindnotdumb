@@ -45,7 +45,7 @@ It's a fantastic package for all the reasons I outlined above, but I'm just not 
 | nice web based authoring interface, complete with draft capabilities, rich markup, and the ability to effortlessly
 | integrate images and other media into my posts.
 
-| I've tried doing this with Pelican. either using `Editorial <http://omz-software.com/editorial/>`__ - the incredie
+| I've tried doing this with Pelican. either using `Editorial <https://omz-software.com/editorial/>`__ - the incredie
 | programmable editor for IOS (You can write Python scripts to do text processing in IOS from your editor, how
 | cool is that? :) or using Panic's outstanding `Prompt <https://www.panic.com/prompt/>`__ SSH client to connect to my
 | cloud based development box and do the editing and publishing from there.

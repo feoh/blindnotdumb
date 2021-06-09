@@ -34,7 +34,7 @@ We took the CIE 'A Taste of Ireland" bus tour, and had an amazing time. This was
 | generally get up close and personal in the kind of relaxed way I most enjoy exploring a place.
 
 | My talented wife took about a billion pictures - I took a few as well but if you see the angle skewed oddly it's probably mine - she has a real
-| eye for composition! You can look at them on `Flickr <http://www.flickr.com/photos/feoh/sets/72157605216185951/>`__
+| eye for composition! You can look at them on `Flickr <https://www.flickr.com/photos/feoh/sets/72157605216185951/>`__
 | if you like.
 
 Maybe we'll go to Italy next year, if I don't convince her that a nice relaxing sunny beach vacation on an island somewhere is the way to go :)

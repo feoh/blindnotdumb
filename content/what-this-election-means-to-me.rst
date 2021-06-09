@@ -28,8 +28,8 @@ Economy aside for a moment, I am proud to be doing my part to give the president
 .. container::
    :name: blogsy_footer
 
-   `|Posted with Blogsy|\ Posted with Blogsy <http://blogsyapp.com>`__
+   `|Posted with Blogsy|\ Posted with Blogsy <https://blogsyapp.com>`__
 
-.. |Posted with Blogsy| image:: http://blogsyapp.com/images/blogsy_footer_icon.png
+.. |Posted with Blogsy| image:: https://blogsyapp.com/images/blogsy_footer_icon.png
    :width: 20px
    :height: 20px

@@ -26,7 +26,7 @@ I found one course, Astronomy, that only claimed to require College Algebra and 
 
 **BIG** mistake.
 
-The course started a week and a half ago. Since that time, I have poured ~30 hours and a number of sleepless nights into it, and unfortunately I have to admit that there is eactly zero chance of my passing this course. No amount of effort, lack of sleep, or heroics short of quitting my job (Freaking unlikely since I'm INCREDIBLY happy where I am now. I escaped from Windows enterprise hell and am working for an amazing company, `Blue State Digital <http://www.bluestatedigital.com/>`__.) will save me.
+The course started a week and a half ago. Since that time, I have poured ~30 hours and a number of sleepless nights into it, and unfortunately I have to admit that there is eactly zero chance of my passing this course. No amount of effort, lack of sleep, or heroics short of quitting my job (Freaking unlikely since I'm INCREDIBLY happy where I am now. I escaped from Windows enterprise hell and am working for an amazing company, `Blue State Digital <https://www.bluestatedigital.com/>`__.) will save me.
 
 I had been expecting the math to kick my ass, but in the end analyais, I could handle that just fine! There wasn't a single bit of algebraic manipulation I couldn't get past with a little work and some Google thrown in for good measure.
 

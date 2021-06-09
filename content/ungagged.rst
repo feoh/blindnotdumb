@@ -7,7 +7,7 @@ Ungagged!
 :slug: ungagged
 :status: published
 
-A couple of weeks back I was laid off from `Blue State Digital <http://www.bluestatedigital.com>`__.
+A couple of weeks back I was laid off from `Blue State Digital <https://www.bluestatedigital.com>`__.
 
 I have nothing but admiration for them and gratitude for three great years during which I helped re-elect the first African-American president, helped fight for equal marriage, and make the world a better place by doing my usual job pushing bits around.  How cool is that?
 

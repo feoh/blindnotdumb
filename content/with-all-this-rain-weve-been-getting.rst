@@ -10,7 +10,7 @@ With all this rain we've been getting...
 Staring out the window just now at the torrential rains, I had a very vivid memory of a really pleasant day many years ago...
 
 | I was in High School I think, and a friend of mine (He was my 'Big Brother' actually, a program I was in for kids whose fathers weren't around so we
-| could get some sense of what it's like to be a man - I think it only partially worked :) ) and I were canoeing around `Lake Dennison <http://maps.google.com/maps?ie=UTF-8&oe=utf-8&client=firefox-a&q=Lake+Dennison,&near=Templeton,+MA&fb=1&view=text&latlng=9446610972854578859&dtab=0&ei=BLGISJHMJomKjAHY9bWhBw&oi=&sa=X#>`__ in Templeton, MA.
+| could get some sense of what it's like to be a man - I think it only partially worked :) ) and I were canoeing around `Lake Dennison <https://maps.google.com/maps?ie=UTF-8&oe=utf-8&client=firefox-a&q=Lake+Dennison,&near=Templeton,+MA&fb=1&view=text&latlng=9446610972854578859&dtab=0&ei=BLGISJHMJomKjAHY9bWhBw&oi=&sa=X#>`__ in Templeton, MA.
 
 | There had been a lot of rain that year too, a LOT of rain, and the lake's water level was threatening to swell over the top and flood the beach entirely.
 | This made for some beautiful canoeing, since it allowed us to row down a series of inlets which would normally have been almost totally inaccessible

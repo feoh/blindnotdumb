@@ -25,7 +25,7 @@ Balance is a good thing, as is knowing what's actually important and where to sp
 
 Avdi Grimm, a technologist whose work I admire, wrote a great `piece <https://www.rubytapas.com/2017/01/18/five-reasons-refuse-write-software-deliver-screencasts/>`__ about the buy versus build dilemma recently. After substantial time and effort, he ended up using the same package I'm using to host this blog.
 
-There are other aspects to my choice that feed into my personal situation. I don't have a lot of time to blog these days. I'm not complaining, I have a job I love, a `Masonic lodge <http://www.amicablelodge.com/>`__ I'm proud to be a member of, and a marriage that leaves me happier and more fulfilled than I have been my entire life.
+There are other aspects to my choice that feed into my personal situation. I don't have a lot of time to blog these days. I'm not complaining, I have a job I love, a `Masonic lodge <https://www.amicablelodge.com/>`__ I'm proud to be a member of, and a marriage that leaves me happier and more fulfilled than I have been my entire life.
 
 So when I post, it's in the "in between" times. I started this post on the subway on my phone, picked it up later on my iPad, and am now finishing it relaxing in our living room with my lovely wife on our Macbook Pro while she reads. Wordpress makes this a breeze. It has a super slick authoring interface that lets me compose right in the browser. It does grammar and spell checking by default, and automatically saves drafts so I don't have to worry about losing my work if my laptop dies or I have to stop for a real life intrusion.
 

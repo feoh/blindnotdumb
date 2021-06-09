@@ -12,4 +12,4 @@ What makes this one unique is that it all happens in real time. My lovely wife i
 
 Two thumbs up.
 
-http://www.bananagrams-intl.com/index-us.asp
+https://www.bananagrams-intl.com/index-us.asp

@@ -9,7 +9,7 @@ Dear Amazon and Penguin - Why Can't You Kids Play Nice?
 
 I received a piece of E-mail from Amazon a few days back apologizing about the fact that my pre-order of the latest `Jim Butcher <www.jimbutcher.com>`__ Dresden Files novel had been canceled, offering me a really cheap price on the print edition.
 
-A couple of days and a great deal of "WTF?" later (That's What The French, this being a family friendly blog and all :) I trotted on over to Jim's website and found an `explanation <http://www.jim-butcher.com/news/000362.php>`__.
+A couple of days and a great deal of "WTF?" later (That's What The French, this being a family friendly blog and all :) I trotted on over to Jim's website and found an `explanation <https://www.jim-butcher.com/news/000362.php>`__.
 
 Essentially, Amazon and Penguin are bickering over the sale price of the book.
 

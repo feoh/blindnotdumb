@@ -7,7 +7,7 @@ Dear Mayor Menino
 :slug: dear-mayor-menino
 :status: published
 
-If you think `banning violent video game sales to minors <http://www.boston.com/news/local/massachusetts/articles/2008/03/17/menino_backs_bill_to_keep_violent_video_games_away_from_children/>`__ will reduce the murder rate...
+If you think `banning violent video game sales to minors <https://www.boston.com/news/local/massachusetts/articles/2008/03/17/menino_backs_bill_to_keep_violent_video_games_away_from_children/>`__ will reduce the murder rate...
 
 You are deluding yourself.
 

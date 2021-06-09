@@ -25,4 +25,4 @@ I steadfastly believe that if we abandon this crucial tenet we will cease to be 
 
  
 
-.. |image1| image:: http://www.plannedscape.net/Fiala/wp-content/uploads/2016/02/image0253.jpg
+.. |image1| image:: https://www.plannedscape.net/Fiala/wp-content/uploads/2016/02/image0253.jpg

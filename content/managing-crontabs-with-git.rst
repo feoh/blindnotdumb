@@ -7,7 +7,7 @@ Managing crontabs with Git
 :slug: managing-crontabs-with-git
 :status: published
 
-April 2012 Update: Nowadays we use\ `Chef <http://www.opscode.com/chef/>`__\ from Opscode solutions to manage our crontabs, and just about everything else in our enterprise infrastructure. It rocks :)
+April 2012 Update: Nowadays we use\ `Chef <https://www.opscode.com/chef/>`__\ from Opscode solutions to manage our crontabs, and just about everything else in our enterprise infrastructure. It rocks :)
 
 Time and time again over the years I've dealt with the same problem - who took a random pot shot at some critical user's crontab file and deleted things without asking?
 

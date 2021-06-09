@@ -7,7 +7,7 @@ I've gone native. (Or - Google's UI and I are parting ways)
 :slug: ive-gone-native-or-googles-ui-and-i-are-parting-ways
 :status: published
 
-Today Google `announced <http://gmailblog.blogspot.com/2012/10/introducing-new-compose-in-gmail.html>`__ that they were releasing a new Composer for GMail.
+Today Google `announced <https://gmailblog.blogspot.com/2012/10/introducing-new-compose-in-gmail.html>`__ that they were releasing a new Composer for GMail.
 
 It's awful.  They made the window small, and right justified it.  I feel like I have to crane my neck at an unnatural angle in order to see what I'm writing, and worse yet, they've turned my good old message composition interface into something akin to a web forum or chat window.
 

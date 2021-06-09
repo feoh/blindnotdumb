@@ -17,9 +17,9 @@ That has been sucking up a big chunk of my waking hours and more of my conscious
 
 However, when I'm not working, or spending time with my lovely wife, I've been reading.
 
-Lately I've been obsessed with `Alan Furst <http://en.wikipedia.org/wiki/Alan_Furst>`__ novels. They're set before and/or during the WWII era and range all over Europe.
+Lately I've been obsessed with `Alan Furst <https://en.wikipedia.org/wiki/Alan_Furst>`__ novels. They're set before and/or during the WWII era and range all over Europe.
 
-The last two novels in particular focus on life in the pre war Russian secret service - the `NKVD <http://en.wikipedia.org/wiki/NKVD>`__.
+The last two novels in particular focus on life in the pre war Russian secret service - the `NKVD <https://en.wikipedia.org/wiki/NKVD>`__.
 
 First of all, I just want to take a minute to gush. I didn't realize how much I could enjoy historical fiction until I encountered this author. I have yet to read another author's work that compares to the kind of lush historical and cultural detail Furst expertly weaves into the story in these books. He has taken the time to research all the little things (idioms of speech, modes of dress, customs and folkways) that run together to create an incredibly rich tapestry that forms the backdrop for the events large and small, personal and impersonal that make these stories shine.
 

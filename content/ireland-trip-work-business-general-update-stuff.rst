@@ -11,7 +11,7 @@ This is one of those rare occasions when I have nothing more to say than a brief
 
 Life has been good, but **busy**.
 
-At work, the `Maven 2 <http://maven.apache.org/>`__ transition is slated to happen this weekend. If we can carry it off successfully, I will be able to trundle off across the pond with a giant weight lifted from my shoulders as we've been working towards this for months.
+At work, the `Maven 2 <https://maven.apache.org/>`__ transition is slated to happen this weekend. If we can carry it off successfully, I will be able to trundle off across the pond with a giant weight lifted from my shoulders as we've been working towards this for months.
 
 Speaking of trundling off across the pond - We're headed to Ireland next week. We're in that frenzied pre vacation phase where we're trying to ensure that we take everything we need while still traveling (comparatively) light. This is all very exciting for me, as it'll be my first trip to Europe, and also my first international vacation as a married man :)
 

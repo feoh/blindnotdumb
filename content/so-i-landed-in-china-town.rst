@@ -16,7 +16,7 @@ As I described in my last post, January was not the best of months for me, and n
 
 There was definitely work to be had out there, but much of it was well outside the city, only barely accessible via a bus line that dropped me into the middle of a **very** pedestrian unfriendly industrial park. Eek. I interviewed a lot, and even had a close call at MIT but in the end analysis they had further cuts and couldn't hire for the job for another month or so which put me out of the running - I have a hungry mortgage to feed after all :)
 
-In the end, a recruiter from a company I'd never heard of before - `The Trizetto Group <http://www.trizetto.com/>`__ called and said they were very interested.
+In the end, a recruiter from a company I'd never heard of before - `The Trizetto Group <https://www.trizetto.com/>`__ called and said they were very interested.
 
 They're a Windows shop, which initially made me shy away from the idea, but they do a LOT of Perl for their core process automation stuff which I'm reasonably fluent in, and it would be an opportunity for a total technology reboot - not something one gets a lot of chances to do in one's career. So I interviewed there a couple of times and it worked out.
 
@@ -34,6 +34,6 @@ I'll get off my soapbox now. I guess that's about it - life is generally pretty 
 
 Hopefully I'll have something of substance to say again soon. Stay tuned!
 
-.. |Chinatown Gate Small| image:: http://www.feoh.org/wp-content/uploads/2009/06/chinatown-gate-small.jpg
+.. |Chinatown Gate Small| image:: https://www.feoh.org/wp-content/uploads/2009/06/chinatown-gate-small.jpg
    :width: 640px
    :height: 480px

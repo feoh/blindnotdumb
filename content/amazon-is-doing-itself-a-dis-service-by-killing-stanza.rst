@@ -16,6 +16,6 @@ For reading prose, in my humble opinion, nothing beats the experience of an E-in
 
 So, while I'll be the first to admit that business is war and taking out what could be seen as a direct rival is a smart move in one sense, in reality the consumer gets punished, and consumers rarely react well to such treatment.
 
-People will not turn to Amazon because their beloved Stanza has exploded in a fiery ball of doom with the coming of IOS 5, they'll simply turn to other alternatives like the excellent `MegaReader <http://www.megareader.net/>`__ application whose author is working very hard to cater to the Stanza users bereft of their favorite reader.
+People will not turn to Amazon because their beloved Stanza has exploded in a fiery ball of doom with the coming of IOS 5, they'll simply turn to other alternatives like the excellent `MegaReader <https://www.megareader.net/>`__ application whose author is working very hard to cater to the Stanza users bereft of their favorite reader.
 
 Dumb move, Amazon.  I am still a loyal fan, and this won't in any way change how much I buy from you, but I am decidedly **not pleased.**

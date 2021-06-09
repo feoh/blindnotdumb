@@ -9,7 +9,7 @@ A few random thoughts on keyboards
 | I've recently been very underwhelmed with the keyboards Apple ships with their computers. They're trying to make them all feel like laptop keyboards, which is an idea I
 | rather disapprove of.
 
-| In particular the recent `Apple Keyboard <http://www.apple.com/shop/product/MB110LL/B/apple-keyboard-with-numeric-keypad-english-usa>`__
+| In particular the recent `Apple Keyboard <https://www.apple.com/shop/product/MB110LL/B/apple-keyboard-with-numeric-keypad-english-usa>`__
 | has such shallow key travel it's very easy to fall into the bad habit of pounding the keys, and the overall layout feels squished
 | and constrained.
 
@@ -17,7 +17,7 @@ A few random thoughts on keyboards
 | liking them.
 
 | Thus far it's definitely a big improvement over the current squashed and squishy laptop like keyboard, but my gold standard for
-| keyboards is the `Razer Black Widow Ultimate <http://www.razerzone.com/store/razer-blackwidow-ultimate>`__ - I use one at work with my
+| keyboards is the `Razer Black Widow Ultimate <https://www.razerzone.com/store/razer-blackwidow-ultimate>`__ - I use one at work with my
 | Linux desktop PC and it feels glorious to type on. Beautiful mechanical keys with very distinct tactile feedback and a satisfying
 | (if perhaps somewhat loud for your officemates :) click.
 

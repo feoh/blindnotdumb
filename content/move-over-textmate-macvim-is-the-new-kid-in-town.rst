@@ -12,11 +12,11 @@ Move over TextMate.  MacVim is the new kid in town!
 | TextMate, EditPlus, or even the venerable /bin/ed whenever that makes sense.
 | 
 | But for the first time in a long time, my current (awesome! :)) job at `Blue
-  State Digital <http://www.bluestatedigital.com>`__ has given me the opportunity to
+  State Digital <https://www.bluestatedigital.com>`__ has given me the opportunity to
 | branch out and do quite a bit of real software development.
 
 | I first encountered TextMate shortly after I came to OSX. It's a great editor,
-| and I have a tremendous amount of respect for Alan Odegard of `Macromates <http://www.macromates.com>`__
+| and I have a tremendous amount of respect for Alan Odegard of `Macromates <https://www.macromates.com>`__
 | software. He has just about single handedly created not only an amazing
 | editor, but a vibrant and loyal community around his program, and he's to be
 | commended for that.
@@ -37,14 +37,14 @@ Move over TextMate.  MacVim is the new kid in town!
 | What's more, there are a number of folks making the same transition, so there
 | are some excellent articles and websites out there to ease the transition like
 | `this guide on making the
-  switch <http://www.jackkinsella.ie/2011/09/05/textmate-to-vim.html#masthead>`__ or
-| the excellent `VimCasts <http://vimcasts.org>`__ series of Vim tutorial screen
+  switch <https://www.jackkinsella.ie/2011/09/05/textmate-to-vim.html#masthead>`__ or
+| the excellent `VimCasts <https://vimcasts.org>`__ series of Vim tutorial screen
 | casts. They cover everything from the basics to some fairly advanced tips and
 | tricks on more complex Vim modes and integrations, and is written by a TextMate
 | to Vim switcher.
 
 | Right now I'm writing this post on the excellent
-| `VimRePress <http://www.vim.org/scripts/script.php?script_id=3510>`__ plugin for
+| `VimRePress <https://www.vim.org/scripts/script.php?script_id=3510>`__ plugin for
 | Vim that allows you to author and manage your Wordpress blog right from within
 | the editor! Very sweet :)
 

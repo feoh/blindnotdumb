@@ -18,7 +18,7 @@ She is getting all sorts of messages from the MSPCA and their ilk claiming that 
 
 The Vote No on 3 contingent is mostly coming off sounding combative and shrill as well. Their Boston Globe piece reminded me of conservative talk radio - it might as well have been written by Rush Limbaugh.
 
-The folks over at `Protect Dogs and Jobs <http://protectdogsandjobs.org/>`__ are citing the loss of 1,000 jobs and $4 million in state revenue if the ban passes, and claiming that the incidence of dog injury in the sport is incredibly small (1 injury for every 1000 dogs racing - something like .1%) and compare that to the injury stat for Girls Volleyball which is at 1.47%. the only thing I keep hearing from these folks about the abuse allegations is "Owners have every incentive to treat their dogs well, so they'll race well" - but I'm not sure how well that theory holds water.
+The folks over at `Protect Dogs and Jobs <https://protectdogsandjobs.org/>`__ are citing the loss of 1,000 jobs and $4 million in state revenue if the ban passes, and claiming that the incidence of dog injury in the sport is incredibly small (1 injury for every 1000 dogs racing - something like .1%) and compare that to the injury stat for Girls Volleyball which is at 1.47%. the only thing I keep hearing from these folks about the abuse allegations is "Owners have every incentive to treat their dogs well, so they'll race well" - but I'm not sure how well that theory holds water.
 
 So who is right? Are the dogs actually being abused, or is this people getting carried away with themselves on principle and ignoring the actual facts of the matter?
 

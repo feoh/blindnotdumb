@@ -15,7 +15,7 @@ I hate to write a negative blog post about a tech publisher's ebooks program, bu
 
 Not that I don't sympathize, writing a book is from what I understand Really Hard, but as a consumer if I've signed up to buy something, I expect a completed product to come out the other end. To be fair, Manning does offer either a refund or an exchange plus a bonus free e-book, but most of the truly hot topics that I found interesting were MEAP books again, so the cycle repeats.
 
-Secondly, Manning uses the Yahoo Store for their ebook delivery. Wow, what a nightmare. You get n days to download your book once they send you the email, and then POOOF your purchase goes off into the ether. Compare and contrast with `O'Reilly and Associates <http://oreilly.com/>`__ and the `Pragmatic Programmers <http://www.pragprog.com/>`__ (two publishing houses I can't recommend enthusiastically enough.) where you can re-download your purchases anytime, for \*life*.
+Secondly, Manning uses the Yahoo Store for their ebook delivery. Wow, what a nightmare. You get n days to download your book once they send you the email, and then POOOF your purchase goes off into the ether. Compare and contrast with `O'Reilly and Associates <https://oreilly.com/>`__ and the `Pragmatic Programmers <https://www.pragprog.com/>`__ (two publishing houses I can't recommend enthusiastically enough.) where you can re-download your purchases anytime, for \*life*.
 
 If you buy early access titles from either of these publishers, you are not chained to your email for fear that the ticking time bomb of your download notice will expire when you're not looking.
 
