@@ -12,18 +12,21 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
+FEED_ALL_RSS = 'feeds/all.rss.xml'
+CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
+
 # Set newly pushed posts as draft.
 #DEFAULT_METADATA = {
 #    'status': 'draft',
 #}
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-DISQUS_SITENAME='blindnotdumb'
+# FEED_ALL_ATOM = None
+# CATEGORY_FEED_ATOM = None
+# TRANSLATION_FEED_ATOM = None
+# AUTHOR_FEED_ATOM = None
+# AUTHOR_FEED_RSS = None
+# DISQUS_SITENAME='blindnotdumb'
 
 # Blogroll
 LINKS = (('Podcast.__init__', 'http://www.podcastinit.com/'),
