@@ -1,7 +1,6 @@
 Title: I Want To Be A Pragmatic Free Software Advocate
 Date: 2021-04-25 17:11
 Category: geekery
-Status: Draft
 Tags: fsf,free,software,advocacy,linux,floss,open,source
 
 # I Want To Be A Pragmatic Free Software Advocate
