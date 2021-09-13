@@ -1,7 +1,6 @@
 Title: Tech Needs Less Eeyore And More Pooh
 Date: 2021-09-13 
 Category: geekery
-Status: Draft
 Tags: technology,industry,culture,attitude,adoption,commentary
 
 I've been slugging it out in the trenches of the technology industry for over 30 years now.
