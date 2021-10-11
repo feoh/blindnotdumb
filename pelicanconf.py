@@ -4,7 +4,7 @@
 AUTHOR = 'Chris Patti'
 SITENAME = 'Blind Not Dumb'
 SITEURL = 'https://www.feoh.org'
-
+THEME = 'themes/pelican-indieweb'
 
 PATH = 'content'
 
@@ -14,6 +14,8 @@ DEFAULT_LANG = 'en'
 
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
+
+CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 # Set newly pushed posts as draft.
 #DEFAULT_METADATA = {

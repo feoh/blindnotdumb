@@ -7,6 +7,7 @@ I've been slugging it out in the trenches of the technology industry for over 30
 
 I say this not as some kind of weird badge of honor, but to lend credence to an observation I'm about to make.
 
-Without fail, every time anyone introduces either a new idea or a new piece of software, pretty much ANYTHING that represents a shift from the status quo, the vast majority of 
+Without fail, every time anyone introduces either a new idea or a new piece of software, pretty much ANYTHING that represents a shift from the status quo, the vast majority of responses are negative.
 
-# This idea needs rework.
+I don't just mean "Hey is this the best way we could do this?" or "Had you considered this or that problem with this approach?".
+
