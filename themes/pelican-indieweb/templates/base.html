@@ -95,7 +95,7 @@
     {% endif %}
 
     {% if category and CATEGORY_FEED_ATOM %}
-    <link href="{{ SITEURL }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}"
+    <link href="{{ SITEURL }}/{{ CATEGORY_FEED_ATOM.format(slug='category.slug') }}"
           type="application/atom+xml" rel="alternate"
           title="{{ SITENAME }} {{ category }} ATOM Feed"/>
     {% endif %}
