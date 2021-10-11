@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-body">
+        <div class="card-text">
+            <header class="article-header">
+                {% include 'includes/article_info_head.html' %}
+            </header>
+            
+            {% for like in article.like_of %}
+            <div class="my-4">
+                <i class="far fa-thumbs-up mr-1"></i>
+                <a class="u-like-of" href="{{like}}">{{like}}</a>
+            </div>
+            {% endfor %}
+            
+            {% for repost in article.repost_of %}
+            <div class="my-4">
+                <i class="fa fa-retweet mr-1"></i>
+                <a class="u-repost-of" href="{{repost}}">{{repost}}</a>
+            </div>
+            {% endfor %}
+            
+            {% for reply in article.in_reply_to %}
+            <div class="my-4">
+                <i class="fa fa-reply mr-1"></i>
+                <a class="u-in-reply-to" href="{{reply}}">{{reply}}</a>
+            </div>
+            {% endfor %}
+
+            {% for bookmark in article.bookmark_of %}
+            <div class="my-4">
+                <i class="fa fa-bookmark mr-1"></i>
+                <a class="u-bookmark-of" href="{{bookmark}}">{{bookmark}}</a>
+            </div>
+            {% endfor %}
+            
+            <div class="my-4 entry-content e-content">
+                {{ article.content }}
+                {% for photo in article.photo %}
+                {% if photo.alt %}
+                <img src="{{photo.value}}" alt="{{ photo.alt | replace('\,', ',') }}"
+                     class="u-photo embedded-photo"/>
+                {% else %}
+                <img src="{{photo.value}}" class="u-photo embedded-photo"/>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% include 'includes/preview.html' %}
+        {% include 'includes/article_info_foot.html' %}
+        </div>
+    </div>
+</div>

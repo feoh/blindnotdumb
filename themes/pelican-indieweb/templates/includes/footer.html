@@ -1,0 +1,36 @@
+<footer class="page-footer my-4">
+    
+   <div class="">
+       <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous">←</a>
+       An IndieWeb Webring 🕸💍
+       <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next">→</a>
+   </div>
+   
+   <div class="container">
+      <div class="row">
+         {% if articles %}
+            {% set copy_date = articles[0].date.strftime('%Y') %}
+         {% else %}
+            {% set copy_date = '' %}
+         {% endif %}
+         <div class="mr-auto">&copy;
+             {{ copy_date }}
+             <a class="p-author" href="{{ SITEURL }}">{{AUTHOR}}</a>
+            &middot; Powered by
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+            {% if article and article.source_path %}
+            &middot;
+            <a href="{{ EDIT_ROOT }}{{ article.source_path[PATH|length:] }}">Edit</a>
+            {% elif page and page.source_path %}
+            &middot;
+            <a href="{{ EDIT_ROOT }}{{ page.source_path[PATH|length:] }}">Edit</a>
+            {% endif %}
+         </div>
+         <div>
+             <i class="fa fa-arrow-up"></i> <a href="#">Back to top</a>
+         </div>
+      </div>
+   </div>
+     
+</footer>
