@@ -1,8 +1,7 @@
 Title: Getting Started With Python On Windows 2021 Edition: Push The Easy Button!
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:31
+Date: 2021-11-06 01:45
 Category: Python
-Tags: python, development, windows, setup, newbie, setup, winget
+Tags: python, development, windows, setup, newbie, setup, winget, geekery
 Authors: Chris Patti
 Summary: Python Dev Setup On Windows in 2021
 
