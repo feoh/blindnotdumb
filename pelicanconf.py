@@ -4,7 +4,6 @@
 AUTHOR = 'Chris Patti'
 SITENAME = 'Blind Not Dumb'
 SITEURL = 'https://www.feoh.org'
-THEME = 'themes/pelican-indieweb'
 
 PATH = 'content'
 
