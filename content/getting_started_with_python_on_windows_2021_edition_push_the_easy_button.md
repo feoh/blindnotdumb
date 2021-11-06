@@ -7,7 +7,7 @@ Summary: Python Dev Setup On Windows in 2021
 
 # Don't Despair! This Is Gonna Be Easy! :)
 
-Over the last few months I've seen a ***ton*** of confusing swirling around social media about how to help people who are new to Python development and software development in general get up and running on Windows quickly.
+Over the last few months I've seen a ***ton*** of confusion swirling around social media about how to help people who are new to Python development and software development in general get up and running on Windows quickly.
 
 GOOD NEWS! You can ignore all that. Many of these suggestions are well meaning but come from people who don't actually do Python development on Windows regularly.
 
@@ -19,11 +19,9 @@ So let's get started!
 
 I hear a lot of incredibly talented and experienced well meaning UNIX/Mac enthusiasts tell newcomers looking to get going on Windows "Oh well you just use WSL! It's easy! Then you install python with apt get yada yada, and then you install pyenv, and then you configure your shell's environment to use the right shims... and...
 
-### What Is WSL And Why Would I Want It?
+The truth is that if you want to learn Linux - you SHOULD! It's an incredible platform and a virtually bottomless font of power waiting for you to tap.
 
-There are some very good reasons why you might in fact want to set yourself up to do Python development using WSL, first and foremost you're trying to develop Python code that is eventually intended to run on a Linux/UNIX system.
-
-Developing and testing your code in WSL will allow it to access native Linux system calls and extensions that aren't available on Windows. If that's important to you, by all means, use WSL! But if it's not or you're not sure, forget about it! :)
+But if there's one thing I've learned from 30 years in the tech trenches, it's that trying to learn a million things all at once is the surest way to learn nothing. Why not foucs on teaching yourself Python programming first and then exploring Linux as a separate effort?
 
 # Install Python
 
@@ -54,10 +52,6 @@ py --help
 ```
 
 to see an exhaustive description of all the magic tricks py can do :)
-
-## Break Out The Tools, It's Time To Start Building!
-
-Now that we've taken our new Python install for a quick spin around the block, let's actually set ourselves up with a 'toy' project so you can see how easy that is.
 
 ### Set The Stage
 
@@ -130,7 +124,11 @@ Now, still in our Powershell prompt, type this command to actually install these
 py -m pip install -r requirements.txt
 ```
 
-You should see some messages about libraries being installed.
+You should see some messages about libraries being installed. Note that you invoke IPython this exact same way:
+
+```
+py -m IPython
+```
 
 ## Write The Code
 
