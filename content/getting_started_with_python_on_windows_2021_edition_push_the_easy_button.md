@@ -17,11 +17,16 @@ So let's get started!
 
 ## Side Note: Everyone Will Tell You To Use WSL - You Probably Don't Want That!
 
-I hear a lot of incredibly talented and experienced well meaning UNIX/Mac enthusiasts tell newcomers looking to get going on Windows "Oh well you just use WSL! It's easy! Then you install python with apt get yada yada, and then you install pyenv, and then you configure your shell's environment to use the right shims... and...
+I hear a lot of incredibly talented and experienced well meaning UNIX/Mac enthusiasts tell newcomers looking to get going on
+Windows "Oh well you just use WSL! It's easy! Then you install python with apt get yada yada, and then you install pyenv,
+and then you configure your shell's environment to use the right shims... and..."
 
-The truth is that if you want to learn Linux - you SHOULD! It's an incredible platform and a virtually bottomless font of power waiting for you to tap.
+The truth is that if you want to learn Linux - you SHOULD! It's an incredible platform and a virtually bottomless font of
+power waiting for you to tap.
 
-But if there's one thing I've learned from 30 years in the tech trenches, it's that trying to learn a million things all at once is the surest way to learn nothing. Why not foucs on teaching yourself Python programming first and then exploring Linux as a separate effort?
+But if there's one thing I've learned in 30 years in the tech trenches, it's that trying to learn a million things all at
+once is the surest way to learn nothing. Why not focus on teaching yourself Python programming first and then exploring Linux
+as a separate effort?
 
 # Install Python
 
@@ -70,7 +75,7 @@ cd src\starwars_characters
 
 ### Building A Sandbox
 
-Now let's create a safe space for our project so we don't unintentionally install libraries or other experiments in public. This can lead to situations where you go to create another project but a library youinstalled previously either causes undesirable behavior or perhaps is even in a broken state, getting in the way of you getting your work done.
+Now let's create a safe space for our project so we don't unintentionally install libraries or other experiments in public. This can lead to situations where you go to create another project but a library you installed previously either causes undesirable behavior or perhaps is even in a broken state, getting in the way of you getting your work done.
 
 We're going to create a thing called 'virtual environment'. Don't worry too much about the details, just think about this as a nice tidy sandbox for us to play in where we don't have to worry about breaking anything outside.
 
@@ -154,13 +159,22 @@ Here's what my Visual Studio Code session looks like with this code loaded and t
 
 ![Starwars Project VSCode Screenshot]({static}images/vscode.png)
 
-Notic that bit at the bottom that says 3.10? That shows us that Visual Studio Code automatically detected the Python we have installed in our virtualenv. You can click on that to see a list of installed Python interpreters to choose from.
+Notice that bit at the bottom that says 3.10? That shows us that Visual Studio Code automatically detected the Python we have installed in our virtualenv. You can click on that to see a list of installed Python interpreters to choose from.
+
+We can run our new project either by using the Run menu inside Visual Studio Code or on the command line with that very same `py -m` syntax we used before:
+
+```
+py -m starwars_characters.py
+```
 
 # The End Is Just The Beginning
 
 Well there we have it! You have Python installed and running, and you've built a small but interesting Python project right here on your Windows machine!
 
-The truth is, a large number of people have put in innumerable hours making Python drive smooth like a Cadillac on Windows, so if you find yourself using and enjoying it, the next time someone tells you to abandon all hope and install Linux/WSL, be sure to point them at this article! Maybe if we change some minds we can help bring more Pythonistas into the incredibly awesome Python community!
+The truth is, a large number of people have put in innumerable hours making Python drive smooth like a Cadillac on Windows,
+so if you find yourself using and enjoying it, the next time someone tells you to abandon all hope and install Linux/WSL,
+be sure to point them at this article! Maybe if we change some minds we can help bring more Pythonistas into the incredibly
+awesome Python community!
 
 Please feel free to leave comments with any questions, or hit me up on 
 [Mastodon](https://cybre.space/@feoh) or [Twitter](https://twitter.com/feoh).
