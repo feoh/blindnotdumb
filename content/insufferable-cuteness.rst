@@ -2,7 +2,7 @@ INSUFFERABLE CUTENESS!
 ######################
 :date: 2008-10-04 16:48
 :author: cpatti
-:category: personal
+:category: misc
 :tags: adorable, buddy, cute, dog, fuzzy, golden, golden retriever, puppy
 :slug: insufferable-cuteness
 :status: published

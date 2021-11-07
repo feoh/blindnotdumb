@@ -2,7 +2,7 @@ Breaking the silence - Ireland.
 ###############################
 :date: 2008-07-23 11:31
 :author: cpatti
-:category: personal
+:category: misc
 :tags: europe, fun, ireland, travel, vacation
 :slug: breaking-the-silence-ireland
 :status: published

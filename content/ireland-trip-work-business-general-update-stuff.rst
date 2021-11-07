@@ -2,7 +2,7 @@ Ireland trip, work business, general update stuff.
 ##################################################
 :date: 2008-05-07 23:33
 :author: cpatti
-:category: personal
+:category: misc
 :tags: europe, ireland, life, travel, vacation, work
 :slug: ireland-trip-work-business-general-update-stuff
 :status: published

@@ -2,7 +2,7 @@ Aruba - Take 2
 ##############
 :date: 2009-10-12 12:36
 :author: cpatti
-:category: personal
+:category: misc
 :tags: aruba, beach, travel, tropical, vacation
 :slug: aruba-take-2
 :status: published

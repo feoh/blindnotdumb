@@ -2,7 +2,7 @@ Sleeeepy (And old :P)
 #####################
 :date: 2011-07-18 15:56
 :author: cpatti
-:category: personal
+:category: misc
 :tags: aging, career, exercise, health, sleep, work
 :slug: sleeeepy-and-old-p
 :status: published

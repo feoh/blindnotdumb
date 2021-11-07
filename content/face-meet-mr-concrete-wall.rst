@@ -2,7 +2,7 @@ Face, meet Mr. Concrete wall.
 #############################
 :date: 2010-06-29 15:36
 :author: cpatti
-:category: personal
+:category: misc
 :tags: astronomy, career, courses, degree, goals, life, math, science, work
 :slug: face-meet-mr-concrete-wall
 :status: published

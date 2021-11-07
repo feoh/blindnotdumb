@@ -2,12 +2,10 @@ Hacking the Wetware
 ###################
 :date: 2018-02-11 21:32
 :author: cpatti
-:category: personal
+:category: geekery
 :tags: exercise, health, life, work
 :slug: hacking-the-wetware
 :status: published
-
-|image1|
 
 Working for Amazon has been a revelation to me in ways large and small.
 
