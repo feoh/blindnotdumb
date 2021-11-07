@@ -2,7 +2,7 @@ Rock Band 2 Special Edition Box - Awesome :)
 ############################################
 :date: 2008-11-02 21:15
 :author: cpatti
-:category: video games
+:category: geekery
 :tags: bass, drums, gaming, guitar, rock band, songs, video games
 :slug: rock-band-2-special-edition-box-awesome
 :status: published

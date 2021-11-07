@@ -2,7 +2,7 @@ Valliant Hearts - My Kind of Game
 #################################
 :date: 2017-03-27 22:41
 :author: cpatti
-:category: video games
+:category: geekery
 :tags: art, games, video games, war, WWI
 :slug: valliant-hearts-my-kind-of-game
 :status: published
