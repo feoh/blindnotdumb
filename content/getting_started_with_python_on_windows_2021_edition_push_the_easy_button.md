@@ -161,10 +161,10 @@ Here's what my Visual Studio Code session looks like with this code loaded and t
 
 Notice that bit at the bottom that says 3.10? That shows us that Visual Studio Code automatically detected the Python we have installed in our virtualenv. You can click on that to see a list of installed Python interpreters to choose from.
 
-We can run our new project either by using the Run menu inside Visual Studio Code or on the command line with that very same `py -m` syntax we used before:
+We can run our new project either by using the Run menu inside Visual Studio Code or on the command line with that very same `py` syntax we used before:
 
 ```
-py -m starwars_characters.py
+py starwars_characters.py
 ```
 
 # The End Is Just The Beginning
