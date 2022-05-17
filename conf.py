@@ -25,7 +25,7 @@ SITE_URL = "https://www.feoh.org/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://www.feoh.org/"
 BLOG_EMAIL = "feoh@feoh.org"
-BLOG_DESCRIPTION = "Thoughts and opinions of an inveterate bit bodger"  # (translatable)
+BLOG_DESCRIPTION = "Thoughts and Opinions of an Inveterate Bit Bodger"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -145,6 +145,7 @@ NAVIGATION_LINKS = {
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
+        ("/feed.atom", "ATOM feed"),
     ),
 }
 
@@ -156,7 +157,8 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+# THEME = "bootblog4"
+THEME = "bnw"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -1189,7 +1191,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.m
 # FEED_TEASER option. FEED_LINKS_APPEND_QUERY is also respected. Atom feeds
 # are generated even for old indexes and have pagination link relations
 # between each other. Old Atom feeds with no changes are marked as archived.
-# GENERATE_ATOM = False
+GENERATE_ATOM = True
 
 # Only include teasers in Atom and RSS feeds. Disabling include the full
 # content. Defaults to True.
@@ -1352,7 +1354,7 @@ METADATA_MAPPING = {
 # Bundle JS and CSS into single files to make site loading faster in a HTTP/1.1
 # environment but is not recommended for HTTP/2.0 when caching is used.
 # Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
