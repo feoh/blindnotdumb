@@ -46,7 +46,7 @@ The 'py' Python launcher used to be a super power that only Windows versions of 
 
 So let's get this party started and see how easy it is these days to get into the Python prompt:
 
-![Windows Python Prompt With Py]({static}images/WindowsPyPrompt.png)
+![Windows Python Prompt With Py](images/WindowsPyPrompt.png)
 
 Pretty easy, right?
 
