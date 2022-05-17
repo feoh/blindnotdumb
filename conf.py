@@ -1294,7 +1294,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.m
 USE_REST_DOCINFO_METADATA = True
 
 # If enabled, hide docinfo fields in reST document output
-# HIDE_REST_DOCINFO = False
+HIDE_REST_DOCINFO = True
 
 # Map metadata from other formats to Nikola names.
 # Supported formats: yaml, toml, rest_docinfo, markdown_metadata
