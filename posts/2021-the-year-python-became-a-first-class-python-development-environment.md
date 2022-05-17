@@ -27,7 +27,7 @@ I still love me some Bourne shell, it's just as powerful today as it was decades
 In addition to things like object pipelines and desired state configuration that
 the UNIX shell simply can't do, modern Powershell has creature comforts like [Oh My Posh](https://ohmyposh.dev/) that make for a very comfortable work environment. Here's a screenshot of mine:
 
-![My Oh My Posh Prompt](images/OhMyPoshScreenshotSmol.png)
+![My Oh My Posh Prompt](OhMyPoshScreenshotSmol.png)
 
 You can see that I get all kinds of nice status like exit code of last command, current git branch, current Python version and virtual environment, etc.
 
