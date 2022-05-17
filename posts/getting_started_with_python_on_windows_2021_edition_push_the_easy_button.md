@@ -46,7 +46,7 @@ The 'py' Python launcher used to be a super power that only Windows versions of 
 
 So let's get this party started and see how easy it is these days to get into the Python prompt:
 
-![Windows Python Prompt With Py](../images/WindowsPyPrompt.png)
+![Windows Python Prompt With Py](/images/WindowsPyPrompt.png)
 
 Pretty easy, right?
 
@@ -92,7 +92,7 @@ py -m venv venv
 
 Let's see what happens when we do that (Assuming you're running Oh My Posh, and you should be if you followed my setup article):
 
-![Create/Activate Virtual Environment](../images/virtualenvps.png)
+![Create/Activate Virtual Environment](/images/virtualenvps.png)
 
 See what happens there? We create the virtual environment, and our shell notices which Python version it uses, and tells us that in our Powershell prompt!
 
@@ -157,7 +157,7 @@ for character in characters:
 
 Here's what my Visual Studio Code session looks like with this code loaded and the output shown in the run window:
 
-![Starwars Project VSCode Screenshot](../images/vscode.png)
+![Starwars Project VSCode Screenshot](/images/vscode.png)
 
 Notice that bit at the bottom that says 3.10? That shows us that Visual Studio Code automatically detected the Python we have installed in our virtualenv. You can click on that to see a list of installed Python interpreters to choose from.
 
