@@ -18,18 +18,3 @@ The result seems like a regular keyboard, but bereft of the comparative elegance
 With Swype, one simply glides one's finger from letter to letter spelling our words. Swype handles tedious details like putting spaces between words or after periods.
 
 I could keep babbling, but suffice it to say it has been a life changer for me. Paired with `Blogsy <https://blogsyapp.com>`__, my iPad blogging ttyl of choice, you may be hearing from me more often!
-
- 
-
- 
-
- 
-
-.. container::
-   :name: blogsy_footer
-
-   `|Posted with Blogsy|\ Posted with Blogsy <https://blogsyapp.com>`__
-
-.. |Posted with Blogsy| image:: https://blogsyapp.com/images/blogsy_footer_icon.png
-   :width: 20px
-   :height: 20px

@@ -29,11 +29,3 @@ Apple is in fact not trying to impose some kind of Orwellian new world order and
 
 Simply put, geeks need to get over themselves. Computing has become such a part of the mainstream of every day life that people don't **want or need** to be beholden to the techno-priesthood any longer. To my mind, this is nothing but win. Over the long haul, it means we can get out of the business of being family tech support, and get back to playing with technology and having fun pushing the envelope!
 
-.. container::
-   :name: blogsy_footer
-
-   `|Posted with Blogsy|\ Posted with Blogsy <https://blogsyapp.com>`__
-
-.. |Posted with Blogsy| image:: https://blogsyapp.com/images/blogsy_footer_icon.png
-   :width: 20px
-   :height: 20px
