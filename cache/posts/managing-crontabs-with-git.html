@@ -1,0 +1,95 @@
+<p>April 2012 Update: Nowadays we use<a class="reference external" href="https://www.opscode.com/chef/">Chef</a>from Opscode solutions to manage our crontabs, and just about everything else in our enterprise infrastructure. It rocks :)</p>
+<p>Time and time again over the years I've dealt with the same problem - who took a random pot shot at some critical user's crontab file and deleted things without asking?</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">All of a sudden, someone realizes that some function that's supposed to run every so often has stopped, and in fact hasn't run in weeks. You sniff around - nope, no errors in the logs, in fact no logs at all!</div>
+</div>
+<p>Then you look at the crontab for the user in question and realize that the lines invoking the script that used to be there have either been deleted or commented out. What the? Who did this, and why?</p>
+<p>Git to the rescue! With the help of a simple Bourne Shell script, you can keep your crontab managed so you'll not just be able to see who changed what and when, but if you have the Git hook installed to send mail on commits, you can be notified of those changes in real time. Pretty cool eh? :)</p>
+<p>Since crontab has no built in security precautions other than requiring you to BE the user whose crontab you're submitting, we can't lock people not using this script out, but if you tell everyone that changes they make outside of the script may be summarily ignored and overwritten (and put something to that effect in the comment block at the top of your crontab) you should be in good shape. The script will compare what's in Git with what's currently installed in cron, and if there are discrepancies it will give you a chance to cleanly exit and resolve them, or allow you to ignore them and roll forward with editing and submitting what's in Git.</p>
+<p>Here's the script. It assumes you're running as your regular user and have sudo privs to the user whose crontab you wish to edit. It also assumes you've created a Git repository called system_cron.git</p>
+<p>To set it up, just edit reponame and gitrepo to appropriate values for your site and copy the script to somewhere folks can access it in their PATH.</p>
+<p>To use it, just invoke it with the user whose crontab you want to edit - for example:<code class="docutils literal">edit_crontab.sh build</code></p>
+<pre class="literal-block">#!/bin/sh
+
+export tmpdir=&quot;/tmp/crontab_$$&quot;
+
+if [ $# -lt 1 ]; then
+    echo &quot;Usage: $0 &quot;
+    exit 1;
+fi
+
+if [ -z &quot;$EDITOR&quot; ]; then
+    echo &quot;No editor found.  Using vim.&quot;
+    export EDITOR=&quot;/usr/bin/vim&quot;
+fi
+
+crontab_user=$1
+
+crontab_file=&quot;`uname -n`-$crontab_user.crontab&quot;
+echo &quot;crontab_file=$crontab_file&quot;
+
+git clone /home/git/system_cron.git $tmpdir
+cd $tmpdir
+
+sudo -u $crontab_user crontab -l &gt; currcrontab_$$
+
+if [ $? -ne 0 ]; then
+    echo &quot;sudo to user $crontab_user failed! Do you have sudo privs?&quot;
+    exit 1;
+fi
+
+diff=`diff currcrontab_$$ $crontab_file`
+
+if [ $? -ne 0 ]; then
+    echo &quot;Currently running crontab for $crontab_user differs from Git!&quot;
+    echo &quot;Here are the differences:&quot;
+    echo $diff
+    echo
+    echo -n &quot;Continue editing / submitting what's in Git? (Y/n): &quot;
+    read yesorno
+    if [ &quot;$yesorno&quot; != &quot;Y&quot; ]; then
+        echo &quot;Very good.  Exiting.&quot;
+        exit 1;
+    fi
+fi
+
+$EDITOR $crontab_file
+
+echo &quot;Here are your changes:&quot;
+git diff --exit-code $crontab_file
+if [ $? -eq 0 ]; then
+    echo &quot;No changes made.  Not submitting anything.&quot;
+    exit 1;
+fi
+
+echo -n &quot;Submit these changes to Git and crontab? (Y/n): &quot;
+read yesorno
+if [ &quot;$yesorno&quot; != &quot;Y&quot; ]; then
+    echo &quot;Your changes are in $tmpdir/system_cron/$crontab_file.&quot;
+    echo &quot;Please clean up this directory when you're done with it.&quot;
+    exit 1;
+else
+    git commit $crontab_file
+    if [ $? -ne 0 ]; then
+        echo &quot;There was a problem committing your crontab to git!&quot;
+        exit 1;
+    fi
+    git push origin master
+    if [ $? -ne 0 ]; then
+        echo &quot;There was a problem pushing your crontab to git!&quot;
+        exit 1;
+    fi
+
+    # if we made it this far. We're all good.  Install that puppy!
+
+    echo &quot;Installing your crontab.&quot;
+    sudo -u $crontab_user crontab $crontab_file
+    if [ $? -ne 0 ]; then
+        echo &quot;ERROR! Your changes were NOT installed! Something went wrong.&quot;
+        exit 1;
+    fi
+fi
+
+echo &quot;Cleaning up tmp directory...&quot;
+#rm -rf $tmpdir</pre>

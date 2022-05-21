@@ -1,0 +1,113 @@
+<p><img alt="Key West Octopus by oe Parks is licensed under CC BY-NC 2.0" src="/images/Octopus-smol.jpeg"></p>
+<p>Over the last few years I've been feeling like living exclusively in my Python programming happy place is something I can't afford to do.</p>
+<!-- TEASER_END -->
+
+<h3>Setting The Scene</h3>
+<p>It's almost impossible to ignore the rise of Javascript in our industry. What started out as an extension project for Mozilla has grown into an ecosystem with more tentacles
+than an H.P. Lovecraft novel.</p>
+<p>So while there are aspects of the language that I find very uncomfortable to work with and that seem to be a bad fit for my brain, I feel compelled to give Javascript a fair
+shake and make a point of using it "in anger" in an actual project that I can ultimately get something out of beyond just learning and keep using and maintaining over time.</p>
+<p>For the last few years I've been running my blog on <a href="https://blog.getpelican.com/">Pelican</a> a beautiful Python based static site generator which has one of the most elegant and
+easy to understand and modify code bases of any open source project I've ever used.</p>
+<p>However, Pelican's minimalist DIY spirit was forcing me to come to terms with an ugly reality I was loathe to admit: I know absolutely nothing about modern web development!</p>
+<p>Sure, I've been able to cobble together simple HTML pages for years. Nothing difficult or involved there, but there is a very long way between being able to add some HTML tags to a
+text file and producing a website that people will actually want to visit in 2022.</p>
+<p>O.K. This smells like an opportunity to lean into the discomfort and grow some new skills so I can hang out a shingle worthy of my brand in full tilt 2022 adaptive web style.</p>
+<h3>Enter The Great Gatsby(JS)</h3>
+<p>On the face of it, there's a lot to like about <a href="https://www.gatsbyjs.com/">GatsbyJS</a>. Here are a few things I found particularly attractive going in:</p>
+<ul>
+<li>Layout will adaptively resize itself depending on the format and characteristics of the viewer's browser</li>
+<li>Sites written with GatsbyJS degrade gracefully and work fine even when people have JS turned off</li>
+<li>Site components communicate using an GraphQL back-end</li>
+</ul>
+<p>So, I dove in head first and started working through the tutorial which, helpfully enough, shows the developer how to build a rather nice, feature-ful blog complete with
+rich tags support and an elegant navigation system.</p>
+<p>And I've gotta say, the tutorial was a <em>really</em> good experience! Want to build an index page? Great! Write some JSX that queries the GraphQL back-end using a fairly elegant
+syntax that embeds the query right into the page. The query returns your post list which your page then renders. Hey this is pretty cool!</p>
+<p>Here's what that first page looks like so you can get the flavor:</p>
+<div class="code"><pre class="code literal-block"><span class="kn">import</span> <span class="o">*</span> <span class="k">as</span> <span class="n">React</span> <span class="kn">from</span> <span class="s1">&#39;react&#39;</span>
+<span class="kn">import</span> <span class="p">{</span> <span class="n">Link</span><span class="p">,</span> <span class="n">useStaticQuery</span><span class="p">,</span> <span class="n">graphql</span> <span class="p">}</span> <span class="kn">from</span> <span class="s1">&#39;gatsby&#39;</span>
+<span class="kn">import</span> <span class="p">{</span>
+  <span class="n">container</span><span class="p">,</span>
+  <span class="n">heading</span><span class="p">,</span>
+  <span class="n">navLinks</span><span class="p">,</span>
+  <span class="n">navLinkItem</span><span class="p">,</span>
+  <span class="n">navLinkText</span>
+<span class="p">}</span> <span class="kn">from</span> <span class="s1">&#39;./layout.module.css&#39;</span>
+
+<span class="n">const</span> <span class="n">Layout</span> <span class="o">=</span> <span class="p">({</span> <span class="n">pageTitle</span><span class="p">,</span> <span class="n">children</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="n">const</span> <span class="n">data</span> <span class="o">=</span> <span class="n">useStaticQuery</span><span class="p">(</span><span class="n">graphql</span><span class="err">`</span>
+    <span class="n">query</span> <span class="p">{</span>
+      <span class="n">site</span> <span class="p">{</span>
+        <span class="n">siteMetadata</span> <span class="p">{</span>
+          <span class="n">title</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="err">`</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="n">div</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">container</span><span class="p">}</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="p">{</span><span class="n">pageTitle</span><span class="p">}</span> <span class="o">|</span> <span class="p">{</span><span class="n">data</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">siteMetadata</span><span class="o">.</span><span class="n">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">header</span><span class="o">&gt;</span><span class="p">{</span><span class="n">data</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">siteMetadata</span><span class="o">.</span><span class="n">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">header</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">nav</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">ul</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinks</span><span class="p">}</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">li</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkItem</span><span class="p">}</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">Link</span> <span class="n">to</span><span class="o">=</span><span class="s2">&quot;/&quot;</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkText</span><span class="p">}</span><span class="o">&gt;</span>
+              <span class="n">Home</span>
+            <span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span>
+          <span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">li</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkItem</span><span class="p">}</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">Link</span> <span class="n">to</span><span class="o">=</span><span class="s2">&quot;/about&quot;</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkText</span><span class="p">}</span><span class="o">&gt;</span>
+              <span class="n">About</span>
+            <span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span>
+          <span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">nav</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">main</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">h1</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">heading</span><span class="p">}</span><span class="o">&gt;</span><span class="p">{</span><span class="n">pageTitle</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="n">children</span><span class="p">}</span>
+      <span class="o">&lt;/</span><span class="n">main</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+  <span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">export</span> <span class="n">default</span> <span class="n">Layout</span>
+</pre></div>
+
+<p>A couple of weeks of evening spare time (probably a couple of days of wall-clock time - bear in mind I'm teaching myself Javascript as I do this) - I finished the tutorial
+and deployed my new blog. I was elated! Mission accomplished!</p>
+<h3>The Plot Thickens</h3>
+<p>The next day, after I'd triumphantly posted the URL for my shiny new redone blog to social media, the first fly appeared in the GatsbyJS soup manifested.</p>
+<p>A friend rather understandably said "Hey, I use an RSS reader to keep up with blogs. You used to have an RSS feed. What's the URL for the new site?"</p>
+<p>Uh. Woops. Truth be told I hadn't even thought about that, and the tutorial doesn't mention it. That's pretty understandable too, right? You don't want to
+overwhelm people who are trying to adopt your technology with a firehose of details to master when they're just starting out.</p>
+<p>OK. Let's bring up GatsbyJS's (up to this point) excellent documentation and see how we add an RSS feed...</p>
+<h3>The Abstractions Begin To Crumble</h3>
+<p>Right then. I find a page describing how to add an RSS feed to your blog, Just add this handy dandy plugin to your site. This will let you do a similar GraphQL query to
+the one you used for your post list, only this time you'll be generating your RSS feed. Here we go!</p>
+<p>Add the plugin and BOOM! My site build fails with an utterly inscrutable Webpack error. Why? Ah the plugin was for a prior version of GatsbyJS and isn't compatible with
+the one you used to build your site. OK, let's just use that older version of GatsbyJS instead!</p>
+<p>Well crud. Turns out that the tutorial was written using <a href="https://mdxjs.com/">MDX</a>, a JSX flavored version of the popular Markdown mark-up language for React JSX pages, and 
+the plugin used to provide MDX support both doesn't work with the RSS feed plugin <em>and</em> doesn't run in the prior version of GatsbyJS.</p>
+<p>Right then! I said I wanted to learn. Let's roll up our sleeves and see about porting that plugin to the new GatsbyJS version.</p>
+<p>Three agonizing weeks of pointless struggle later...</p>
+<h3>The Knee Bone DOESN'T Connect To The Shin Bone</h3>
+<p>One of the things that drew me to GatsbyJS to begin with was this beautiful abstraction: pages, plugins, and components all seamlessly interpolating with a GraphQL back end.</p>
+<p>And it <em>does</em> work that way to an extent. All the plugins do indeed communicate with the rest of your system using GraphQL queries, but because the plugin architecture
+doesn't seem to enforce any interoperability rules, and also because successive GatsbyJS versions introduce radical breaking changes to the plugin API, you end up with
+a programmer who was sold a glorious GraphQL future but winds up holding a rather large bucket of bolts that refuse to work together to build a meaningful whole.</p>
+<h3>To Be Fair</h3>
+<p>I realize I'm painting a rather unappealing picture of GatsbyJS here, so I just want to say that it became a rather popular Javascript framework a year or so back with
+good reason. There are many <em>many</em> competent programmers out there deploying beautiful sites that scale using these tools.</p>
+<p>I also recognize that building abstractions that don't leak and that seamlessly work well together is incredibly challenging. I just feel that ultimately GatsbyJS
+isn't the tool for me and also that perhaps sme of the marketing should be adjusted to reflect reality on the ground.</p>
+<p>It also needs to be said that GatsbyJS is 100% FLOSS, and as such is a gift freely given by its implementors which I very much appreciate. None of what I write here changes
+that in any way.</p>
+<p>I should also say that my inability to build with it is as much due to my own lack of Javascript acumen as it is with the tool itself. </p>
+<p>These are just my opinions and personal experiences and thus should be taken with a grain (or perhaps a shaker) of salt, especially if you're a seasoned 
+Javascript developer.</p>
+<h3>The Happy Ending (But Not With GatsbyJS!)</h3>
+<p>Ultimately, I decided that the best thing I could possibly do for myself with this blog project was to go with what I know, so I chose <a href="https://getnikola.com">Nikola</a> - a
+superlative Python powered static site generator, and I'm just delighted with that choice.</p>
+<p>I'm still planning on finding something to use Javascript for, it's just not going to be this particular task :)</p>

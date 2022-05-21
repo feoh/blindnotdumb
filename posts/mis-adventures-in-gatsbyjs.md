@@ -127,7 +127,7 @@ the one you used to build your site. OK, let's just use that older version of Ga
 Well crud. Turns out that the tutorial was written using [MDX](https://mdxjs.com/), a JSX flavored version of the popular Markdown mark-up language for React JSX pages, and 
 the plugin used to provide MDX support both doesn't work with the RSS feed plugin *and* doesn't run in the prior version of GatsbyJS.
 
-Right then! I said I wanted to learn. Let's roll up our sleeves and see about porting that plugin to the new GatsbyJS version.
+I said I wanted to learn. Let's roll up our sleeves and see about porting that plugin to the new GatsbyJS version.
 
 Three agonizing weeks of pointless struggle later...
 

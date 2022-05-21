@@ -1,0 +1,30 @@
+<section id="vimrepress">
+<h1>VimRePress</h1>
+<div class="line-block">
+<div class="line">In an ongoing effort to immerse myself in Vim as much as possible, I'm trying out a plugin called <a class="reference external" href="https://github.com/vim-scripts/VimRepress">VimRepress</a> - a fork of the popular Vimpress plugin.</div>
+<div class="line"><br /></div>
+</div>
+<section id="installing">
+<h2>Installing</h2>
+<p>Unfortunately, getting it running with MacVim on MacOS X Lion is a bit of a bear, but thankfully Paulo Poiati wrote an excellent <a class="reference external" href="https://blog.paulopoiati.com/2012/02/07/installing-vimrepress-in-macvim-osx-lion/">article</a> on getting the job done.</p>
+<p>Basically, if you're using Homebrew, you have to rebuild your MacVim to use the i386 architecture, otherwise you wind up with a Python interpreter that doesn't match the bitness of your editor, and when MacVim goes to invoke Python to run the blogging bits in the plugin, MacVim explodes.</p>
+<p>Also unfortunately, you can't use the Homebrew built Python or Ruby interpreters when building MacVim either, and have to instead use the bundled ones from MacOS (both sorely out of date. Who uses Ruby 1.8 anymore? :).</p>
+<p>So I had to uninstall my Homebrew based Python and Ruby, install python-markdown2 into the OSX default Python instance, and now everything seems to be working just fine.</p>
+</section>
+</section>
+<section id="living-the-vim-life">
+<h1>Living the Vim Life</h1>
+<section id="vimrepress-and-blogging">
+<h2>VimRepress and Blogging</h2>
+<p>That said, there are still some creature comforts that I miss from the awesome Blogging bundle in TextMate - silly things like giving me a drop down list with the possible Categories for my post and the like. Hopefully over time we can get those implemented in Vim land :)</p>
+<p>On the upside, and this counts for a lot, is that I can now write in <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a> again &lt;<em>contented sigh</em>&gt; I've missed Markdown terribly ever since I transitioned the blog from Typo to Wordpress many moons ago. It's a joy to write in, and really lets me think about the writing, not about a properly formed HTML element, which is priceless.</p>
+</section>
+<section id="vim-and-me-in-the-large">
+<h2>Vim and Me In the Large</h2>
+<p>For what it's worth, thus far the minor pain of transitioning to Vim has been entirely worth it, I've definitely seen a noticeable productivity boost, and for work-a-day code and configuration editing, I'm actually finding Vim to be vastly more powerful than TextMate simply because my environment is everywhere I want to be rather than being chained to using my Mac desktop for editing and resorting to chicanery like remote mounted filesystems via sshfs.</p>
+<p>For years I'd read <a class="reference external" href="https://pragprog.com/the-pragmatic-programmer">The Pragmatic Programmer</a> with its mantra of &quot;Learn <strong>one</strong> editor, and learn it *<em>well</em>&quot; (paraphrase).</p>
+<p>I always had mixed feelings about that. I'd taken pride through most of my career in being able to learn a multitude of different tools and adapt to whatever worked best in the local environment. That is in fact a really great skill to have, but there is definitely wisdom where editors are concerned to pick one and <em>live</em> in it 24/7.</p>
+<p><a class="reference external" href="https://code.google.com/p/macvim/">MacVim</a> has helped tremendously with that. With it you can have your cake and eat it to. You can use the very same config files and plugins you use on your UNIX servers on your desktop, only wrapped in a superbly crafted Aqua GUI.</p>
+<p>It's a continuing process, but thus far the work I've put in has been totally worth it. I would encourage anyone who's on the fence to give it a try and be strict with yourself about it. Pick a time when you can afford to take the hit and spend the time to get facile enough that you won't miss your old environment. You won't regret it.</p>
+</section>
+</section>

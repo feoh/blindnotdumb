@@ -1,0 +1,59 @@
+<p>Happy 2017 all!</p>
+<div class="line-block">
+<div class="line">A little over two years ago, the Wordpress instance I had been &quot;maintaining&quot; to run my blog was hacked by a bunch</div>
+<div class="line">of script kiddies.</div>
+</div>
+<div class="line-block">
+<div class="line">Not like I'm excusing them or anything, hacking someone's hobby domain feels rather like walking into someone's</div>
+<div class="line">yard and, if you'll forgive me for being crass for a moment, smashing the garden statues and relieving yourself</div>
+<div class="line">in the pool, just because you can. However, I was doing a really crappy job of securing my site.</div>
+</div>
+<div class="line-block">
+<div class="line">I had set it up several years before on a Linode. I wasn't a &quot;Devops&quot; professional at that point, so I really</div>
+<div class="line">had no idea what I was doing, and I made every mistake in the book.2017</div>
+</div>
+<div class="line-block">
+<div class="line">Static blogging was becoming all the rage, and my Podcast.<strong>init</strong> co-host was using</div>
+<div class="line"><a class="reference external" href="https://blog.getpelican.com/">Pelican</a> so that seemed like a good choice. It was very straight forward to set</div>
+<div class="line">up, and I could run it on a much simpler set of infrastructure. No database, no complex interactions between</div>
+<div class="line">web server and interpreter, just a simple instance running a webserver. That's all. Super easy to lock down.</div>
+</div>
+<div class="line-block">
+<div class="line">Being the major nerd that I am, I did automate the whole thing using Chef. You can find the recipes</div>
+<div class="line"><a class="reference external" href="https://github.com/feoh/pelican_blog">on my github</a>. I even had it set up so that chef would handle updating</div>
+<div class="line">the site when I checked a new post into git.</div>
+</div>
+<p>And, from an infrastructure perspective, it runs like clockwork.</p>
+<div class="line-block">
+<div class="line">More recently, i was able to even eliminate the instance and just serve my blog from</div>
+<div class="line"><a class="reference external" href="https://aws.amazon.com/s3/">Amazon S3</a>.</div>
+</div>
+<div class="line-block">
+<div class="line">But there's more to any system than the infrastructure that runs it. It has to be usable in a way that fits the</div>
+<div class="line">needs and workflow of its users.</div>
+</div>
+<p>Through no fault of its own, I am beginning to wonder if Pelican doesn't fit my needs.</p>
+<p>It's a fantastic package for all the reasons I outlined above, but I'm just not posting like I used to. Why?</p>
+<div class="line-block">
+<div class="line">When I thought about it, I realized that I used to do a ton of blogging in the &quot;in between times&quot;. On the go, on</div>
+<div class="line">vacation, or in bed at night while my wife read. Wordpress has some superlative tools for this. It has a really</div>
+<div class="line">nice web based authoring interface, complete with draft capabilities, rich markup, and the ability to effortlessly</div>
+<div class="line">integrate images and other media into my posts.</div>
+</div>
+<div class="line-block">
+<div class="line">I've tried doing this with Pelican. either using <a class="reference external" href="https://omz-software.com/editorial/">Editorial</a> - the incredie</div>
+<div class="line">programmable editor for IOS (You can write Python scripts to do text processing in IOS from your editor, how</div>
+<div class="line">cool is that? :) or using Panic's outstanding <a class="reference external" href="https://www.panic.com/prompt/">Prompt</a> SSH client to connect to my</div>
+<div class="line">cloud based development box and do the editing and publishing from there.</div>
+</div>
+<p>And, it works. I have successfully done it. But I certainly wouldn't call it convenient.</p>
+<div class="line-block">
+<div class="line">So, I'm looking into other options. At this point, I'm wondering if I've learned all I can from running my own</div>
+<div class="line">blog, and if maybe I mightn't be better served moving to one of the hosted services like</div>
+<div class="line"><a class="reference external" href="https://wordpress.com/">Wordpress.com</a>.</div>
+</div>
+<div class="line-block">
+<div class="line">I'm certainly open to other ideas though, I do enjoy the simplicity of static blogging, but making it harder than</div>
+<div class="line">it needs to be feels like shooting myself in the foot.</div>
+</div>
+<p>Does anyone have any thoughts or ideas? I'd love to hear from you if you do.</p>

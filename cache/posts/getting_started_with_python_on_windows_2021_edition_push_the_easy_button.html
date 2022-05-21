@@ -1,0 +1,115 @@
+<h1>Don't Despair! This Is Gonna Be Easy! :)</h1>
+<p>Over the last few months I've seen a <strong><em>ton</em></strong> of confusion swirling around social media about how to help people who are new to Python development and software development in general get up and running on Windows quickly.</p>
+<p>GOOD NEWS! You can ignore all that. Many of these suggestions are well meaning but come from people who don't actually do Python development on Windows regularly.</p>
+<p>Note that I'm not going to tell you the 5 different ways to do a thing, I'm going to tell you the ONE easy way :)</p>
+<p>So let's get started!</p>
+<h2>Side Note: Everyone Will Tell You To Use WSL - You Probably Don't Want That!</h2>
+<p>I hear a lot of incredibly talented and experienced well meaning UNIX/Mac enthusiasts tell newcomers looking to get going on
+Windows "Oh well you just use WSL! It's easy! Then you install python with apt get yada yada, and then you install pyenv,
+and then you configure your shell's environment to use the right shims... and..."</p>
+<p>The truth is that if you want to learn Linux - you SHOULD! It's an incredible platform and a virtually bottomless font of
+power waiting for you to tap.</p>
+<p>But if there's one thing I've learned in 30 years in the tech trenches, it's that trying to learn a million things all at
+once is the surest way to learn nothing. Why not focus on teaching yourself Python programming first and then exploring Linux
+as a separate effort?</p>
+<h1>Install Python</h1>
+<p>If you're on Windows 11 (And I recommend it if your hardware is new enough!) this is as simple as bringing up a Powershell in your swank Windows Terminal. If you want a look at my setup please go read <a href="https://www.feoh.org/2021-the-year-windows-became-a-first-class-python-development-environment.html">my article on that</a>.</p>
+<p>Anyway, all you have to do is type:</p>
+<div class="code"><pre class="code literal-block">winget install python
+</pre></div>
+
+<p>That's it! This will install the latest stable version of Python from <a href="https://www.python.org">The official Python website</a>. If you're not lucky enough to be running Windows 11, just download the latest stable version from <a href="https://www.python.org/downloads/">the website's Downloads page</a> and double click on the executable file in your Downloads folder. If you're not sure just keep clicking Next on the dialogs and in a few minutes you'll have Python installed!</p>
+<h1>Embracing The Power of Py! (Psst. This Is The Easy Button!)</h1>
+<p>The 'py' Python launcher used to be a super power that only Windows versions of Python shipped with, but now thanks to <a href="https://github.com/brettcannon/python-launcher">Brett Cannon, an amazingly prolific Python core developer's hard work</a> our UNIX friends can enjoy the easy button as well!</p>
+<p>So let's get this party started and see how easy it is these days to get into the Python prompt:</p>
+<p><img alt="Windows Python Prompt With Py" src="/images/WindowsPyPrompt.png"></p>
+<p>Pretty easy, right?</p>
+<p>Note that py has other superpowers as well. It can list all the python versions you have installed, and also let you choose which version to run with the arguments you choose. Run:</p>
+<div class="code"><pre class="code literal-block">py --help
+</pre></div>
+
+<p>to see an exhaustive description of all the magic tricks py can do :)</p>
+<h3>Set The Stage</h3>
+<p>Again, from your Powershell, create a project directory for yourself. Programmers often create a 'src' directory wherever it's convenient (Maybe in your home directory?) and then put their projects underneath.</p>
+<p>So let's go ahead and do that:</p>
+<div class="code"><pre class="code literal-block">CD $HOME
+mkdir src\starwars_characters
+
+# Yes i&#39;m a big nerd. Our project will pull down a list of characters in the movies from the Star Wars API :)
+
+cd src\starwars_characters
+</pre></div>
+
+<h3>Building A Sandbox</h3>
+<p>Now let's create a safe space for our project so we don't unintentionally install libraries or other experiments in public. This can lead to situations where you go to create another project but a library you installed previously either causes undesirable behavior or perhaps is even in a broken state, getting in the way of you getting your work done.</p>
+<p>We're going to create a thing called 'virtual environment'. Don't worry too much about the details, just think about this as a nice tidy sandbox for us to play in where we don't have to worry about breaking anything outside.</p>
+<p>Again from our Powershell prompt:</p>
+<div class="code"><pre class="code literal-block"># Actually create our virtual environment. Put the bits in a folder called &#39;venv&#39;.
+# Most Pythonistas use this folder name, but you can use any name you want :)
+py -m venv venv
+
+# Actually activate our new virtual environment in our Powershell
+.\venv\Scripts\Activate.ps1
+</pre></div>
+
+<p>Let's see what happens when we do that (Assuming you're running Oh My Posh, and you should be if you followed my setup article):</p>
+<p><img alt="Create/Activate Virtual Environment" src="/images/virtualenvps.png"></p>
+<p>See what happens there? We create the virtual environment, and our shell notices which Python version it uses, and tells us that in our Powershell prompt!</p>
+<p>Then, we activate our virtual environment, and now our prompt adds a (venv) at the beginning. With this visual indicator in plce, we know we're safely ensconced in our sandbox and can start playing with no worries!</p>
+<h3>Install Necessary Libraries</h3>
+<p>You'll need an editor or an IDE. I use <a href="https://code.visualstudio.com/">Visual Studio Code</a>. It's free, it runs on any modern computer, and it offers an incredibly rich set of tools to help you with your development. Bonus points? It's also free, and even largely open source.</p>
+<p>Let's get started, and tell Python which libraries we'll need for our project:</p>
+<div class="code"><pre class="code literal-block">code requirements.txt
+</pre></div>
+
+<p>In this file, add a single line:</p>
+<div class="code"><pre class="code literal-block">requests
+</pre></div>
+
+<p>If you want to add a truly superlative interactive Python environment with which to prototype and 
+explore, you could also add IPython:</p>
+<div class="code"><pre class="code literal-block">IPython
+</pre></div>
+
+<p>(Note IPython here is case sensitive so be careful!)</p>
+<p>Now, still in our Powershell prompt, type this command to actually install these required libraries into our virtual environment:</p>
+<div class="code"><pre class="code literal-block">py -m pip install -r requirements.txt
+</pre></div>
+
+<p>You should see some messages about libraries being installed. Note that you invoke IPython this exact same way:</p>
+<div class="code"><pre class="code literal-block">py -m IPython
+</pre></div>
+
+<h2>Write The Code</h2>
+<p>Create a file in your project directory called starwars_characters.py with your editor that includes the following code:</p>
+<div class="code"><pre class="code literal-block"><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">STARWARS_API_URL_BASE</span> <span class="o">=</span> <span class="s2">&quot;https://swapi.dev/api&quot;</span>
+<span class="n">GET_CHARACTERS_URL</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">STARWARS_API_URL_BASE</span><span class="si">}</span><span class="s2">/people&quot;</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">GET_CHARACTERS_URL</span><span class="p">)</span>
+
+<span class="n">response_json</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="n">characters</span> <span class="o">=</span> <span class="n">response_json</span><span class="p">[</span><span class="s1">&#39;results&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">characters</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Character Name: </span><span class="si">{</span><span class="n">character</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+<p>Here's what my Visual Studio Code session looks like with this code loaded and the output shown in the run window:</p>
+<p><img alt="Starwars Project VSCode Screenshot" src="/images/vscode.png"></p>
+<p>Notice that bit at the bottom that says 3.10? That shows us that Visual Studio Code automatically detected the Python we have installed in our virtualenv. You can click on that to see a list of installed Python interpreters to choose from.</p>
+<p>We can run our new project either by using the Run menu inside Visual Studio Code or on the command line with that very same <code>py</code> syntax we used before:</p>
+<div class="code"><pre class="code literal-block">py starwars_characters.py
+</pre></div>
+
+<h1>The End Is Just The Beginning</h1>
+<p>Well there we have it! You have Python installed and running, and you've built a small but interesting Python project right here on your Windows machine!</p>
+<p>The truth is, a large number of people have put in innumerable hours making Python drive smooth like a Cadillac on Windows,
+so if you find yourself using and enjoying it, the next time someone tells you to abandon all hope and install Linux/WSL,
+be sure to point them at this article! Maybe if we change some minds we can help bring more Pythonistas into the incredibly
+awesome Python community!</p>
+<p>Please feel free to leave comments with any questions, or hit me up on 
+<a href="https://cybre.space/@feoh">Mastodon</a> or <a href="https://twitter.com/feoh">Twitter</a>.</p>
+<p>I'd love to hear from you!</p>

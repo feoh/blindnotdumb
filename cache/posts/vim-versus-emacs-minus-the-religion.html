@@ -1,0 +1,144 @@
+<section id="vim-versus-emacs-minus-the-religion-1">
+<h1>Vim Versus Emacs - Minus the Religion</h1>
+<p><strong>[Note: I originally wrote this for</strong><a class="reference external" href="https://www.quora.com/Text-Editors/Which-is-better-Vim-or-Emacs-Why/answer/Christopher-Patti">Quora</a><strong>but am reposting it here with slight embelishment.</strong></p>
+<section id="introduction">
+<h2>Introduction</h2>
+<div class="line-block">
+<div class="line">In hard core technical circles, discussing the relative merits of</div>
+<div class="line">these two editors is pretty much verboten. In the past, debates around</div>
+<div class="line">this issue have actually become vicious (which is ludicrous when you</div>
+<div class="line">think about it) and raged on for literally years. Devotees on either</div>
+<div class="line">side would rarely listen to reason, and mostly everyone seemed to</div>
+<div class="line">think it was an either/or situation. To be honest, I think that stance</div>
+<div class="line">is utter rubbish.</div>
+</div>
+<div class="line-block">
+<div class="line">I feel as if I'm uniquely placed to answer this one because I've been</div>
+<div class="line">using both for about 25 years now. (15 with almost full time Vim and</div>
+<div class="line">10 emacs).</div>
+</div>
+<div class="line-block">
+<div class="line">First off, I want to slightly challenge your question. It's too</div>
+<div class="line">simplistic and there can be no answer to it the way you asked it.</div>
+<div class="line">Emacs and vi are both superlative editors for certain types of</div>
+<div class="line">things - their strengths give them super powers in very different ways</div>
+<div class="line">that lend them to solving some problems more easily than others.</div>
+</div>
+<section id="vi-vim">
+<h3>Vi/Vim</h3>
+<div class="line-block">
+<div class="line">To my mind, if your goal is simply to edit text, Vim might be better</div>
+<div class="line">suited to the task. Its modal editing lends itself to lightning fast</div>
+<div class="line">text entry, and there is a nearly infinite potential growth curve for</div>
+<div class="line">how its various commands and shortcuts can be efficiently brought to</div>
+<div class="line">bear in navigating and moving text around.</div>
+</div>
+<div class="line-block">
+<div class="line">Through the years, various extension technologies have been added to</div>
+<div class="line">Vi (a-la Vim) that enable it to be extended in various ways, but in my</div>
+<div class="line">personal hard wrought experience, there are limits as to how far you</div>
+<div class="line">can push that extension before the both the editing paradigm and the</div>
+<div class="line">mechanics begin to creak and groan under the weight of what you're</div>
+<div class="line">trying to accomplish.</div>
+</div>
+<div class="line-block">
+<div class="line">For instance, the straw that broke the camel's back for me was trying</div>
+<div class="line">to get IDE like method and member auto-completion and refactoring into</div>
+<div class="line">the editor. There are various solutions for this in Vim, but they</div>
+<div class="line">either just plain didn't work, or if they did de-stabilized my Vim</div>
+<div class="line">installation because they required the installation of C shared</div>
+<div class="line">libraries that were a pain to build and install. There's nothing quite</div>
+<div class="line">like having your editor dump core in the middle of a critical editing</div>
+<div class="line">session to make you reconsider your choice of tools.</div>
+</div>
+<div class="line-block">
+<div class="line">Note that the above scenario has virtually nothing to do, strictly</div>
+<div class="line">speaking, with editing text. It's the result of trying to make Vim</div>
+<div class="line">into an IDE, which it isn't.</div>
+</div>
+<div class="line-block">
+<div class="line">As others have mentioned Vi/Vim also has the advantage of ubiquity.</div>
+<div class="line">It's bundled by default on just about every UNIX system on the planet,</div>
+<div class="line">and that's definitely worth noting.</div>
+</div>
+<div class="line-block">
+<div class="line">A great resource for Vim users is <a class="reference external" href="https://www.vimcasts.com">Vimcasts</a></div>
+<div class="line">and Drew Neil's excellent book <a class="reference external" href="https://pragprog.com/book/dnvim/practical-vim">Practical Vim</a>.</div>
+</div>
+</section>
+<section id="emacs">
+<h3>Emacs</h3>
+<div class="line-block">
+<div class="line">I personally think of emacs less as a text editor and more as an</div>
+<div class="line">incredibly powerful programming environment hyper optimized for</div>
+<div class="line">working with text - the upshot being that it also has very capable</div>
+<div class="line">text editing features.</div>
+</div>
+<div class="line-block">
+<div class="line">I know that sounds like I'm just playing with words but trust me I'm</div>
+<div class="line">not. If you want to create the most incredibly powerful programming</div>
+<div class="line">environment utterly customized to your every need, then Emacs is</div>
+<div class="line">undoubtedly for you.</div>
+</div>
+<div class="line-block">
+<div class="line">It excels at subprocess control, so for instance if you're programming</div>
+<div class="line">in Python, emacs will run a Python interpreter for you inside the</div>
+<div class="line">editor. Why would you want this you might ask? Because then you can,</div>
+<div class="line">while you're coding, try bits and bobs of code out and actually run it</div>
+<div class="line">and see how it works. Emacs can even run the Python interpreter on a</div>
+<div class="line">remote machine and hook it into your editing session.</div>
+</div>
+<div class="line-block">
+<div class="line">At the core of emacs is emacs lisp - elisp is at the heart of emacs's</div>
+<div class="line">superpowers. It is the ONLY extension language available in emacs,</div>
+<div class="line">but it can do just about anything. You can avoid learning elisp and</div>
+<div class="line">still be very productive using emacs, but chances are if you're like</div>
+<div class="line">most people you will get sucked in eventually as the lure of sanding</div>
+<div class="line">the rough edges off of some mode or other becomes too great :)</div>
+</div>
+<div class="line-block">
+<div class="line">You can, if you so choose, use emacs as your entire working</div>
+<div class="line">environment - edit, code, chat, manipulate source control (like Git) -</div>
+<div class="line">pretty much anything.</div>
+</div>
+<div class="line-block">
+<div class="line">This is a common attack non emacs users make &quot;It's not an editor. It's</div>
+<div class="line">an operating system!&quot; and I say they're right, but they're also</div>
+<div class="line">missing the point :)</div>
+</div>
+<div class="line-block">
+<div class="line">Excellent starter resources for Emacs users are - <a class="reference external" href="https://pragmaticemacs.com/">Pragmatic Emacs</a> and</div>
+<div class="line">the book / website (both stellar) <a class="reference external" href="https://www.masteringemacs.org/">Mastering Emacs</a>.</div>
+</div>
+</section>
+</section>
+<section id="summary">
+<h2>Summary</h2>
+<div class="line-block">
+<div class="line">I realize this is a long answer, but the question is nuanced and</div>
+<div class="line">complex so hopefully the length is merited.</div>
+</div>
+<div class="line-block">
+<div class="line">If you are mostly editing plain old text, or doing very light coding</div>
+<div class="line">or maybe editing static configurations, or if you need your editor</div>
+<div class="line">to be there by default everywhere you go in UNIX-land, then Vim is</div>
+<div class="line">almost undoubtedly your best bet.</div>
+</div>
+<div class="line-block">
+<div class="line">If your needs are more complex, and you find yourself pushing the</div>
+<div class="line">envelope, asking IDE like things of your editor, or if you know off</div>
+<div class="line">the bat that you're a hard core developer who dreams in code and</div>
+<div class="line">demands the utmost in customization capabilities from your</div>
+<div class="line">environment, then skip right to emacs.</div>
+</div>
+<div class="line-block">
+<div class="line">Ultimately, ignore all the rhetoric and religion and figure out which</div>
+<div class="line">will make you more productive - or do what I do and use them both! I</div>
+<div class="line">use vi for super quick edits on servers and emacs for heavier editing</div>
+<div class="line">or when I'm editing on my desktop / laptop.</div>
+</div>
+<p>Tools are just tools, use what makes sense.</p>
+<p>[ <strong>Update 07/16/2015: My astute readers reminded me of</strong><a class="reference external" href="https://www.emacswiki.org/emacs/Evil">evil-mode</a>**
+which can be seen as letting you have your cake and eat it too :) It provides startlingly complete vim compatibility inside emacs. It works great, I used it initially when I was making the transition from vi to emacs and can recommend it heartily.** ]</p>
+</section>
+</section>

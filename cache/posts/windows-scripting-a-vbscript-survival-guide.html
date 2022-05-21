@@ -1,0 +1,42 @@
+<section id="introduction">
+<h1>1. Introduction</h1>
+<p>If you're new to the world of Windows scripting as I am, the array of acronyms, technologies and access methodologies that you need to traverse in order to get anything done can range from bewildering on a good day to utterly derangement inducing on a bad one.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">I've been doing installer and deployment development at a Windows enterprise software company for the last year or so, and after decades spent comfortably swaddled in the familiarity of the UNIX and Java world, I definitely found myself feeling shell shocked, disoriented, and frustrated at the lack of any sort of cohesive resources to aid me in my quest.</div>
+</div>
+<p>Microsoft has been doing its best to pretend VBScript doesn't exist - touting <a class="reference external" href="https://blogs.msdn.com/PowerShell/">Windows PowerShell</a> as the way and the light.  PowerShell is indeed an awesome tool, and I for one would happily consign VBScript to the briny deeps never to be thought of again were it not for one little problem - the vast majority of Windows systems running in the wild don't have PowerShell installed.   Until a new day dawns and PowerShell is on *every single* Windows box our company wants to install its software on, VBScript remains the lowest common denominator for system scripting and thus the only <strong>real</strong> game in town for install time scripting.</p>
+<p>The goal of this article is not to teach you VBScript, sadly, there are essentially no books and precious few online resources dedicated to this topic online.  I will offer pointers to those that I have found most useful, and some collected wisdom on how to best make use of them, as well as some pitfalls I encountered which with any luck I can help you avoid.</p>
+<p>That said, let's get started.</p>
+</section>
+<section id="learning-vbscript">
+<h1>2. Learning VBScript</h1>
+<p>This will mostly be a collection of pointers to resources with a smidgen of commentary on each to get you moving in the right direction.</p>
+<section id="a-books">
+<h2>A. Books</h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.amazon.com/Windows-XP-Annoyances-Geeks-2nd/dp/0596008767/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1270065442&amp;sr=8-1">Windows XP Annoyances</a> - This book should really be titled &quot;Windows For Geeks&quot; :) it is the single most useful book I have ever encountered for someone trying to make the transition from another environment and isn't content to just grit their teeth and groan at all the annoying defaults Windows ships with.  In addition to an incredible amount of depth around the Windows registry and how you can wield it to suit your needs, this book also has one of the best simple introductions to system scripting with VBScript I've seen.  Two thumbs up. Note that this is the 1997 edition, and this book now comes in Windows Vista and Windows 7 flavors which I haven't read, but can only assume are equally awesome.</p></li>
+<li><p><a class="reference external" href="https://www.visualbasicscript.com/">visualbasicscript.com</a> - This is far and away the single best VBScript resources on the intertubes.  The folks in these forums are experts, and will help you solve your problem virtually every time.  I can't say enough about the incredible community here.  Nine out of ten times, if I go looking somewhere else first I end up coming back here and wishing I hadn't wasted my time elsewhere first :)</p></li>
+<li><p><a class="reference external" href="https://technet.microsoft.com/en-us/scriptcenter/default.aspx">Microsoft Script Center / The Scripting Guys</a> - The second most useful scripting site on the web.  The Scripts Repository and &quot;Scripting Guys&quot; MSDN blog are an incredible resource for system scripters.  While the emphasis has definitely shifted towards PowerShell these days (and rightfully so) most of the techniques discussed can be leveraged in VBScript once you get cozy with the syntactic differences between the two (very different) languages.</p></li>
+<li><p><a class="reference external" href="https://msdn.microsoft.com/en-us/library/d1et7k7c%28v=VS.85%29.aspx">MSDN Windows Scripting Technologies</a> - This page covers things like the Windows Scripting Host, the core technology that actually allows you to perform useful work in VBScript.  While somewhat more complete than the VBScript reference itself, it's no great shakes.  You'll find yourself learning much more from examples published elsewhere, but for the occasional API lookup or clarification it can be useful.</p></li>
+<li><p><a class="reference external" href="https://msdn.microsoft.com/en-us/library/t0aew7h6%28VS.85%29.aspx">MSDN VBscript Reference</a> - You'll note this site's position well down the list.  It's there for a reason.  The documentation provided here is very sketchy and frankly incredibly misleading in places.  The authors seem to have weaseled out of writing a more complete documentation set by making a vacuous assertion along the lines of &quot;Well, it's just like regular Visual Basic, with a few minor differences&quot;.  This leaves people like myself who have never had the need to touch a fully fledged VB implementation out in the cold, feeling like second class citizens.  While these pages can be useful for occasional clarification on some obscure language feature, those seeking to understand how the language works in the large should definitely look elsewhere.</p></li>
+<li><p><a class="reference external" href="https://support.microsoft.com/kb/308364">Windows Script Debugging Microsoft KB Article</a> - This article will get you started interactively debugging your scripts using Visual Studio.  Don't bother with the Windows Script Debugger, Visual Studio Express is free and much better :)</p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/vbscript/default.asp">W3Schools VBScript Tutorial/Reference</a> - This page is definitely rather Web-centric, focusing on VBScript in classic ASP programming, however, the core language and some of the techniques are the same.  In many cases this is a better reference than the MSDN one, and the tutorial lets you work through the examples online in a web browser which is cool.</p></li>
+</ul>
+</section>
+</section>
+<section id="debugging">
+<h1>3. Debugging</h1>
+<section id="who-turned-the-lights-out">
+<h2>Who turned the lights out?</h2>
+<p>If you find that some script you've inherited is not working, but you get exactly zero output or errors, look for the telltale <code class="docutils literal">On Error Goto 0</code> or <code class="docutils literal">On Error Resume Next</code> statements. These basically disable VBScript's inherent error handling functionality and cause your script to silently ignore errors. Helpful, eh?</p>
+</section>
+<section id="never-run-while-blind-folded">
+<h2>Never run while blind folded.</h2>
+<p>Know how you're invoking your VBScript. If you're calling your script from an installer or some such executable, you're likely using Microsoft's <code class="docutils literal">cscript</code> tool. which doesn't do a very good job of always displaying handy things like syntax or run time errors. Try running your script with <code class="docutils literal">wscript</code> instead for debugging purposes. Heretofore mysterious behavior may become clear :)</p>
+</section>
+<section id="that-s-all">
+<h2>That's all!</h2>
+<p>Hopefully this post will prove useful to some poor soul, manacled in place, suffering through their own personal Windows induced hell. Even if it isn't, these tidbits have been rattling around in my head since I escaped (I now work for <a class="reference external" href="https://www.bluestatedigital.com">Blue State Digital</a>, we're a LAMPs shop (Linux, Apache, MySQL, PHP) and I hope to never be trapped in Windows enterprise limbo again!</p>
+</section>
+</section>
