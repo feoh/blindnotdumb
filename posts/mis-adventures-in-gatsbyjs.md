@@ -19,7 +19,7 @@ Over the last few years I've been feeling like living exclusively in my Python p
 
 ### Setting The Scene
 
-It's almost impossible to ignore the rise of Javascript in our industry. Whst atsrted out as an extension prject for Mozilla has grown into an ecosystem with more tentacles
+It's almost impossible to ignore the rise of Javascript in our industry. What started out as an extension project for Mozilla has grown into an ecosystem with more tentacles
 than an H.P. Lovecraft novel.
 
 So while there are aspects of the language that I find very uncomfortable to work with and that seem to be a bad fit for my brain, I feel compelled to give Javascript a fair
@@ -41,10 +41,10 @@ On the face of it, there's a lot to like about [GatsbyJS](https://www.gatsbyjs.c
 
 * Layout will adaptively resize itself depending on the format and characteristics of the viewer's browser
 * Sites written with GatsbyJS degrade gracefully and work fine even when people have JS turned off
-* Site components communicate using an GraqhQL back-end
+* Site components communicate using an GraphQL back-end
 
-So, I dove in head first and started working through the tutorial which, helpfully enough, shows the developer how to build a rather nice, featureful blog complete with
-rich tags suppoert and an elegant navigation system.
+So, I dove in head first and started working through the tutorial which, helpfully enough, shows the developer how to build a rather nice, feature-ful blog complete with
+rich tags support and an elegant navigation system.
 
 And I've gotta say, the tutorial was a *really* good experience! Want to build an index page? Great! Write some JSX that queries the GraphQL back-end using a fairly elegant
 syntax that embeds the query right into the page. The query returns your post list which your page then renders. Hey this is pretty cool!
@@ -102,7 +102,7 @@ const Layout = ({ pageTitle, children }) => {
 export default Layout
 ```
 
-A couple of weeks of evening spare time (probabgly a couple of days of wallclock time - bear in mind I'm teaching myself Javascript as I do this) - I finished the tutorial
+A couple of weeks of evening spare time (probably a couple of days of wall-clock time - bear in mind I'm teaching myself Javascript as I do this) - I finished the tutorial
 and deployed my new blog. I was elated! Mission accomplished!
 
 ### The Plot Thickens
@@ -121,7 +121,7 @@ OK. Let's bring up GatsbyJS's (up to this point) excellent documentation and see
 Right then. I find a page describing how to add an RSS feed to your blog, Just add this handy dandy plugin to your site. This will let you do a similar GraphQL query to
 the one you used for your post list, only this time you'll be generating your RSS feed. Here we go!
 
-Add the plugin and BOOM! My site build fails with an utterly unscrutable Webpack error. Why? Ah the plugin was for a prior version of GatsbyhJS and isn't compatible with
+Add the plugin and BOOM! My site build fails with an utterly inscrutable Webpack error. Why? Ah the plugin was for a prior version of GatsbyJS and isn't compatible with
 the one you used to build your site. OK, let's just use that older version of GatsbyJS instead!
 
 Well crud. Turns out that the tutorial was written using [MDX](https://mdxjs.com/), a JSX flavored version of the popular Markdown mark-up language for React JSX pages, and 
@@ -133,7 +133,7 @@ Three agonizing weeks of pointless struggle later...
 
 ### The Knee Bone DOESN'T Connect To The Shin Bone
 
-One of the things that drew me to GatsbyJS to begin with was this beautiful abstraction: pages, plugins, and components all seamlessly interoperating with a GraphQL back end.
+One of the things that drew me to GatsbyJS to begin with was this beautiful abstraction: pages, plugins, and components all seamlessly interpolating with a GraphQL back end.
 
 And it *does* work that way to an extent. All the plugins do indeed communicate with the rest of your system using GraphQL queries, but because the plugin architecture
 doesn't seem to enforce any interoperability rules, and also because successive GatsbyJS versions introduce radical breaking changes to the plugin API, you end up with
@@ -147,12 +147,12 @@ good reason. There are many *many* competent programmers out there deploying bea
 I also recognize that building abstractions that don't leak and that seamlessly work well together is incredibly challenging. I just feel that ultimately GatsbyJS
 isn't the tool for me and also that perhaps sme of the marketing should be adjusted to reflect reality on the ground.
 
-It also needs to be said that GatsbyJS is 100% FLOSS, and as such is a gift freely given by its implementors which I very much appeciate. None of what I write here changes
+It also needs to be said that GatsbyJS is 100% FLOSS, and as such is a gift freely given by its implementors which I very much appreciate. None of what I write here changes
 that in any way.
 
 I should also say that my inability to build with it is as much due to my own lack of Javascript acumen as it is with the tool itself. 
 
-These are just my opinions and personal experiences and thus should be taken with a grain (or perhaps a shaker) of salt, especially if you're a sesasoned 
+These are just my opinions and personal experiences and thus should be taken with a grain (or perhaps a shaker) of salt, especially if you're a seasoned 
 Javascript developer.
 
 ### The Happy Ending (But Not With GatsbyJS!)
