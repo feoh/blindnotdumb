@@ -10,8 +10,7 @@
 .. type: text
 -->
 
-![Octopus](/images/Octopus.jpeg)
-<p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/34450190@N08/11847079564">Key West Octopus</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/34450190@N08">Joe Parks</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/2.0/?ref=openverse">CC BY-NC 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img></a>. </p>
+![Key West Octopus by oe Parks is licensed under CC BY-NC 2.0](/images/Octopus-smol.jpeg)
 
 
 Over the last few years I've been feeling like living exclusively in my Python programming happy place is something I can't afford to do.
