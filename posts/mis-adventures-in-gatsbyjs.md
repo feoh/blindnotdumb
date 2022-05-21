@@ -2,7 +2,7 @@
 .. title: Mis-Adventures In GatsbyJS
 .. slug: mis-adventures-in-gatsbyjs
 .. date: 2022-05-20 16:14:19 UTC-04:00
-.. tags: javascript, development,framework,programming
+.. tags: JavaScript, development,framework,programming
 .. category: geekery
 .. link: 
 .. description: 
@@ -19,10 +19,10 @@ Over the last few years I've been feeling like living exclusively in my Python p
 
 ### Setting The Scene
 
-It's almost impossible to ignore the rise of Javascript in our industry. What started out as an extension project for Mozilla has grown into an ecosystem with more tentacles
+It's almost impossible to ignore the rise of JavaScript in our industry. What started out as an extension project for Mozilla has grown into an ecosystem with more tentacles
 than an H.P. Lovecraft novel.
 
-So while there are aspects of the language that I find very uncomfortable to work with and that seem to be a bad fit for my brain, I feel compelled to give Javascript a fair
+So while there are aspects of the language that I find very uncomfortable to work with and that seem to be a bad fit for my brain, I feel compelled to give JavaScript a fair
 shake and make a point of using it "in anger" in an actual project that I can ultimately get something out of beyond just learning and keep using and maintaining over time.
 
 For the last few years I've been running my blog on [Pelican](https://blog.getpelican.com/) a beautiful Python based static site generator which has one of the most elegant and
@@ -102,7 +102,7 @@ const Layout = ({ pageTitle, children }) => {
 export default Layout
 ```
 
-A couple of weeks of evening spare time (probably a couple of days of wall-clock time - bear in mind I'm teaching myself Javascript as I do this) - I finished the tutorial
+A couple of weeks of evening spare time (probably a couple of days of wall-clock time - bear in mind I'm teaching myself JavaScript as I do this) - I finished the tutorial
 and deployed my new blog. I was elated! Mission accomplished!
 
 ### The Plot Thickens
@@ -141,7 +141,7 @@ a programmer who was sold a glorious GraphQL future but winds up holding a rathe
 
 ### To Be Fair
 
-I realize I'm painting a rather unappealing picture of GatsbyJS here, so I just want to say that it became a rather popular Javascript framework a year or so back with
+I realize I'm painting a rather unappealing picture of GatsbyJS here, so I just want to say that it became a rather popular JavaScript framework a year or so back with
 good reason. There are many *many* competent programmers out there deploying beautiful sites that scale using these tools.
 
 I also recognize that building abstractions that don't leak and that seamlessly work well together is incredibly challenging. I just feel that ultimately GatsbyJS
@@ -150,15 +150,15 @@ isn't the tool for me and also that perhaps sme of the marketing should be adjus
 It also needs to be said that GatsbyJS is 100% FLOSS, and as such is a gift freely given by its implementors which I very much appreciate. None of what I write here changes
 that in any way.
 
-I should also say that my inability to build with it is as much due to my own lack of Javascript acumen as it is with the tool itself. 
+I should also say that my inability to build with it is as much due to my own lack of JavaScript acumen as it is with the tool itself. 
 
 These are just my opinions and personal experiences and thus should be taken with a grain (or perhaps a shaker) of salt, especially if you're a seasoned 
-Javascript developer.
+JavaScript developer.
 
 ### The Happy Ending (But Not With GatsbyJS!)
 
 Ultimately, I decided that the best thing I could possibly do for myself with this blog project was to go with what I know, so I chose [Nikola](https://getnikola.com) - a
 superlative Python powered static site generator, and I'm just delighted with that choice.
 
-I'm still planning on finding something to use Javascript for, it's just not going to be this particular task :)
+I'm still planning on finding something to use JavaScript for, it's just not going to be this particular task :)
 
