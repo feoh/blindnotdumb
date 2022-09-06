@@ -10,7 +10,7 @@ Hi all!
 
 Just a brief house-keeping note.
 
-This is going to hence-forth be strictly my profeesional blog.
+This is going to hence-forth be strictly my professional blog.
 
 I'll be cleaning out old posts that aren't tech related and *maybe*
 moving any I feel particularly inclined to keep over to my new personal
