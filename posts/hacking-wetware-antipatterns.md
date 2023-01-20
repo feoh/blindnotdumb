@@ -28,6 +28,8 @@ anyone.
 Changing things up with your work load can sometimes help, but other times the source of the stress or conditions around your
 work mean that even varying your worrk may not be enough.
 
+There's a really superlative book on this topic I can strongly recommend - [Why Zebras Don't Get Ulcers](https://www.goodreads.com/book/show/327.Why_Zebras_Don_t_Get_Ulcers).
+
 ## How Does One Un-Boil a Frog?
 
 There are a few things I have found to be helpful through the years in recovering from burn out.
@@ -38,6 +40,12 @@ As a part of recovering from my most recent bout of burn out I've started learni
 aspect in this being effective is that it's something VERY different from the activity that got you here. For me,
 learning an entirely new skill that has nothing to do with computers has been satisfying and fulfilling.
 
+Tech projects can be good too provided they're well and truly disconnected from the work that's burning you out and don't
+end up being a source of stress themselves!
+
+Why not go for some long walks/hikes in the woods? Go for a nice bicycle ride? Finding fun activities that are also exercise
+can be good on many levels!
+
 ### Give Yourself a Break
 
 As professionals we put a ton of pressure on ourselves. Everybody wants to be a superstar and nobody likes to think about losing,
@@ -45,9 +53,6 @@ even when losing a tiny and actually almost meaningless skirmish can feel like y
 
 It can be difficult to zoom out and gain that perspective in the moment, but it's important to try and figure it out. Having
 solid support systems can be very helpful here, whether it's your spouse, a good friend, or even a therapist. Speaking of...
-
-Tech projects can be good too provided they're well and truly disconnected from the work that's burning you out and don't
-end up being a source of stress themselves!
 
 ### Get Help If You Need It
 
