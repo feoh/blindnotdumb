@@ -1,6 +1,6 @@
 Title: Hacking the Wetware 2 - Antipatterns (Burn Out & The Ego Trap)
 Date: 2023-01-19 21:16:21
-Modified: 2023-01-20 16:07:00
+Modified: 2023-01-23 13:20:57
 Tags: burnout,burn-out,mental-health,health,mind,work,technology,career
 Slug: hacking-wetware-antipatterns
 Authors: Chris Patti
@@ -63,6 +63,16 @@ Except, when push comes to shove, we're all human. We all need mechanisms in our
 perspective to keep us grounded and help avoid boiled frog syndrome.
 
 I myself use [BetterHelp](https://www.betterhelp.com/) and have found it incredibly useful.
+
+### Gratitude
+
+This may sound a bit wu or perhaps irrelevant to some, but I have recently found it to be a powerful tool for shaping the way I
+think about things in a positive direction.
+
+Taking a moment to zoom out from whatever I'm thinking or feeling and *appreciate* the fact that I live a life of such incredible
+privilege helps me gain some much needed perspective. 
+
+Clearly I'm not the only one, I found [this Youtube video](https://www.youtube.com/watch?v=ZBduBppB8r0) on the topic really helpful.
 
 ## The Ego Trap
 
