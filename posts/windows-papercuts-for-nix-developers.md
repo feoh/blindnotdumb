@@ -6,7 +6,6 @@
 .. category: 
 .. link: 
 .. description: Every Platform or Operating System Has Paper Cuts
-.. status: draft
 .. type: text
 -->
 
@@ -34,7 +33,7 @@ For most of us, having a standard raft of development tools on hand is par for
 the course. We just expect gcc and make to be there at our beck and call, and
 the fact that they're not can cause some tools to fail spectacularly.
 
-For instance, whwnever I start my editor of choice (Neovim) I'm greeted with:
+For instance, whenever I start my editor of choice (Neovim) I'm greeted with:
 
 ![Neovim C Compiler Error on Windows](/images/windows_nvim_c_boom.png)
 
@@ -42,7 +41,7 @@ Having spoken to some experts, apparently it's considered *really* bad form to
 leave your C compiler on the PATH on Windows. I suspect this is because malware
 on Windows is such an incredibly pervasive problem.
 
-I get that, but then we should probably either modify our toolchains to not
+I get that, but then we should probably either modify our tool-chains to not
 expect that as a default or maybe create documentation to help people understand
 the happy path.
 
@@ -54,7 +53,7 @@ That thing provides a prompt shortcut called "Powershell for VS XXXX" and you
 can use that to get a shell that has the usual build tools available.
 
 Not a great solution though, since the experts say not to run that way as a
-default, but having your editor blow up on inocation just isn't a great feel.
+default, but having your editor blow up on start just-up isn't a great feel.
 
 ### The Shell
 
@@ -90,22 +89,22 @@ integrated [fzf](https://github.com/junegunn/fzf) the fuzzy finder into my
 workflow.
 
 With a single keystroke I can find any file or directory on my system.
-Navigation becomes effortless and the endless sequence of cd and pwd commands
+Navigation becomes effortless and the endless sequence of `cd` and `pwd` commands
 melt away in a burst of productivity goodness :)
 
 Thankfully, Powershell offers all these benefits as well via
 [PSFzf](https://github.com/kelleyma49/PSFzf).
 
-Here's what it looks like. In this case I wanted to edit my Neovim main config
-file `init.lua`:
+Here's what it looks like. In this case I wanted to edit my Neovim main
+configuration file `init.lua`:
 
 ![Edit my init.lua file](/images/psfzf.png)
 
 ### The Console / Terminal
 
-For long time *NIX afficianados, one of the biggest bones of contention for a
+For long time *NIX users, one of the biggest bones of contention for a
 long time was the Windows console. To put it kindly, it was god awful, mostly
-because ot maintained compatibility with the Antideluvian DOS console.
+because it maintained compatibility with the Antideluvian DOS console.
 
 Happily, we now have a fairly decent solution [Windows
 Terminal](https://github.com/microsoft/terminal). I say fairly decent because
@@ -123,13 +122,29 @@ and it's been exciting to watch it evolve.
 
 ### The Windows Desktop/GUI
 
-I'm sure there'll be folks who aren't happy with this one but my take? Just
+I'm sure there will be folks who aren't happy with this one but my take? Just
 ignore it.
 
 Windows is pretty good about making EVERYTHING accessible from the keyboard, and
 many things are also accessible from the command line. If you just avoid
 graphical interfaces wherever possible, and if you're anything like me, you'll
 see your productivity levels soar and your frustration levels plummet.
+
+### Where Do I Put?
+
+One of the things I continue to struggle with is the simple expedient of "Where
+do I PUT things?". On UNIX based systems, pretty much everything user or
+configuration related lives in $HOME. Not so on Windows.
+
+As just an example, my Neovim configuration lives in something like
+`$HOME\AppData\Local\nvim.`
+
+In some respects, I get it. Keeping application configuration separate is a good
+thing, but navigating where to put what can feel like a bit of a morass for the
+uninitiated.
+
+Maybe once I get a better understanding of the lay of the land, I can create a
+cheat sheet for UNIX users.
 
 ## Fin
 
