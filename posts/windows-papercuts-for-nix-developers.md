@@ -2,8 +2,8 @@
 .. title: Windows Papercuts for *NIX Developers
 .. slug: windows-papercuts-for-nix-developers
 .. date: 2023-07-04 13:42:31 UTC-04:00
-.. tags: windows, python, neovim, compiler, powershell
-.. category: 
+.. tags: Windows, python, neovim, compiler, powershell
+.. category: geekery
 .. link: 
 .. description: Every Platform or Operating System Has Paper Cuts
 .. type: text
