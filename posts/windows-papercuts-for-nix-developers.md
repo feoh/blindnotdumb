@@ -130,6 +130,27 @@ many things are also accessible from the command line. If you just avoid
 graphical interfaces wherever possible, and if you're anything like me, you'll
 see your productivity levels soar and your frustration levels plummet.
 
+### Packaging
+
+One of the big pain points coming from *NIX is the lack of a 'real' package
+manager.
+
+I use the `winget` tool that comes bundled with Windows 11. It's officially
+supported by Microsoft and lets me install most if not all of the commercial
+apps I use.
+
+It has the further advantage that it will write a JSON blob with all the
+packages you have installed, so you can get your software up to snuff with a
+single Powershell invocation.
+
+But there are other popular options as well, namely
+[Scoop](https://github.com/ScoopInstaller/Scoop) and
+[Chocolatey](https://chocolatey.org/).
+
+To be honest I wish MSFT had worked a bit harder to maintain compatibility with
+these other projects so we don't have multiple separate package namespaces.
+Can't have everything I guess.
+
 ### Where Do I Put?
 
 One of the things I continue to struggle with is the simple expedient of "Where
