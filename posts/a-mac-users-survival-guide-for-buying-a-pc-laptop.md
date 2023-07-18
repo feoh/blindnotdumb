@@ -9,7 +9,8 @@
 .. type: text
 -->
 
-!["Scream" by xuhulk is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.](/images/Scream.jpg)
+!["Scream" by xuhulk is licensed under CC BY-SA 2.0.](/images/Scream.jpg)
+
 # Why Are We Here?
 
 Mac users tend to be a rather opinionated lot. We generally love our Macs for
