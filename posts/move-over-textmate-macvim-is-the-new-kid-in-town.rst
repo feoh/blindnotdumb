@@ -3,7 +3,7 @@ Move over TextMate.  MacVim is the new kid in town!
 :date: 2011-09-09 17:41
 :author: cpatti
 :category: geekery
-:tags: editors, Mac, platforms, textmate, UNIX, vim
+:tags: editors, mac, platforms, textmate, UNIX, vim
 :slug: move-over-textmate-macvim-is-the-new-kid-in-town
 :status: published
 
