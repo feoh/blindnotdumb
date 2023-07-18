@@ -64,6 +64,16 @@ This isn't always the case in the PC world, so if you're like me and picky about
 screens (in my case, I'm low vision, I NEED a large bright display), you need to
 be careful here.
 
+## To Matte or Not To Matte
+
+Every time I mention nit count and screens, people who likely know more than I
+do about this stuff remind me that having a Matte screen can make a significant
+impact on the amount of perceived glare. That makes sense to me, but I have yet
+to have the opportunity to test matte and non matte screens side by side so I
+have no personal opinion on this. If I ever buy a PC laptop again though, I'll
+be sure to look for a matte screen. With glare being such a serious problem for
+me, it certainly can't hurt!
+
 ## It's All About The Nits
 
 The Lenovo T15 gen2 I bought is a lovely laptop in many ways, but the screen is
