@@ -6,7 +6,7 @@
 .. category: geekery
 .. link: 
 .. description: 
-.. preview: /images/Octopus.jpg
+.. previewimage: /images/Octopus.jpg
 .. type: text
 -->
 

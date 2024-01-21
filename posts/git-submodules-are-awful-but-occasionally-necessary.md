@@ -3,6 +3,7 @@
 .. slug: git-submodules-are-awful-but-occasionally-necessary
 .. date: 2024-01-09 23:09:31 UTC-05:00
 .. tags: git scm version control submodules vcs bestpractices
+.. previewimage: /images/YoDawgDotFiles.jpg
 .. category: 
 .. link: 
 .. description: 
@@ -119,3 +120,22 @@ If you do, I'm all ears! You can reach me on the Fediverse -
 @feoh@oldbytes.space or via email - feoh at feoh dot org. Or leave a comment
 here if that works for you. In any case I look forward to hearing from you, even
 if you think I'm full of malarkey :)
+
+# Update: Someone knew better! Git subtree!
+
+If you're a technical person in 2024 and you're not on the Fediverse, you're
+missing out. It doesn't have the dank memes and crap posting Twitter does, but
+some of us consider that a feature :)
+
+When I wrote this post, I sent a copy there and asked "Does anyone know
+better?". Thankfully I received an incredibly helpful
+[response](https://cybersecurity.theater/@varx/111731694640751156).
+
+It turns out there's a much better alternative to git submodules, and they're
+called Git subtrees. They're awesome :)
+
+You can find all about them
+[here](https://www.atlassian.com/git/tutorials/git-subtree). Once you set a
+subtree up, it checks out automatically with the rest of your repository.
+
+I'm delighted thus far!

@@ -3,6 +3,7 @@
 .. slug: a-mac-users-survival-guide-for-buying-a-pc-laptop
 .. date: 2023-07-18 09:58:05 UTC-04:00
 .. tags: pc,mac,laptop,buying,survival
+.. previewimage: /images/Scream.jpg
 .. category: 
 .. link: 
 .. description: 
