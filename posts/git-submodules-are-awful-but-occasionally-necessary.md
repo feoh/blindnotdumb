@@ -2,7 +2,7 @@
 .. title: Git Submodules are awful but occasionally necessary.
 .. slug: git-submodules-are-awful-but-occasionally-necessary
 .. date: 2024-01-09 23:09:31 UTC-05:00
-.. tags: git scm version control submodules vcs bestpractices
+.. tags: git,scm,version,control,submodules,vcs,bestpractices,subtree
 .. previewimage: /images/YoDawgDotFiles.jpg
 .. category: 
 .. link: 
