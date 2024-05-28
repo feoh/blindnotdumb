@@ -3,7 +3,7 @@
 :date: 2010-01-28 13:39
 :author: cpatti
 :category: geekery
-:tags: infrastructure, Installers, installshield, microsoft, msbuild, powershell, release, releng, scripting, tfs, Windows
+:tags: infrastructure, installers, Installshield, microsoft, msbuild, powershell, release, releng, scripting, tfs, windows
 :slug: 3-things-microsoft-should-do-for-release-engineers
 :status: published
 

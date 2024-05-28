@@ -3,7 +3,7 @@ Windows Scripting - a VBScript Survival Guide
 :date: 2010-03-31 15:18
 :author: cpatti
 :category: geekery
-:tags: deployment, Installers, microsoft, powershell, scripting, systems, vbscript, visual basic, Windows
+:tags: deployment, installers, microsoft, powershell, scripting, systems, vbscript, visualbasic, windows
 :slug: windows-scripting-a-vbscript-survival-guide
 :status: published
 

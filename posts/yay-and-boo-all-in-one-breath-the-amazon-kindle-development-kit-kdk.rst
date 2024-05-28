@@ -3,7 +3,7 @@ Yay and Boo all in one breath: The Amazon Kindle Development Kit (KDK)
 :date: 2010-02-07 12:13
 :author: cpatti
 :category: geekery
-:tags: amazon, development, j2me, Java, kindle, programming
+:tags: amazon, development, j2me, java, kindle, programming
 :slug: yay-and-boo-all-in-one-breath-the-amazon-kindle-development-kit-kdk
 :status: published
 

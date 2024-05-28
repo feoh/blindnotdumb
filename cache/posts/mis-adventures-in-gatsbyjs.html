@@ -25,54 +25,54 @@ rich tags support and an elegant navigation system.</p>
 <p>And I've gotta say, the tutorial was a <em>really</em> good experience! Want to build an index page? Great! Write some JSX that queries the GraphQL back-end using a fairly elegant
 syntax that embeds the query right into the page. The query returns your post list which your page then renders. Hey this is pretty cool!</p>
 <p>Here's what that first page looks like so you can get the flavor:</p>
-<div class="code"><pre class="code literal-block"><span class="kn">import</span> <span class="o">*</span> <span class="k">as</span> <span class="n">React</span> <span class="kn">from</span> <span class="s1">&#39;react&#39;</span>
-<span class="kn">import</span> <span class="p">{</span> <span class="n">Link</span><span class="p">,</span> <span class="n">useStaticQuery</span><span class="p">,</span> <span class="n">graphql</span> <span class="p">}</span> <span class="kn">from</span> <span class="s1">&#39;gatsby&#39;</span>
-<span class="kn">import</span> <span class="p">{</span>
-  <span class="n">container</span><span class="p">,</span>
-  <span class="n">heading</span><span class="p">,</span>
-  <span class="n">navLinks</span><span class="p">,</span>
-  <span class="n">navLinkItem</span><span class="p">,</span>
-  <span class="n">navLinkText</span>
-<span class="p">}</span> <span class="kn">from</span> <span class="s1">&#39;./layout.module.css&#39;</span>
+<div class="code"><pre class="code literal-block"><span class="kn">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">React</span><span class="w"> </span><span class="kn">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span>
+<span class="kn">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Link</span><span class="p">,</span><span class="w"> </span><span class="n">useStaticQuery</span><span class="p">,</span><span class="w"> </span><span class="n">graphql</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kn">from</span><span class="w"> </span><span class="s1">&#39;gatsby&#39;</span>
+<span class="kn">import</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">container</span><span class="p">,</span>
+<span class="w">  </span><span class="n">heading</span><span class="p">,</span>
+<span class="w">  </span><span class="n">navLinks</span><span class="p">,</span>
+<span class="w">  </span><span class="n">navLinkItem</span><span class="p">,</span>
+<span class="w">  </span><span class="n">navLinkText</span>
+<span class="p">}</span><span class="w"> </span><span class="kn">from</span><span class="w"> </span><span class="s1">&#39;./layout.module.css&#39;</span>
 
-<span class="n">const</span> <span class="n">Layout</span> <span class="o">=</span> <span class="p">({</span> <span class="n">pageTitle</span><span class="p">,</span> <span class="n">children</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
-  <span class="n">const</span> <span class="n">data</span> <span class="o">=</span> <span class="n">useStaticQuery</span><span class="p">(</span><span class="n">graphql</span><span class="err">`</span>
-    <span class="n">query</span> <span class="p">{</span>
-      <span class="n">site</span> <span class="p">{</span>
-        <span class="n">siteMetadata</span> <span class="p">{</span>
-          <span class="n">title</span>
-        <span class="p">}</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="err">`</span><span class="p">)</span>
+<span class="n">const</span><span class="w"> </span><span class="n">Layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="n">pageTitle</span><span class="p">,</span><span class="w"> </span><span class="n">children</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">const</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">useStaticQuery</span><span class="p">(</span><span class="n">graphql</span><span class="err">`</span>
+<span class="w">    </span><span class="n">query</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">site</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">siteMetadata</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">title</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="err">`</span><span class="p">)</span>
 
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="n">div</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">container</span><span class="p">}</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="p">{</span><span class="n">pageTitle</span><span class="p">}</span> <span class="o">|</span> <span class="p">{</span><span class="n">data</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">siteMetadata</span><span class="o">.</span><span class="n">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">header</span><span class="o">&gt;</span><span class="p">{</span><span class="n">data</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">siteMetadata</span><span class="o">.</span><span class="n">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">header</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">nav</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">ul</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinks</span><span class="p">}</span><span class="o">&gt;</span>
-          <span class="o">&lt;</span><span class="n">li</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkItem</span><span class="p">}</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="n">Link</span> <span class="n">to</span><span class="o">=</span><span class="s2">&quot;/&quot;</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkText</span><span class="p">}</span><span class="o">&gt;</span>
-              <span class="n">Home</span>
-            <span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span>
-          <span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-          <span class="o">&lt;</span><span class="n">li</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkItem</span><span class="p">}</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="n">Link</span> <span class="n">to</span><span class="o">=</span><span class="s2">&quot;/about&quot;</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkText</span><span class="p">}</span><span class="o">&gt;</span>
-              <span class="n">About</span>
-            <span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span>
-          <span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-        <span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
-      <span class="o">&lt;/</span><span class="n">nav</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">main</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">h1</span> <span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">heading</span><span class="p">}</span><span class="o">&gt;</span><span class="p">{</span><span class="n">pageTitle</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-        <span class="p">{</span><span class="n">children</span><span class="p">}</span>
-      <span class="o">&lt;/</span><span class="n">main</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-  <span class="p">)</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="n">div</span><span class="w"> </span><span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">container</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="p">{</span><span class="n">pageTitle</span><span class="p">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">{</span><span class="n">data</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">siteMetadata</span><span class="o">.</span><span class="n">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="n">header</span><span class="o">&gt;</span><span class="p">{</span><span class="n">data</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">siteMetadata</span><span class="o">.</span><span class="n">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">header</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="n">nav</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="n">ul</span><span class="w"> </span><span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinks</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">          </span><span class="o">&lt;</span><span class="n">li</span><span class="w"> </span><span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkItem</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="n">Link</span><span class="w"> </span><span class="n">to</span><span class="o">=</span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkText</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">              </span><span class="n">Home</span>
+<span class="w">            </span><span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span>
+<span class="w">          </span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<span class="w">          </span><span class="o">&lt;</span><span class="n">li</span><span class="w"> </span><span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkItem</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="n">Link</span><span class="w"> </span><span class="n">to</span><span class="o">=</span><span class="s2">&quot;/about&quot;</span><span class="w"> </span><span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">navLinkText</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">              </span><span class="n">About</span>
+<span class="w">            </span><span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span>
+<span class="w">          </span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;/</span><span class="n">nav</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="n">main</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="n">h1</span><span class="w"> </span><span class="n">className</span><span class="o">=</span><span class="p">{</span><span class="n">heading</span><span class="p">}</span><span class="o">&gt;</span><span class="p">{</span><span class="n">pageTitle</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">{</span><span class="n">children</span><span class="p">}</span>
+<span class="w">      </span><span class="o">&lt;/</span><span class="n">main</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="w">  </span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="n">export</span> <span class="n">default</span> <span class="n">Layout</span>
+<span class="n">export</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="n">Layout</span>
 </pre></div>
 
 <p>A couple of weeks of evening spare time (probably a couple of days of wall-clock time - bear in mind I'm teaching myself JavaScript as I do this) - I finished the tutorial

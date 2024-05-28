@@ -2,7 +2,7 @@
 .. title: Mis-Adventures In GatsbyJS
 .. slug: mis-adventures-in-gatsbyjs
 .. date: 2022-05-20 16:14:19 UTC-04:00
-.. tags: JavaScript, development,framework,programming
+.. tags: javascript, development,framework,programming
 .. category: geekery
 .. link: 
 .. description: 

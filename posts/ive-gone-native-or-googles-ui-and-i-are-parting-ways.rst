@@ -3,7 +3,7 @@ I've gone native. (Or - Google's UI and I are parting ways)
 :date: 2012-10-31 17:31
 :author: cpatti
 :category: rants
-:tags: email, google, handicapped, Macintosh, mail, UX
+:tags: email, google, handicapped, macintosh, mail, UX
 :slug: ive-gone-native-or-googles-ui-and-i-are-parting-ways
 :status: published
 

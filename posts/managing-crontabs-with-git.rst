@@ -3,7 +3,7 @@ Managing crontabs with Git
 :date: 2010-10-20 15:24
 :author: cpatti
 :category: geekery
-:tags: administration, bourne shell, cron, crontab, Git, management, SCM, script, shell, sysadmin, UNIX
+:tags: administration, bourne shell, cron, crontab, git, management, scm, script, shell, sysadmin, unix
 :slug: managing-crontabs-with-git
 :status: published
 
