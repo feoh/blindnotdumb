@@ -9,9 +9,7 @@
 .. type: text
 -->
 
-# The Problem
-
-## Introduction
+# Introduction
 
 We all lie to ourselves all the time. It's a part of the human condition.
 
@@ -23,7 +21,7 @@ tools and have the courage to see things as they truly are.
 
 Veritas Liberabit Vos: Or in English, the truth will set you free.
 
-## Of Boiled Frogs and Thoughtless Choices
+# Of Boiled Frogs and Thoughtless Choices
 
 Moving through a career in technology can feel a lot like skiing downhill while
 juggling, where at any given moment any number of the objects you're juggling
@@ -55,9 +53,7 @@ Understanding how you ended up where you are right now is *important* as it can
 help you understand the ways in which you'll need to change in thought, action
 and behavior in order to get where you know you really need to be.
 
-# Pivot Point
-
-## Science!!!
+# Science!!!
 
 One of the most difficult aspects of any situation like this is cutting through
 all the *feelings* involved and trying to come to a fact based understanding of
@@ -78,7 +74,7 @@ subjectivity.
 Obviously I gave these specific examples for my particular case, you have to
 figure out what deficit you're trying to address and come up with your own.
 
-## You Need a Concrete Plan
+# You Need a Concrete Plan
 
 OK, so now you've admitted to yourself that things aren't where they need to be.
 Great! That's the first step, now what are you going to do about it?
@@ -94,7 +90,7 @@ How realistic is that, *really*? Are you working full time? Do you have other
 stressors or drains on your time that you simply cannot change? These kinds of
 obstacles are there for *everyone*. The trick is how we choose to handle them.
 
-## Optimize For Success
+# Optimize For Success
 
 Be realistic with yourself. Plan for success and give yourself the space you
 need to succeed! We've all found ourselves wallowing in that feeling of extreme
@@ -104,7 +100,7 @@ Make your goals small and attainable, because optimizing for success builds the
 self confidence we need to power through the challenges that come our way in the
 future!
 
-## Optimize For Success Part 2: Deliberate Practice and Resources
+# Optimize For Success Part 2: Deliberate Practice and Resources
 
 In the book _Peak: Secrets From The New Science of Expertise_ the authors
 describe the concept of "deliberate practice".
