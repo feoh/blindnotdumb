@@ -139,7 +139,7 @@ it in any kind of sincere, assertive way.
 # Self Confidence Through Right Action
 
 Whatever your plan of action is, and whatever your outcomes may be, you should
-*feel really good* about the steps you're taking to get your career on track.
+*give yourself credit* for the steps you're taking to get your career on track.
 
 If you're putting the work in, and moving the needle, even if it's moving more
 slowly than you'd like, please for goodness sake try to *feel really good about
