@@ -1,5 +1,5 @@
 <!--
-.. title: Veritas Liberabit Vos: The Truth Will Set You Free
+.. title: Hacking The Wetware 3: Veritas Liberabit Vos
 .. slug: veritas-liberabit-vos-the-truth-will-set-you-free
 .. date: 2024-09-28 20:33:02 UTC-04:00
 .. tags: 
@@ -20,6 +20,8 @@ yourself about where your actual skill set is at, it can easily become an
 obstacle to personal and career growth that will prey on your mind and create
 stress on your life that you could avoid if you arm yourself with the right
 tools and have the courage to see things as they truly are.
+
+Veritas Liberabit Vos: Or in English, the truth will set you free.
 
 ## Of Boiled Frogs and Thoughtless Choices
 
