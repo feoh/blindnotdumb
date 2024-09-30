@@ -124,6 +124,20 @@ their career.
 Local meet-ups can be good for this, giving you an opportunity to network and
 chat with other like minded folks who can help you on your way.
 
+Finding a more supportive work environment might be an option for you as well. I
+know that in my situation I moved from a fairly high octane megacorp job to
+working at MIT and that was one of the best career decisions I've ever made.
+
+People in this environment have *time* to support me. For years everyone assumed
+that because I have 30 years in that I had outstanding software development
+chops. And like I admitted above, that just wasn't the case.
+
+At MIT, my manager and co-workers actually have the time to walk me through
+things, occasionally even explaining like I'm 5 and going *very* slowly, but it
+turns out that's something I needed all along but never got, in part because I
+was so busy telling myself everything was fine that I never really *asked* for
+it in any kind of sincere, assertive way.
+
 # Self Confidence Through Right Action
 
 Whatever your plan of action is, and whatever your outcomes may be, you should
