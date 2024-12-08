@@ -33,6 +33,6 @@ I'll get off my soapbox now. I guess that's about it - life is generally pretty 
 
 Hopefully I'll have something of substance to say again soon. Stay tuned!
 
-.. |Chinatown Gate Small| image:: https://www.feoh.org/wp-content/uploads/2009/06/chinatown-gate-small.jpg
+.. |Chinatown Gate Small| image:: https://www.feoh.org/images/chinatown-gate-small.jpg
    :width: 640px
    :height: 480px
