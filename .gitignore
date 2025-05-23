@@ -70,3 +70,4 @@ lib64
 share/
 seo_report.html
 
+.doit.db
