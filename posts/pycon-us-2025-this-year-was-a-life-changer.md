@@ -32,10 +32,11 @@ I've been to more than a few technical conferences in my time, and while I've se
 The talks are out on Youtube already, so I can link to them directly this year!
 
 - First up, I'm going to give my inner bleeding heart liberal free reign and mention the positively AWESOME keynote from [Corey Doctorow](https://youtu.be/ydVmzg_SJLw?si=f7TTJcGTIblt73dg). It's truly outstanding and will give you insights into why the internet and big tech are as they are today and how we might be able to fix them.
+- [Zoom, Enhance: Asyncio's New Introspection Powers](https://youtu.be/RrsVi1P6n0w?si=SEpaCNZdSa3ZKOe0) doesn't sound like much but core developers Pablo and Yuriy go positively BANANAS in this talk. I won't say more because that would spoil it :) Seriously though, if you're a heavy Async IO user you shouldn't miss this.
 - I was incredibly inspired by Paul Ganssle's [Programming For Yourself](https://youtu.be/NNbq-o5HODY?si=TT2bYbSDSW8ZW-_X) where we learn about how he tried to teach his child perfect pitch. It's beautiful and sweet and says so much about what I value in computing!
 - Lynn Root's Keynote (Video not available yet) was amazing. She was SO incredibly brave to make this. It's about her life's journey and how giving herself permission to play cured a severe burnout induced crisis.
+- There was also a talk by Pablo on the new remote debugging features in 3.14 but it's not on Youtube yet as near as I can tell. This is my favorite new feature for 3.14!
 
-More to come as more videos become available :)
 
 ## Sprints - And YOU!
 
