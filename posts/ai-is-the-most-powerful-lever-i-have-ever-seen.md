@@ -28,8 +28,8 @@ For a long time, quite frankly the models weren't really good enough. Sure, you 
 its ilk if you were persistent enough, but over the last several months to a year, they've improved by *orders of
 magnitude* and more and more engineers are writing about how they're feeling empowered to, in the words of Bryan
 Cantrill on the [Friends of Oxide Podcast](https://oxide-and-friends.transistor.fm/episodes/engineering-rigor-in-the-llm-age):
-"Like, yes, the world emphasizes like the the the the velocity, which a term that I, again,
-don't like because it makes us all sound like projectiles. But the this is what what it allows us to do is do things that
+"Like, yes, the world emphasizes like the the the velocity, which a term that I, again,
+don't like because it makes us all sound like projectiles. But the this is what it allows us to do is do things that
 we simply never would have gotten to before that allow for more rigorous artifacts."
 
 And they're not alone. Lots of others have been writing and talking about how they're feeling empowered by generative AI
@@ -61,7 +61,7 @@ It's really hard for a lot of people to accept that the incredible talent and sk
 adult lives perfecting is now almost in-arguably worth a *lot* less than it used to be.
 
 When I, a guy who understands computers pretty well but knows *nothing* about mobile software development can sit down
-with Claude Code and in an hour produce an incredibly polished app that runs *really* well in Android, IOS, Linux,
+with Claude Code and in an hour produce an incredibly polished [app](https://github.com/feoh/linkdqueue) that runs *really* well in Android, IOS, Linux,
 Windows and Mac? That's an almost *unimaginably enormous* amount of highly specialized human expertise that's just evaporated
 into the ether.
 
