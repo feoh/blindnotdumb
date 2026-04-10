@@ -1,7 +1,6 @@
 <!--
 .. title: AI is the most powerful lever I have ever seen.
 .. slug: ai-is-the-most-powerful-lever-i-have-ever-seen
-.. status: draft
 .. date: 2026-03-01 19:43:32 UTC-05:00
 .. tags: software,development,artificial,intelligence,ai,llm
 .. category: 
