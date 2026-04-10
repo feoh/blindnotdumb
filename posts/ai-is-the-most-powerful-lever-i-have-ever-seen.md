@@ -85,3 +85,4 @@ I am treating it like a learning opportunity rather than turning my brain off.
 And I'm having *fun*. I hope you are too. This is a crazy time to work in technology. Let's embrace the coming change
 and move forward in celebration of the spirit of innovation.  Because honestly, what's the alternative?
 
+
