@@ -1,15 +1,13 @@
 ---
-title: Some Housekeeping
+title: Some Brief But Important House Keeping
 slug: some-housekeeping
+date: 2022-03-11 01:11
+author: Chris Patti
+description: Some necessary housekeeping. Shouldn't take but a minute.
+tags:
+- blog
+- housekeeping
 ---
-
-Title: Some Brief But Important House Keeping
-Date: 2022-03-11 01:11
-Category: misc
-Tags: blog, housekeeping
-Slug: some-housekeeping
-Authors: Chris Patti
-Summary: Some necessary housekeeping. Shouldn't take but a minute.
 
 Hi all!
 

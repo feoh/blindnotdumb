@@ -1,16 +1,19 @@
 ---
-title: Hacking Wetware Antipatterns
+title: Hacking the Wetware 2 - Antipatterns (Burn Out & The Ego Trap)
 slug: hacking-wetware-antipatterns
+date: '2023-01-19 21:16:21'
+author: Chris Patti
+description: Hacking The Wetware - Antipatterns
+tags:
+- burnout
+- burn-out
+- mental-health
+- health
+- mind
+- work
+- technology
+- career
 ---
-
-Title: Hacking the Wetware 2 - Antipatterns (Burn Out & The Ego Trap)
-Date: 2023-01-19 21:16:21
-Modified: 2023-01-23 13:20:57
-Tags: burnout,burn-out,mental-health,health,mind,work,technology,career
-PreviewImage: /images/Boiling_The_Frog.jpg
-Slug: hacking-wetware-antipatterns
-Authors: Chris Patti
-Summary: Hacking The Wetware - Antipatterns
 
 !["Boiling Frog" by DonkeyHotey is licensed under CC BY-SA 2.0.](/images/Boiling_The_Frog.jpg)
 

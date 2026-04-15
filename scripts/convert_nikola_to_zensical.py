@@ -20,6 +20,7 @@ IMAGES_DIR = ROOT / 'images'
 
 MD_META_RE = re.compile(r"^<!--\n(?P<meta>.*?)\n-->\n*", re.S)
 MD_FIELD_RE = re.compile(r"^\.\.\s+(?P<key>[a-z_]+):\s*(?P<value>.*)$")
+PEL_FIELD_RE = re.compile(r"^(?P<key>[A-Za-z_][A-Za-z0-9_]*):\s*(?P<value>.*)$")
 RST_FIELD_RE = re.compile(r"^:(?P<key>[a-z_]+):\s*(?P<value>.*)$")
 
 SKIP_SLUGS = {'article_template'}
@@ -35,14 +36,22 @@ def clean_value(value: str):
     return value if value else None
 
 
+def normalize_date(value: str | None) -> str | None:
+    if not value:
+        return None
+    value = value.strip()
+    value = re.sub(r'^0(\d{4}-)', r'\1', value)
+    return value or None
+
+
 def normalize_meta(meta: dict[str, object], fallback_slug: str) -> dict[str, object]:
     title = meta.get('title') or fallback_slug.replace('-', ' ').title()
     slug = clean_value(str(meta.get('slug') or fallback_slug)) or fallback_slug
     raw_tags = clean_value(str(meta.get('tags') or ''))
-    tags = [t.strip() for t in raw_tags.split(',') if t.strip()] if raw_tags else []
-    date = clean_value(str(meta.get('date') or ''))
-    description = clean_value(str(meta.get('description') or ''))
-    author = clean_value(str(meta.get('author') or ''))
+    tags = list(dict.fromkeys(t.strip() for t in raw_tags.split(',') if t.strip())) if raw_tags else []
+    date = normalize_date(clean_value(str(meta.get('date') or '')))
+    description = clean_value(str(meta.get('description') or '')) or clean_value(str(meta.get('summary') or ''))
+    author = clean_value(str(meta.get('author') or meta.get('authors') or ''))
     return {
         'title': title,
         'slug': slug,
@@ -65,6 +74,21 @@ def parse_markdown(path: Path) -> tuple[dict[str, object], str]:
             if m2:
                 meta[m2.group('key')] = m2.group('value')
         body = text[m.end():].lstrip()
+    else:
+        lines = text.splitlines()
+        idx = 0
+        while idx < len(lines):
+            line = lines[idx].rstrip('\n')
+            if not line.strip():
+                idx += 1
+                break
+            m2 = PEL_FIELD_RE.match(line)
+            if not m2:
+                break
+            meta[m2.group('key').lower()] = m2.group('value')
+            idx += 1
+        if meta:
+            body = '\n'.join(lines[idx:]).lstrip()
     return normalize_meta(meta, path.stem), body
 
 
@@ -115,6 +139,19 @@ def write_markdown(path: Path, meta: dict[str, object], body: str) -> None:
     path.write_text(text)
 
 
+def display_date(value: str | None) -> str:
+    if not value:
+        return ''
+    value = value.strip().replace(' UTC-05:00', '-0500').replace(' UTC-04:00', '-0400')
+    for fmt in ('%Y-%m-%d %H:%M:%S %z', '%Y-%m-%d %H:%M:%S%z', '%Y-%m-%d %H:%M', '%Y-%m-%d %H:%M:%S'):
+        try:
+            dt = datetime.strptime(value, fmt)
+            return dt.strftime('%Y-%m-%d')
+        except Exception:
+            pass
+    return value[:10] if re.match(r'^\d{4}-\d{2}-\d{2}', value) else value
+
+
 def render_index(posts: list[dict[str, object]]) -> str:
     lines = [
         '---',
@@ -125,28 +162,42 @@ def render_index(posts: list[dict[str, object]]) -> str:
         '',
         '# Blind Not Dumb',
         '',
-        'A Zensical-powered branch of Chris Patti\'s blog, migrated from Nikola.',
+        'Chris Patti on software, systems, accessibility, books, and the occasional well-deserved rant.',
+        '',
+        'Originally built in Nikola, this branch is a Zensical migration using the default theme and a simplified structure.',
+        '',
+        '## Start here',
+        '',
+        '- [About](about.md)',
+        '- [Archive](archive.md)',
         '',
         '## Recent posts',
         '',
     ]
-    for post in posts[:20]:
+    for post in posts[:15]:
         title = post['title']
         slug = post['slug']
-        date = post.get('date') or ''
+        date = display_date(post.get('date'))
         suffix = f' ({date})' if date else ''
         lines.append(f'- [{title}](posts/{slug}.md){suffix}')
-    lines += ['', '## Archive', '', '- [All posts](archive.md)', '- [About](about.md)', '']
+    lines += ['', 'If you want the full back catalog, head to the [archive](archive.md).', '']
     return '\n'.join(lines)
 
 
 def render_archive(posts: list[dict[str, object]]) -> str:
-    lines = ['---', 'title: Archive', '---', '', '# Archive', '']
+    lines = ['---', 'title: Archive', '---', '', '# Archive', '', 'A chronological list of migrated posts from the original Nikola site.', '']
+    current_year = None
     for post in posts:
         title = post['title']
         slug = post['slug']
-        date = post.get('date') or ''
+        date = display_date(post.get('date'))
+        year = date[:4] if date else 'Undated'
         tags = post.get('tags') or []
+        if year != current_year:
+            if current_year is not None:
+                lines.append('')
+            lines.extend([f'## {year}', ''])
+            current_year = year
         suffix = f' ({date})' if date else ''
         lines.append(f'- [{title}](posts/{slug}.md){suffix}')
         if tags:
