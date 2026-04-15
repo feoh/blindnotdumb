@@ -62,10 +62,25 @@ EXTRA_CSS = """.frontpage-hero {
   font-weight: 600;
 }
 
+.frontpage-section-label {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.65rem;
+}
+
 .frontpage-featured {
   margin: 0 0 2.75rem;
-  padding: 0 0 2.25rem;
+  padding: 0 0 2.5rem;
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.frontpage-featured-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(16rem, 1fr);
+  gap: 2rem;
+  align-items: start;
 }
 
 .frontpage-featured .featured-label {
@@ -86,14 +101,34 @@ EXTRA_CSS = """.frontpage-hero {
   max-width: 48rem;
 }
 
+.frontpage-featured-meta {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.7rem;
+  background: color-mix(in srgb, var(--md-default-bg-color) 92%, var(--md-primary-fg-color) 8%);
+}
+
+.frontpage-featured-meta p {
+  margin: 0 0 0.75rem;
+}
+
+.frontpage-featured-meta p:last-child {
+  margin-bottom: 0;
+}
+
+.frontpage-list {
+  display: grid;
+  gap: 1.4rem;
+}
+
 .post-preview {
-  margin: 0 0 2.5rem;
-  padding-bottom: 2rem;
+  margin: 0;
+  padding: 0 0 1.4rem;
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
 }
 
 .post-preview h3 {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
 }
 
 .post-preview-date {
@@ -113,8 +148,16 @@ EXTRA_CSS = """.frontpage-hero {
   margin-bottom: 0.35rem;
 }
 
+.frontpage-footer-link {
+  margin-top: 1.75rem;
+}
+
 @media (max-width: 720px) {
   .frontpage-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .frontpage-featured-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -325,6 +368,8 @@ def render_index(posts: list[dict[str, object]]) -> str:
         lines.extend([
             '<section class="frontpage-featured">',
             '<p class="featured-label">Latest post</p>',
+            '<div class="frontpage-featured-grid">',
+            '<div>',
             f'<h2><a href="posts/{slug}/">{title}</a></h2>',
             f'<p class="post-preview-date">{date}</p>' if date else '',
             f'<p class="featured-excerpt">{excerpt}</p>' if excerpt else '',
@@ -332,7 +377,21 @@ def render_index(posts: list[dict[str, object]]) -> str:
         ])
         if tags:
             lines.append('<p class="post-preview-tags">' + ' '.join(f'<a class="md-tag" href="tags/{slugify(tag)}/">{tag}</a>' for tag in tags) + '</p>')
-        lines.extend(['</section>', '', '## Recent posts', ''])
+        lines.extend([
+            '</div>',
+            '<aside class="frontpage-featured-meta">',
+            '<p class="frontpage-section-label">What you\'ll find here</p>',
+            '<p>Practical writing about software engineering, infrastructure, accessibility, tools, reading, and life in technology.</p>',
+            '<p><a href="about/">Learn more about Chris</a></p>',
+            '<p><a href="archive/">Browse the full archive</a></p>',
+            '</aside>',
+            '</div>',
+            '</section>',
+            '',
+            '## Recent posts',
+            '',
+            '<div class="frontpage-list">',
+        ])
 
     for post in recent:
         title = post['title']
@@ -351,7 +410,9 @@ def render_index(posts: list[dict[str, object]]) -> str:
         if tags:
             lines.append('<p class="post-preview-tags">' + ' '.join(f'<a class="md-tag" href="tags/{slugify(tag)}/">{tag}</a>' for tag in tags) + '</p>')
         lines.extend(['</article>', ''])
-    lines += ['Browse the full back catalog in the [archive](archive.md).', '']
+    if featured:
+        lines.extend(['</div>', ''])
+    lines += ['<p class="frontpage-footer-link">Browse the full back catalog in the <a href="archive/">archive</a>.</p>', '']
     return '\n'.join(lines)
 
 

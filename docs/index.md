@@ -17,15 +17,26 @@ hide:
 
 <section class="frontpage-featured">
 <p class="featured-label">Latest post</p>
+<div class="frontpage-featured-grid">
+<div>
 <h2><a href="posts/ai-is-the-most-powerful-lever-i-have-ever-seen/">AI is the most powerful lever I have ever seen.</a></h2>
 <p class="post-preview-date">2026-03-01</p>
 <p class="featured-excerpt">"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world." - Archimedes</p>
 <p><a href="posts/ai-is-the-most-powerful-lever-i-have-ever-seen/">Keep reading</a></p>
 <p class="post-preview-tags"><a class="md-tag" href="tags/software/">software</a> <a class="md-tag" href="tags/development/">development</a> <a class="md-tag" href="tags/artificial/">artificial</a> <a class="md-tag" href="tags/intelligence/">intelligence</a> <a class="md-tag" href="tags/ai/">ai</a> <a class="md-tag" href="tags/llm/">llm</a></p>
+</div>
+<aside class="frontpage-featured-meta">
+<p class="frontpage-section-label">What you'll find here</p>
+<p>Practical writing about software engineering, infrastructure, accessibility, tools, reading, and life in technology.</p>
+<p><a href="about/">Learn more about Chris</a></p>
+<p><a href="archive/">Browse the full archive</a></p>
+</aside>
+</div>
 </section>
 
 ## Recent posts
 
+<div class="frontpage-list">
 <article class="post-preview">
 <h3><a href="posts/goodbye-blog-comments-you-were-fun-while-you-lasted/">Goodbye Blog Comments, You Were Fun While You Lasted</a></h3>
 <p class="post-preview-date">2026-02-02</p>
@@ -97,4 +108,6 @@ hide:
 <p class="post-preview-tags"><a class="md-tag" href="tags/windows/">windows</a> <a class="md-tag" href="tags/python/">python</a> <a class="md-tag" href="tags/neovim/">neovim</a> <a class="md-tag" href="tags/compiler/">compiler</a> <a class="md-tag" href="tags/powershell/">powershell</a></p>
 </article>
 
-Browse the full back catalog in the [archive](archive.md).
+</div>
+
+<p class="frontpage-footer-link">Browse the full back catalog in the <a href="archive/">archive</a>.</p>
