@@ -31,6 +31,27 @@ def slugify(name: str) -> str:
     return re.sub(r'[^a-z0-9-]+', '-', name.lower()).strip('-')
 
 
+def normalize_title(title: str) -> str:
+    replacements = {
+        'IOS ': 'iOS ',
+        'IPad': 'iPad',
+        'Macbook': 'MacBook',
+        'China Town': 'Chinatown',
+    }
+    for old, new in replacements.items():
+        title = title.replace(old, new)
+    return title
+
+
+def clean_markdown_body(text: str) -> str:
+    text = text.replace('```winget install git```', '`winget install git`')
+    text = re.sub(r'!\[/images/([^\]]+)\]\(/images/[^)]+\)', lambda m: f'![{Path(m.group(1)).stem.replace("_", " ")}](/images/{m.group(1)})', text)
+    text = re.sub(r'<iframe[^>]*src="([^"]+)"[^>]*></iframe>', r'Embedded post: <\1>', text)
+    text = re.sub(r'##\s+(.+?)\s+##', r'## \1', text)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip() + '\n'
+
+
 def clean_value(value: str):
     value = value.strip()
     return value if value else None
@@ -45,7 +66,7 @@ def normalize_date(value: str | None) -> str | None:
 
 
 def normalize_meta(meta: dict[str, object], fallback_slug: str) -> dict[str, object]:
-    title = meta.get('title') or fallback_slug.replace('-', ' ').title()
+    title = normalize_title(str(meta.get('title') or fallback_slug.replace('-', ' ').title()))
     slug = clean_value(str(meta.get('slug') or fallback_slug)) or fallback_slug
     raw_tags = clean_value(str(meta.get('tags') or ''))
     tags = list(dict.fromkeys(t.strip() for t in raw_tags.split(',') if t.strip())) if raw_tags else []
@@ -89,7 +110,7 @@ def parse_markdown(path: Path) -> tuple[dict[str, object], str]:
             idx += 1
         if meta:
             body = '\n'.join(lines[idx:]).lstrip()
-    return normalize_meta(meta, path.stem), body
+    return normalize_meta(meta, path.stem), clean_markdown_body(body)
 
 
 def parse_rst_meta(lines: list[str], fallback_slug: str) -> tuple[dict[str, object], int]:
@@ -117,8 +138,7 @@ def convert_rst_body(body: str) -> str:
     html = parts['html_body']
     text = md(html, heading_style='ATX')
     text = re.sub(r'(!\[[^\]]*\]\([^\)]+\))(?=[A-Za-z])', r'\1\n\n', text)
-    text = re.sub(r'\n{3,}', '\n\n', text).strip() + '\n'
-    return text
+    return clean_markdown_body(text)
 
 
 def write_markdown(path: Path, meta: dict[str, object], body: str) -> None:

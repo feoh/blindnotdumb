@@ -14,7 +14,6 @@ tags:
 
 ![XKCD Comic About Self Hosting](https://imgs.xkcd.com/comics/hard_reboot.png)
 
-
 # The Internet is a Dangerous Place These Days (Introduction)
 
 In this day and age, you really are taking a risk if you're not running some
@@ -26,7 +25,7 @@ convenient, and all around does the job well.
 
 At this, -dsr-, a long time online acquaintance whose opinions I respect, piped in with this:
 
-<iframe src="https://tilde.zone/@dashdsrdash/111449235781879573/embed" width="400" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe>
+Embedded post: <https://tilde.zone/@dashdsrdash/111449235781879573/embed>
 
 Generally, when he speaks, I listen. His skill as a system administrator is formidable
 and to say that he has helped me out from time to time would be an understatement.
@@ -112,6 +111,5 @@ It's not that she couldn't do it if she wanted to, but she REALLY doesn't want t
 
 So, for my purposes, any desire to hone my sysadmin skills is irrelevant, at least for the purposes of this particular
 decision.
-
 
 So, why do *you* homelab?

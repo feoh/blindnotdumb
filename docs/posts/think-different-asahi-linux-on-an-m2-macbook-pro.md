@@ -1,5 +1,5 @@
 ---
-title: 'Think Different: Asahi Linux On An M2 Macbook Pro'
+title: 'Think Different: Asahi Linux On An M2 MacBook Pro'
 slug: think-different-asahi-linux-on-an-m2-macbook-pro
 date: 2025-12-11 18:57:35 UTC-05:00
 tags:
@@ -101,7 +101,6 @@ The only way I was able to make this work is by downloading the AppImage. Head o
 Website](https://obsidian.md) and Click the "Get Obsidian for Linux (AppImage)" link. Be sure to down download  the ARM64
 version or you will be sad :)
 
-
 On Intel systems, I normally integrate AppImages with my desktop using the excellent
 [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) but I haven't been able to get it to work on Asahi.
 I can install it but it does nothing when I double click the AppImage from Dolphin. On Intel it pops up a dialog and
@@ -115,7 +114,6 @@ know!).
 
 This one was a bit tricky, I tried the various RPMs with zero success, but ultimately decided to give the Snap from the
 snap store a try, and it worked like a champ! Just run `snap install vivaldi` and you're good to go!
-
 
 ## Zoom Teleconferencing
 
@@ -138,7 +136,6 @@ into its own "app".  This isn't great in any number of ways, but it's the best I
 
 People have recommended [Slacky](https://github.com/andirsun/Slacky) but all I could get out of that was that Slack was
 unable to load. Grump :)
-
 
 I'll keep updating this as I go with any learning I can share. Please get in touch on the Fediverse if you have
 questions or are thinking of trying this yourself. I'd love to hear from you! I'm [@feoh@oldbytes.space there](https://oldbytes.space/@feoh).

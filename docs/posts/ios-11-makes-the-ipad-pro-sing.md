@@ -1,5 +1,5 @@
 ---
-title: IOS 11 Makes the iPad Pro Sing!
+title: iOS 11 Makes the iPad Pro Sing!
 slug: ios-11-makes-the-ipad-pro-sing
 date: 2017-10-14 11:25
 author: cpatti

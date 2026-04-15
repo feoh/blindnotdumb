@@ -11,7 +11,6 @@ tags:
 
 ![Key West Octopus by oe Parks is licensed under CC BY-NC 2.0](/images/Octopus-smol.jpeg)
 
-
 Over the last few years I've been feeling like living exclusively in my Python programming happy place is something I can't afford to do.
 
 <!-- TEASER_END -->

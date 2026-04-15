@@ -1,5 +1,5 @@
 ---
-title: Apple IPad Pro Smart Keyboard
+title: Apple iPad Pro Smart Keyboard
 slug: apple-ipad-pro-smart-keyboard
 date: 2017-03-04 23:50
 author: cpatti

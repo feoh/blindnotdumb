@@ -41,9 +41,7 @@ This will mostly be a collection of pointers to resources with a smidgen of comm
 * [Windows Script Debugging Microsoft KB Article](https://support.microsoft.com/kb/308364) - This article will get you started interactively debugging your scripts using Visual Studio.  Don't bother with the Windows Script Debugger, Visual Studio Express is free and much better :)
 * [W3Schools VBScript Tutorial/Reference](https://www.w3schools.com/vbscript/default.asp) - This page is definitely rather Web-centric, focusing on VBScript in classic ASP programming, however, the core language and some of the techniques are the same.  In many cases this is a better reference than the MSDN one, and the tutorial lets you work through the examples online in a web browser which is cool.
 
-## 3. Debugging
-
-### Who turned the lights out?
+## 3. Debugging# Who turned the lights out?
 
 If you find that some script you've inherited is not working, but you get exactly zero output or errors, look for the telltale On Error Goto 0 or On Error Resume Next statements. These basically disable VBScript's inherent error handling functionality and cause your script to silently ignore errors. Helpful, eh?
 

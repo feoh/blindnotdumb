@@ -27,9 +27,7 @@ Linux folks appreciated this. Anyway :)
 
 So let's get started!
 
-## The Paper Cuts
-
-### The C Compiler
+## The Paper Cuts# The C Compiler
 
 For most of us, having a standard raft of development tools on hand is par for
 the course. We just expect gcc and make to be there at our beck and call, and

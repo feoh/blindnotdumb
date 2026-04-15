@@ -38,9 +38,9 @@ You can see that I get all kinds of nice status like exit code of last command, 
 
 While Powershell is indeed a totally different beast from the UNIX shell I'm used to, its built in help for **every** command and understandable syntax make the learning curve feel rather shallow indeed.
 
-Another gripe most UNIX users have when coming to Windows is that everything requires mousing around and futzing with a GUI, and it can feel like you're trapped in an endless series of installer screens to get even your basic working tools installed. Modern Windows obviates all that with [winget](https://www.slashgear.com/microsofts-winget-1-0-released-for-real-heres-why-you-want-it-01675425/) a full fat package manager with tons of common applications already in there. Just ```winget install git``` and you're off to the races :)
+Another gripe most UNIX users have when coming to Windows is that everything requires mousing around and futzing with a GUI, and it can feel like you're trapped in an endless series of installer screens to get even your basic working tools installed. Modern Windows obviates all that with [winget](https://www.slashgear.com/microsofts-winget-1-0-released-for-real-heres-why-you-want-it-01675425/) a full fat package manager with tons of common applications already in there. Just `winget install git` and you're off to the races :)
 
-## Before The Command Line, There Was The Terminal ##
+## Before The Command Line, There Was The Terminal
 
 As anyone who's worked with Windows for a long time could tell you, in the old days, the Windows Console was pretty primitive. You were basically dealing with MS-DOS CMD.EXE with the barest modicum of window dressing. Needless to say, this is 2021 and that's just not cutting it.
 

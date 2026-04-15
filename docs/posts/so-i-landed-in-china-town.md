@@ -1,5 +1,5 @@
 ---
-title: So, I landed in China Town!
+title: So, I landed in Chinatown!
 slug: so-i-landed-in-china-town
 date: 2009-06-12 19:15
 author: cpatti
@@ -14,7 +14,7 @@ tags:
 
 It has been forever and a day since I posted here. I apologize for the fade, my 4 or 5 readers must be thinking I'd joined the silent masses of bloggers who can't overcome the inertia and fail to post ever again...
 
-![/images/Chinatown_Gate_Small.jpg](/images/Chinatown_Gate_Small.jpg)
+![Chinatown Gate Small](/images/Chinatown_Gate_Small.jpg)
 
 As I described in my last post, January was not the best of months for me, and neither was February for that matter. After the layoff, I launched into the job search with zeal and quickly remembered (It's like riding the bike :) the familiar rhythms of the horse and pony show that is any job search.
 

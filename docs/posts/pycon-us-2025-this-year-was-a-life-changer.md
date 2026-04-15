@@ -39,7 +39,6 @@ The talks are out on Youtube already, so I can link to them directly this year!
 - Lynn Root's Keynote (Video not available yet) was amazing. She was SO incredibly brave to make this. It's about her life's journey and how giving herself permission to play cured a severe burnout induced crisis.
 - There was also a talk by Pablo on the new remote debugging features in 3.14 but it's not on Youtube yet as near as I can tell. This is my favorite new feature for 3.14!
 
-
 ## Sprints - And YOU!
 
 After Pycon's talks are over and the main conference ends, a remarkable thing happens. Many of the open source projects you know and love gather in meeting rooms in the conference venue, mentor new contributors and generally get work done.

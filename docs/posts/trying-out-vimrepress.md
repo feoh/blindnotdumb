@@ -24,9 +24,7 @@ Also unfortunately, you can't use the Homebrew built Python or Ruby interpreters
 
 So I had to uninstall my Homebrew based Python and Ruby, install python-markdown2 into the OSX default Python instance, and now everything seems to be working just fine.
 
-## Living the Vim Life
-
-### VimRepress and Blogging
+## Living the Vim Life# VimRepress and Blogging
 
 That said, there are still some creature comforts that I miss from the awesome Blogging bundle in TextMate - silly things like giving me a drop down list with the possible Categories for my post and the like. Hopefully over time we can get those implemented in Vim land :)
 

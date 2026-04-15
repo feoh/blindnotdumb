@@ -60,9 +60,7 @@ So until the day comes when I can devote myself to learning how to build for the
 it's really "Nice" to know that there are tools out there that *are* within my reach to help
 me build beautiful interactive web apps in my favorite programming language - Python!
 
-## Potential Down Sides
-
-### Javascript All The Way Down
+## Potential Down Sides# Javascript All The Way Down
 
 NiceGUI is a Python wrapper over [Quasar](https://quasar.dev) - an "Enterprise Ready"
 Javascript framework written atop [Vue.js](https://vuejs.org/).
