@@ -19,7 +19,7 @@ Originally built in Nikola, this branch is a Zensical migration using the defaul
 
 - [AI is the most powerful lever I have ever seen.](posts/ai-is-the-most-powerful-lever-i-have-ever-seen.md) (2026-03-01)
 - [Goodbye Blog Comments, You Were Fun While You Lasted](posts/goodbye-blog-comments-you-were-fun-while-you-lasted.md) (2026-02-02)
-- [Think Different: Asahi Linux On An M2 Macbook Pro](posts/think-different-asahi-linux-on-an-m2-macbook-pro.md) (2025-12-11)
+- [Think Different: Asahi Linux On An M2 MacBook Pro](posts/think-different-asahi-linux-on-an-m2-macbook-pro.md) (2025-12-11)
 - [NiceGUI: Awesome Python Dynamic Websites For The Web Dev Impaired!](posts/nicegui-awesome-dynamic-websites-for-people-who-write-ugly-html.md) (2025-08-03)
 - [Pycon US 2025: This Year Was a Life Changer](posts/pycon-us-2025-this-year-was-a-life-changer.md) (2025-05-22)
 - [Hacking The Wetware 3: Veritas Liberabit Vos](posts/veritas-liberabit-vos-the-truth-will-set-you-free.md) (2024-09-28)

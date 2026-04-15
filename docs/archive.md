@@ -15,7 +15,7 @@ A chronological list of migrated posts from the original Nikola site.
 
 ## 2025
 
-- [Think Different: Asahi Linux On An M2 Macbook Pro](posts/think-different-asahi-linux-on-an-m2-macbook-pro.md) (2025-12-11)
+- [Think Different: Asahi Linux On An M2 MacBook Pro](posts/think-different-asahi-linux-on-an-m2-macbook-pro.md) (2025-12-11)
   - Tags: mac, macos, linux, asahi, m2, macbook
 - [NiceGUI: Awesome Python Dynamic Websites For The Web Dev Impaired!](posts/nicegui-awesome-dynamic-websites-for-people-who-write-ugly-html.md) (2025-08-03)
   - Tags: python, web, website, dynamic, ui
@@ -74,9 +74,9 @@ A chronological list of migrated posts from the original Nikola site.
 
 ## 2017
 
-- [IOS 11 Makes the iPad Pro Sing!](posts/ios-11-makes-the-ipad-pro-sing.md) (2017-10-14)
+- [iOS 11 Makes the iPad Pro Sing!](posts/ios-11-makes-the-ipad-pro-sing.md) (2017-10-14)
   - Tags: ios, IPad, mobility, work
-- [Apple IPad Pro Smart Keyboard](posts/apple-ipad-pro-smart-keyboard.md) (2017-03-04)
+- [Apple iPad Pro Smart Keyboard](posts/apple-ipad-pro-smart-keyboard.md) (2017-03-04)
   - Tags: hardware, IPad, keyboards, mobile, technology
 - [So I got a new keyboard (WASD Code 104 Key)](posts/so-i-got-a-new-keyboard-wasd-code-104-key.md) (2017-02-23)
   - Tags: keyboards, macintosh, mechanical
@@ -157,7 +157,7 @@ A chronological list of migrated posts from the original Nikola site.
   - Tags: clojure, computers, development, factor, go, invention, languages, programming, scala, technology
 - [Twitter is not Facebook, let's keep it that way.](posts/twitter-is-not-facebook-lets-keep-it-that-way.md) (2009-06-18)
   - Tags: communication, customs, facebook, friends, games, morees, social-networking, twitter
-- [So, I landed in China Town!](posts/so-i-landed-in-china-town.md) (2009-06-12)
+- [So, I landed in Chinatown!](posts/so-i-landed-in-china-town.md) (2009-06-12)
   - Tags: boston, Chinatown, downtown, job, life, work
 - [A Short, Sharp Shock](posts/a-short-sharp-shock.md) (2009-02-19)
   - Tags: Broad, career, job, layoff, MIT, search
