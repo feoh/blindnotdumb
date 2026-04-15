@@ -1,0 +1,239 @@
+#!/home/feoh/.openclaw/workspace/.venv/bin/python
+from __future__ import annotations
+
+import re
+import shutil
+from collections.abc import Iterable
+from datetime import datetime
+from pathlib import Path
+
+import yaml
+from docutils.core import publish_parts
+from markdownify import markdownify as md
+
+ROOT = Path('/home/feoh/.openclaw/workspace/blindnotdumb')
+POSTS_DIR = ROOT / 'posts'
+DOCS_DIR = ROOT / 'docs'
+DOCS_POSTS_DIR = DOCS_DIR / 'posts'
+DOCS_IMAGES_DIR = DOCS_DIR / 'images'
+IMAGES_DIR = ROOT / 'images'
+
+MD_META_RE = re.compile(r"^<!--\n(?P<meta>.*?)\n-->\n*", re.S)
+MD_FIELD_RE = re.compile(r"^\.\.\s+(?P<key>[a-z_]+):\s*(?P<value>.*)$")
+RST_FIELD_RE = re.compile(r"^:(?P<key>[a-z_]+):\s*(?P<value>.*)$")
+
+SKIP_SLUGS = {'article_template'}
+ABOUT_SLUGS = {'about', 'about-2'}
+
+
+def slugify(name: str) -> str:
+    return re.sub(r'[^a-z0-9-]+', '-', name.lower()).strip('-')
+
+
+def clean_value(value: str):
+    value = value.strip()
+    return value if value else None
+
+
+def normalize_meta(meta: dict[str, object], fallback_slug: str) -> dict[str, object]:
+    title = meta.get('title') or fallback_slug.replace('-', ' ').title()
+    slug = clean_value(str(meta.get('slug') or fallback_slug)) or fallback_slug
+    raw_tags = clean_value(str(meta.get('tags') or ''))
+    tags = [t.strip() for t in raw_tags.split(',') if t.strip()] if raw_tags else []
+    date = clean_value(str(meta.get('date') or ''))
+    description = clean_value(str(meta.get('description') or ''))
+    author = clean_value(str(meta.get('author') or ''))
+    return {
+        'title': title,
+        'slug': slug,
+        'tags': tags,
+        'date': date,
+        'description': description,
+        'author': author,
+    }
+
+
+def parse_markdown(path: Path) -> tuple[dict[str, object], str]:
+    text = path.read_text()
+    meta = {}
+    m = MD_META_RE.match(text)
+    body = text
+    if m:
+        for line in m.group('meta').splitlines():
+            line = line.strip()
+            m2 = MD_FIELD_RE.match(line)
+            if m2:
+                meta[m2.group('key')] = m2.group('value')
+        body = text[m.end():].lstrip()
+    return normalize_meta(meta, path.stem), body
+
+
+def parse_rst_meta(lines: list[str], fallback_slug: str) -> tuple[dict[str, object], int]:
+    meta = {}
+    idx = 0
+    # Title block
+    if len(lines) >= 2 and set(lines[1].strip()) in ({'#'}, {'='}, {'-'}, {'~'}, {'*'}):
+        meta['title'] = lines[0].strip()
+        idx = 2
+    while idx < len(lines):
+        line = lines[idx].rstrip('\n')
+        if not line.strip():
+            idx += 1
+            break
+        m = RST_FIELD_RE.match(line)
+        if not m:
+            break
+        meta[m.group('key')] = m.group('value')
+        idx += 1
+    return normalize_meta(meta, fallback_slug), idx
+
+
+def convert_rst_body(body: str) -> str:
+    parts = publish_parts(source=body, writer_name='html5')
+    html = parts['html_body']
+    text = md(html, heading_style='ATX')
+    text = re.sub(r'(!\[[^\]]*\]\([^\)]+\))(?=[A-Za-z])', r'\1\n\n', text)
+    text = re.sub(r'\n{3,}', '\n\n', text).strip() + '\n'
+    return text
+
+
+def write_markdown(path: Path, meta: dict[str, object], body: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    front = {
+        'title': meta['title'],
+        'slug': meta['slug'],
+    }
+    if meta.get('date'):
+        front['date'] = meta['date']
+    if meta.get('author'):
+        front['author'] = meta['author']
+    if meta.get('description'):
+        front['description'] = meta['description']
+    if meta.get('tags'):
+        front['tags'] = meta['tags']
+    text = '---\n' + yaml.safe_dump(front, sort_keys=False, allow_unicode=True).strip() + '\n---\n\n' + body.strip() + '\n'
+    path.write_text(text)
+
+
+def render_index(posts: list[dict[str, object]]) -> str:
+    lines = [
+        '---',
+        'title: Blind Not Dumb',
+        'hide:',
+        '  - navigation',
+        '---',
+        '',
+        '# Blind Not Dumb',
+        '',
+        'A Zensical-powered branch of Chris Patti\'s blog, migrated from Nikola.',
+        '',
+        '## Recent posts',
+        '',
+    ]
+    for post in posts[:20]:
+        title = post['title']
+        slug = post['slug']
+        date = post.get('date') or ''
+        suffix = f' ({date})' if date else ''
+        lines.append(f'- [{title}](posts/{slug}.md){suffix}')
+    lines += ['', '## Archive', '', '- [All posts](archive.md)', '- [About](about.md)', '']
+    return '\n'.join(lines)
+
+
+def render_archive(posts: list[dict[str, object]]) -> str:
+    lines = ['---', 'title: Archive', '---', '', '# Archive', '']
+    for post in posts:
+        title = post['title']
+        slug = post['slug']
+        date = post.get('date') or ''
+        tags = post.get('tags') or []
+        suffix = f' ({date})' if date else ''
+        lines.append(f'- [{title}](posts/{slug}.md){suffix}')
+        if tags:
+            lines.append(f'  - Tags: {", ".join(tags)}')
+    lines.append('')
+    return '\n'.join(lines)
+
+
+def sort_posts(posts: list[dict[str, object]]) -> list[dict[str, object]]:
+    def key(post: dict[str, object]):
+        raw = str(post.get('date') or '').strip()
+        if not raw:
+            return ('', '')
+        normalized = raw.replace(' UTC-05:00', '-0500').replace(' UTC-04:00', '-0400')
+        for fmt in ('%Y-%m-%d %H:%M:%S %z', '%Y-%m-%d %H:%M', '%Y-%m-%d %H:%M:%S'):
+            try:
+                dt = datetime.strptime(normalized, fmt)
+                return ('1', dt.strftime('%Y-%m-%dT%H:%M:%S%z'))
+            except Exception:
+                pass
+        return ('1', raw)
+    return sorted(posts, key=key, reverse=True)
+
+
+def ensure_image_aliases() -> None:
+    if not DOCS_IMAGES_DIR.exists():
+        return
+    by_lower = {p.name.lower(): p for p in DOCS_IMAGES_DIR.iterdir() if p.is_file()}
+    for md_file in DOCS_DIR.rglob('*.md'):
+        text = md_file.read_text(errors='ignore')
+        for ref in re.findall(r'\((/images/[^)]+)\)', text):
+            target = DOCS_IMAGES_DIR / Path(ref).name
+            if target.exists():
+                continue
+            source = by_lower.get(target.name.lower())
+            if source and source.exists():
+                shutil.copy2(source, target)
+
+
+def main() -> None:
+    if DOCS_DIR.exists():
+        shutil.rmtree(DOCS_DIR)
+    DOCS_POSTS_DIR.mkdir(parents=True, exist_ok=True)
+    if IMAGES_DIR.exists():
+        shutil.copytree(IMAGES_DIR, DOCS_IMAGES_DIR, dirs_exist_ok=True)
+
+    posts: list[dict[str, object]] = []
+    about_written = False
+
+    for path in sorted(POSTS_DIR.iterdir()):
+        if not path.is_file():
+            continue
+        stem = slugify(path.stem)
+        if stem in SKIP_SLUGS:
+            continue
+
+        if path.suffix == '.md':
+            meta, body = parse_markdown(path)
+        elif path.suffix == '.rst':
+            lines = path.read_text().splitlines()
+            meta, start = parse_rst_meta(lines, stem)
+            body = convert_rst_body('\n'.join(lines[start:]).strip() + '\n')
+        else:
+            continue
+
+        slug = slugify(str(meta.get('slug') or stem))
+        meta['slug'] = slug
+        entry = dict(meta)
+
+        out_path = DOCS_POSTS_DIR / f'{slug}.md'
+        if slug in ABOUT_SLUGS and not about_written:
+            out_path = DOCS_DIR / 'about.md'
+            meta['title'] = meta.get('title') or 'About'
+            about_written = True
+        write_markdown(out_path, meta, body)
+        if out_path.name != 'about.md':
+            posts.append(entry)
+
+    posts = sort_posts(posts)
+    (DOCS_DIR / 'index.md').write_text(render_index(posts))
+    (DOCS_DIR / 'archive.md').write_text(render_archive(posts))
+
+    if not about_written:
+        (DOCS_DIR / 'about.md').write_text('---\ntitle: About\n---\n\n# About\n\nComing soon.\n')
+
+    ensure_image_aliases()
+
+
+if __name__ == '__main__':
+    main()

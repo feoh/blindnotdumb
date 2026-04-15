@@ -62,6 +62,7 @@ target/
 
 # Blog output
 output/
+site/
 
 # Python venv
 bin/

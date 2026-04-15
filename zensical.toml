@@ -1,0 +1,28 @@
+[project]
+site_name = "Blind Not Dumb"
+site_description = "Chris Patti's blog, migrated from Nikola to Zensical."
+site_author = "Chris Patti"
+site_url = "https://www.feoh.org/"
+docs_dir = "docs"
+site_dir = "site"
+copyright = "&copy; 2026 Chris Patti"
+nav = [
+  { Home = "index.md" },
+  { Archive = "archive.md" },
+  { About = "about.md" },
+]
+
+[project.theme]
+language = "en"
+features = [
+  "content.code.copy",
+  "content.footnote.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.path",
+  "navigation.sections",
+  "search.highlight",
+  "search.suggest",
+]

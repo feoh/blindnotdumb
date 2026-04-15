@@ -1,2 +1,1 @@
-nikola[extras]
-
+zensical>=0.0.33

@@ -1,3 +1,3 @@
 [build]
-  publish = "output"
-  command = "nikola build"
+  publish = "site"
+  command = "pip install uv && uv sync && uv run zensical build"
