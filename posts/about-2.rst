@@ -15,5 +15,5 @@ Blind Not Dumb is where I write about software, infrastructure, accessibility, b
 
 --------------
 
-.. |chris-patti-2026.jpg| image:: /images/chris-patti-2026.jpg
+.. |chris-patti-2026.jpg| image:: images/chris-patti-2026.jpg
    :class: alignnone size-full wp-image-276
