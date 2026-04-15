@@ -5,7 +5,7 @@ date: 2007-12-18 14:43
 author: cpatti
 ---
 
-![chris-patti-2026.jpg](../images/chris-patti-2026.jpg)
+![chris-patti-2026.jpg](/images/chris-patti-2026.jpg)
 
 My name is [Chris Patti](mailto:cpatti@gmail.com) and I'm a DevOps engineer who cares deeply about good tools, humane systems, and making technology work better for real people.
 

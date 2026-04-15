@@ -48,12 +48,11 @@ EXTRA_CSS = """.frontpage-hero {
 
 .frontpage-title {
   margin: 0 0 0.35rem;
-  letter-spacing: -0.02em;
 }
 
 .frontpage-dek {
-  font-size: 1.08rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.6;
   margin: 0 0 0.85rem;
   max-width: 44rem;
 }
@@ -94,8 +93,6 @@ EXTRA_CSS = """.frontpage-hero {
 
 .frontpage-featured h2 {
   margin-bottom: 0.4rem;
-  font-size: 2rem;
-  line-height: 1.15;
 }
 
 .frontpage-featured .featured-excerpt {
@@ -132,8 +129,6 @@ EXTRA_CSS = """.frontpage-hero {
 
 .post-preview h3 {
   margin-bottom: 0.25rem;
-  font-size: 1.2rem;
-  line-height: 1.25;
 }
 
 .post-preview-date {
@@ -155,13 +150,6 @@ EXTRA_CSS = """.frontpage-hero {
 
 .frontpage-footer-link {
   margin-top: 1.75rem;
-}
-
-.md-content img[alt="chris-patti-2026.jpg"] {
-  max-width: 320px;
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 720px) {
