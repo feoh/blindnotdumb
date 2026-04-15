@@ -1,0 +1,13 @@
+{% if page.meta and page.meta.hide %}
+  {% set hidden = "hidden" if "tags" in page.meta.hide %}
+{% endif %}
+{% set raw_tags = page.meta.tags if page and page.meta and page.meta.tags else [] %}
+{% if raw_tags %}
+  <nav class="md-tags" {{ hidden }}>
+    {% for tag in raw_tags %}
+      <a href="{{ ('tags/' ~ tag|lower|replace(' ', '-')|replace('/', '-') ~ '/') | url }}" class="md-tag">
+        {{- tag -}}
+      </a>
+    {% endfor %}
+  </nav>
+{% endif %}

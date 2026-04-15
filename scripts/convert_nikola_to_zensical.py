@@ -15,7 +15,9 @@ ROOT = Path('/home/feoh/.openclaw/workspace/blindnotdumb')
 POSTS_DIR = ROOT / 'posts'
 DOCS_DIR = ROOT / 'docs'
 DOCS_POSTS_DIR = DOCS_DIR / 'posts'
+DOCS_TAGS_DIR = DOCS_DIR / 'tags'
 DOCS_IMAGES_DIR = DOCS_DIR / 'images'
+DOCS_STYLES_DIR = DOCS_DIR / 'stylesheets'
 IMAGES_DIR = ROOT / 'images'
 
 MD_META_RE = re.compile(r"^<!--\n(?P<meta>.*?)\n-->\n*", re.S)
@@ -25,6 +27,62 @@ RST_FIELD_RE = re.compile(r"^:(?P<key>[a-z_]+):\s*(?P<value>.*)$")
 
 SKIP_SLUGS = {'article_template'}
 ABOUT_SLUGS = {'about', 'about-2'}
+
+EXTRA_CSS = """.frontpage-hero {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin: 1rem 0 2rem;
+}
+
+.frontpage-avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: 0 0 0 4px rgba(86, 112, 212, 0.15);
+}
+
+.frontpage-dek {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.post-preview {
+  margin: 0 0 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.post-preview h3 {
+  margin-bottom: 0.35rem;
+}
+
+.post-preview-date {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.8rem;
+}
+
+.post-preview-tags {
+  margin-top: 0.85rem;
+}
+
+.post-preview-tags .md-tag {
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 720px) {
+  .frontpage-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+"""
 
 
 def slugify(name: str) -> str:
@@ -50,6 +108,34 @@ def clean_markdown_body(text: str) -> str:
     text = re.sub(r'##\s+(.+?)\s+##', r'## \1', text)
     text = re.sub(r'\n{3,}', '\n\n', text)
     return text.strip() + '\n'
+
+
+def strip_markdown(text: str) -> str:
+    text = re.sub(r'```.*?```', '', text, flags=re.S)
+    text = re.sub(r'`([^`]+)`', r'\1', text)
+    text = re.sub(r'!\[[^\]]*\]\([^)]+\)', '', text)
+    text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+    text = re.sub(r'<[^>]+>', '', text)
+    text = re.sub(r'^[#>*\-\s]+', '', text, flags=re.M)
+    text = re.sub(r'[_*~]+', '', text)
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
+
+def make_excerpt(meta: dict[str, object], body: str, max_len: int = 420) -> str:
+    if meta.get('description'):
+        return str(meta['description'])
+    blocks = [strip_markdown(block) for block in re.split(r'\n\s*\n', body) if block.strip()]
+    for block in blocks:
+        if not block or block.startswith('Embedded post:'):
+            continue
+        if len(block) < 60:
+            continue
+        return block[: max_len - 1].rstrip() + ('…' if len(block) > max_len else '')
+    for block in blocks:
+        if block and not block.startswith('Embedded post:'):
+            return block[: max_len - 1].rstrip() + ('…' if len(block) > max_len else '')
+    return ''
 
 
 def clean_value(value: str):
@@ -176,31 +262,49 @@ def render_index(posts: list[dict[str, object]]) -> str:
     lines = [
         '---',
         'title: Blind Not Dumb',
+        'template: blog_index.html',
         'hide:',
         '  - navigation',
+        '  - toc',
         '---',
         '',
         '# Blind Not Dumb',
         '',
         'Chris Patti on software, systems, accessibility, books, and the occasional well-deserved rant.',
         '',
-        'Originally built in Nikola, this branch is a Zensical migration using the default theme and a simplified structure.',
+        'Thoughtful writing about engineering, tools, platform work, accessibility, books, and life on the internet.',
+        '',
+        '<div class="frontpage-hero">',
+        '  <img src="/images/profile_pic.jpg" alt="Chris Patti" class="frontpage-avatar">',
+        '  <p class="frontpage-dek">Blind Not Dumb is Chris Patti\'s personal blog, with essays, technical writing, practical war stories, and the occasional cantankerous opinion.</p>',
+        '</div>',
         '',
         '## Start here',
         '',
         '- [About](about.md)',
         '- [Archive](archive.md)',
         '',
-        '## Recent posts',
+        '## Latest posts',
         '',
     ]
-    for post in posts[:15]:
+    for post in posts[:10]:
         title = post['title']
         slug = post['slug']
         date = display_date(post.get('date'))
+        excerpt = post.get('excerpt') or ''
+        tags = post.get('tags') or []
         suffix = f' ({date})' if date else ''
-        lines.append(f'- [{title}](posts/{slug}.md){suffix}')
-    lines += ['', 'If you want the full back catalog, head to the [archive](archive.md).', '']
+        lines.extend([
+            '<article class="post-preview">',
+            f'<h3><a href="posts/{slug}/">{title}</a></h3>',
+            f'<p class="post-preview-date">{date}</p>' if date else '',
+            f'<p>{excerpt}</p>' if excerpt else '',
+            f'<p><a href="posts/{slug}/">Read more</a></p>',
+        ])
+        if tags:
+            lines.append('<p class="post-preview-tags">' + ' '.join(f'<a class="md-tag" href="tags/{slugify(tag)}/">{tag}</a>' for tag in tags) + '</p>')
+        lines.extend(['</article>', ''])
+    lines += ['Browse the full back catalog in the [archive](archive.md).', '']
     return '\n'.join(lines)
 
 
@@ -221,8 +325,38 @@ def render_archive(posts: list[dict[str, object]]) -> str:
         suffix = f' ({date})' if date else ''
         lines.append(f'- [{title}](posts/{slug}.md){suffix}')
         if tags:
-            lines.append(f'  - Tags: {", ".join(tags)}')
+            lines.append('  - Tags: ' + ', '.join(f'[{tag}](../tags/{slugify(tag)}/)' for tag in tags))
     lines.append('')
+    return '\n'.join(lines)
+
+
+def render_tag_page(tag: str, posts: list[dict[str, object]]) -> str:
+    lines = [
+        '---',
+        f'title: Tag: {tag}',
+        'hide:',
+        '  - toc',
+        '---',
+        '',
+        f'# Tag: {tag}',
+        '',
+        f'Posts filed under **{tag}**.',
+        '',
+        '[Back to archive](../archive.md)',
+        '',
+    ]
+    for post in posts:
+        title = post['title']
+        slug = post['slug']
+        date = display_date(post.get('date'))
+        excerpt = post.get('excerpt') or ''
+        suffix = f' ({date})' if date else ''
+        lines.extend([
+            f'## [{title}](../posts/{slug}/){suffix}',
+            '',
+            excerpt,
+            '',
+        ])
     return '\n'.join(lines)
 
 
@@ -257,12 +391,18 @@ def ensure_image_aliases() -> None:
                 shutil.copy2(source, target)
 
 
+def write_support_files() -> None:
+    DOCS_STYLES_DIR.mkdir(parents=True, exist_ok=True)
+    (DOCS_STYLES_DIR / 'extra.css').write_text(EXTRA_CSS)
+
+
 def main() -> None:
     if DOCS_DIR.exists():
         shutil.rmtree(DOCS_DIR)
     DOCS_POSTS_DIR.mkdir(parents=True, exist_ok=True)
     if IMAGES_DIR.exists():
         shutil.copytree(IMAGES_DIR, DOCS_IMAGES_DIR, dirs_exist_ok=True)
+    DOCS_TAGS_DIR.mkdir(parents=True, exist_ok=True)
 
     posts: list[dict[str, object]] = []
     about_written = False
@@ -286,6 +426,7 @@ def main() -> None:
         slug = slugify(str(meta.get('slug') or stem))
         meta['slug'] = slug
         entry = dict(meta)
+        entry['excerpt'] = make_excerpt(meta, body)
 
         out_path = DOCS_POSTS_DIR / f'{slug}.md'
         if slug in ABOUT_SLUGS and not about_written:
@@ -300,9 +441,17 @@ def main() -> None:
     (DOCS_DIR / 'index.md').write_text(render_index(posts))
     (DOCS_DIR / 'archive.md').write_text(render_archive(posts))
 
+    tags: dict[str, list[dict[str, object]]] = {}
+    for post in posts:
+        for tag in post.get('tags') or []:
+            tags.setdefault(tag, []).append(post)
+    for tag, tagged_posts in sorted(tags.items(), key=lambda item: item[0].lower()):
+        (DOCS_TAGS_DIR / f'{slugify(tag)}.md').write_text(render_tag_page(tag, tagged_posts))
+
     if not about_written:
         (DOCS_DIR / 'about.md').write_text('---\ntitle: About\n---\n\n# About\n\nComing soon.\n')
 
+    write_support_files()
     ensure_image_aliases()
 
 

@@ -1,0 +1,15 @@
+---
+title: Tag: rss
+hide:
+  - toc
+---
+
+# Tag: rss
+
+Posts filed under **rss**.
+
+[Back to archive](../archive.md)
+
+## [I'm Glad Google Is Retiring Reader.](../posts/im-glad-google-is-retiring-reader/) (2013-04-15)
+
+Because I and about a zillion other jilted Reader fans have now found Feedly.

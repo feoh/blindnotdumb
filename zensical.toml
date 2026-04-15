@@ -5,6 +5,7 @@ site_author = "Chris Patti"
 site_url = "https://www.feoh.org/"
 docs_dir = "docs"
 site_dir = "site"
+extra_css = ["stylesheets/extra.css"]
 copyright = "&copy; 2026 Chris Patti"
 nav = [
   { Home = "index.md" },
@@ -13,6 +14,7 @@ nav = [
 ]
 
 [project.theme]
+custom_dir = "overrides"
 language = "en"
 features = [
   "content.code.copy",
