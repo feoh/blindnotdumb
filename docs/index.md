@@ -6,31 +6,25 @@ hide:
   - toc
 ---
 
-# Blind Not Dumb
-
-Chris Patti on software, systems, accessibility, books, and the occasional well-deserved rant.
-
-Thoughtful writing about engineering, tools, platform work, accessibility, books, and life on the internet.
-
 <div class="frontpage-hero">
   <img src="/images/profile_pic.jpg" alt="Chris Patti" class="frontpage-avatar">
-  <p class="frontpage-dek">Blind Not Dumb is Chris Patti's personal blog, with essays, technical writing, practical war stories, and the occasional cantankerous opinion.</p>
+  <div>
+    <h1 class="frontpage-title">Blind Not Dumb</h1>
+    <p class="frontpage-dek">Chris Patti writes about software, systems, accessibility, books, platform work, and the occasional well-deserved rant.</p>
+    <p class="frontpage-links"><a href="about/">About</a> <a href="archive/">Archive</a></p>
+  </div>
 </div>
 
-## Start here
-
-- [About](about.md)
-- [Archive](archive.md)
-
-## Latest posts
-
-<article class="post-preview">
-<h3><a href="posts/ai-is-the-most-powerful-lever-i-have-ever-seen/">AI is the most powerful lever I have ever seen.</a></h3>
+<section class="frontpage-featured">
+<p class="featured-label">Latest post</p>
+<h2><a href="posts/ai-is-the-most-powerful-lever-i-have-ever-seen/">AI is the most powerful lever I have ever seen.</a></h2>
 <p class="post-preview-date">2026-03-01</p>
-<p>"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world." - Archimedes</p>
-<p><a href="posts/ai-is-the-most-powerful-lever-i-have-ever-seen/">Read more</a></p>
+<p class="featured-excerpt">"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world." - Archimedes</p>
+<p><a href="posts/ai-is-the-most-powerful-lever-i-have-ever-seen/">Keep reading</a></p>
 <p class="post-preview-tags"><a class="md-tag" href="tags/software/">software</a> <a class="md-tag" href="tags/development/">development</a> <a class="md-tag" href="tags/artificial/">artificial</a> <a class="md-tag" href="tags/intelligence/">intelligence</a> <a class="md-tag" href="tags/ai/">ai</a> <a class="md-tag" href="tags/llm/">llm</a></p>
-</article>
+</section>
+
+## Recent posts
 
 <article class="post-preview">
 <h3><a href="posts/goodbye-blog-comments-you-were-fun-while-you-lasted/">Goodbye Blog Comments, You Were Fun While You Lasted</a></h3>

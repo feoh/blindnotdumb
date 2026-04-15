@@ -29,24 +29,61 @@ SKIP_SLUGS = {'article_template'}
 ABOUT_SLUGS = {'about', 'about-2'}
 
 EXTRA_CSS = """.frontpage-hero {
-  display: flex;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  gap: 1.5rem;
   align-items: center;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 2.5rem;
+  padding: 1.25rem 0 1.75rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
 }
 
 .frontpage-avatar {
-  width: 112px;
-  height: 112px;
-  border-radius: 999px;
+  width: 128px;
+  height: 128px;
+  border-radius: 18px;
   object-fit: cover;
   box-shadow: 0 0 0 4px rgba(86, 112, 212, 0.15);
+}
+
+.frontpage-title {
+  margin: 0 0 0.35rem;
 }
 
 .frontpage-dek {
   font-size: 1.05rem;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 0.85rem;
+  max-width: 44rem;
+}
+
+.frontpage-links a {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.frontpage-featured {
+  margin: 0 0 2.75rem;
+  padding: 0 0 2.25rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.frontpage-featured .featured-label {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.frontpage-featured h2 {
+  margin-bottom: 0.4rem;
+}
+
+.frontpage-featured .featured-excerpt {
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 48rem;
 }
 
 .post-preview {
@@ -78,8 +115,7 @@ EXTRA_CSS = """.frontpage-hero {
 
 @media (max-width: 720px) {
   .frontpage-hero {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
   }
 }
 """
@@ -259,6 +295,8 @@ def display_date(value: str | None) -> str:
 
 
 def render_index(posts: list[dict[str, object]]) -> str:
+    featured = posts[0] if posts else None
+    recent = posts[1:10] if len(posts) > 1 else []
     lines = [
         '---',
         'title: Blind Not Dumb',
@@ -268,26 +306,35 @@ def render_index(posts: list[dict[str, object]]) -> str:
         '  - toc',
         '---',
         '',
-        '# Blind Not Dumb',
-        '',
-        'Chris Patti on software, systems, accessibility, books, and the occasional well-deserved rant.',
-        '',
-        'Thoughtful writing about engineering, tools, platform work, accessibility, books, and life on the internet.',
-        '',
         '<div class="frontpage-hero">',
         '  <img src="/images/profile_pic.jpg" alt="Chris Patti" class="frontpage-avatar">',
-        '  <p class="frontpage-dek">Blind Not Dumb is Chris Patti\'s personal blog, with essays, technical writing, practical war stories, and the occasional cantankerous opinion.</p>',
+        '  <div>',
+        '    <h1 class="frontpage-title">Blind Not Dumb</h1>',
+        '    <p class="frontpage-dek">Chris Patti writes about software, systems, accessibility, books, platform work, and the occasional well-deserved rant.</p>',
+        '    <p class="frontpage-links"><a href="about/">About</a> <a href="archive/">Archive</a></p>',
+        '  </div>',
         '</div>',
         '',
-        '## Start here',
-        '',
-        '- [About](about.md)',
-        '- [Archive](archive.md)',
-        '',
-        '## Latest posts',
-        '',
     ]
-    for post in posts[:10]:
+    if featured:
+        title = featured['title']
+        slug = featured['slug']
+        date = display_date(featured.get('date'))
+        excerpt = featured.get('excerpt') or ''
+        tags = featured.get('tags') or []
+        lines.extend([
+            '<section class="frontpage-featured">',
+            '<p class="featured-label">Latest post</p>',
+            f'<h2><a href="posts/{slug}/">{title}</a></h2>',
+            f'<p class="post-preview-date">{date}</p>' if date else '',
+            f'<p class="featured-excerpt">{excerpt}</p>' if excerpt else '',
+            f'<p><a href="posts/{slug}/">Keep reading</a></p>',
+        ])
+        if tags:
+            lines.append('<p class="post-preview-tags">' + ' '.join(f'<a class="md-tag" href="tags/{slugify(tag)}/">{tag}</a>' for tag in tags) + '</p>')
+        lines.extend(['</section>', '', '## Recent posts', ''])
+
+    for post in recent:
         title = post['title']
         slug = post['slug']
         date = display_date(post.get('date'))
