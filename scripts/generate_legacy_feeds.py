@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path('/home/feoh/.openclaw/workspace/blindnotdumb')
+ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / 'content' / 'posts'
 PUBLIC = ROOT / 'public'
 BASE = 'https://www.feoh.org/'
@@ -70,7 +70,9 @@ def main() -> None:
             '  </entry>',
         ])
     atom.append('</feed>')
-    (PUBLIC / 'feed.atom').write_text('\n'.join(atom) + '\n')
+    out = PUBLIC / 'feed.atom'
+    out.write_text('\n'.join(atom) + '\n')
+    print(f'wrote {out}')
 
 
 if __name__ == '__main__':
