@@ -19,8 +19,13 @@ If not, you can use a local Hugo binary:
 ## Build
 
 ```bash
-hugo --destination public
+hugo build --cleanDestinationDir
+python3 scripts/generate_legacy_feeds.py
 ```
+
+This preserves the legacy feed endpoints:
+- `rss.xml`
+- `feed.atom`
 
 ## Notes
 
@@ -28,3 +33,4 @@ hugo --destination public
 - `static/images/` contains site images
 - Hugo tags/taxonomies provide tag index pages
 - Legacy Nikola and Pelican source/config files have been removed from this branch
+- `scripts/generate_legacy_feeds.py` writes `public/feed.atom` for subscriber compatibility
