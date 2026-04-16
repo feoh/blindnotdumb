@@ -19,6 +19,7 @@ If not, you can use a local Hugo binary:
 ## Build
 
 ```bash
+python scripts/generate_legacy_feeds.py
 hugo --destination public
 ```
 

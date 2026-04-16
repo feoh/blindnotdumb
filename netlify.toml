@@ -1,3 +1,3 @@
 [build]
   publish = "public"
-  command = "hugo --destination public"
+  command = "python scripts/generate_legacy_feeds.py && hugo --destination public"

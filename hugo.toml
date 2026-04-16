@@ -12,6 +12,13 @@ summaryLength = 40
 [permalinks]
   posts = "/posts/:slug/"
 
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  mediaType = "application/rss+xml"
+  baseName = "rss"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
