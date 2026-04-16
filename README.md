@@ -1,6 +1,6 @@
 # Blind Not Dumb, Hugo branch
 
-This branch is a Hugo-based migration path for the blog.
+This branch is a Hugo-based version of the blog.
 
 ## Local development
 
@@ -10,7 +10,7 @@ If Hugo is installed globally:
 hugo server
 ```
 
-If not, you can use the local workspace binary I bootstrapped while testing:
+If not, you can use a local Hugo binary:
 
 ```bash
 .tools/hugo/hugo server
@@ -19,13 +19,12 @@ If not, you can use the local workspace binary I bootstrapped while testing:
 ## Build
 
 ```bash
-python scripts/convert_nikola_to_hugo.py
-.tools/hugo/hugo --destination public
+hugo --destination public
 ```
 
-## Migration notes
+## Notes
 
-- Original source posts remain under `posts/`
-- Hugo content is generated into `content/`
-- Static images are copied into `static/images/`
-- Tags work through Hugo taxonomies out of the box
+- `content/` is the canonical source for posts and pages
+- `static/images/` contains site images
+- Hugo tags/taxonomies provide tag index pages
+- Legacy Nikola and Pelican source/config files have been removed from this branch
