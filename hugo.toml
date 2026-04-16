@@ -1,0 +1,18 @@
+baseURL = "https://www.feoh.org/"
+languageCode = "en-us"
+title = "Blind Not Dumb"
+summaryLength = 40
+
+[params]
+  description = "Chris Patti on software, systems, accessibility, books, and the occasional well-deserved rant."
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

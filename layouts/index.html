@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section class="hero">
+  <img src="/images/profile_pic.jpg" alt="Chris Patti" class="hero-photo">
+  <div>
+    <h1>Blind Not Dumb</h1>
+    <p class="dek">Chris Patti writes about software, systems, accessibility, books, platform work, and the occasional well-deserved rant.</p>
+  </div>
+</section>
+
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ with index $posts 0 }}
+<section class="featured">
+  <p class="eyebrow">Latest post</p>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p class="meta">{{ .Date.Format "2006-01-02" }}</p>
+  <p>{{ .Summary }}</p>
+  <p><a href="{{ .RelPermalink }}">Keep reading</a></p>
+  {{ partial "tags.html" . }}
+</section>
+{{ end }}
+
+<section>
+  <h2>Recent posts</h2>
+  <div class="post-list">
+    {{ range first 10 (after 1 $posts) }}
+      <article class="post-card">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="meta">{{ .Date.Format "2006-01-02" }}</p>
+        <p>{{ .Summary }}</p>
+        <p><a href="{{ .RelPermalink }}">Read more</a></p>
+        {{ partial "tags.html" . }}
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

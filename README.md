@@ -1,12 +1,31 @@
-# Blind, Not Dumb
+# Blind Not Dumb, Hugo branch
 
-My "professional" blog. Powered by the stupendously awesome [Nikola](https://getnikola.com/handbook.html) static site generator, which is in turn powered by:
+This branch is a Hugo-based migration path for the blog.
 
-Note that any opinions are mine and not my employer's. Duh :)
+## Local development
 
-![Python](https://www.python.org/static/community_logos/python-powered-w-200x80.png)
+If Hugo is installed globally:
 
+```bash
+hugo server
+```
 
-Current Netlify deploy status:
+If not, you can use the local workspace binary I bootstrapped while testing:
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/676a813f-8157-4eb5-95c1-b6f20c50cae8/deploy-status)](https://app.netlify.com/sites/practical-almeida-809a2f/deploys)
+```bash
+.tools/hugo/hugo server
+```
+
+## Build
+
+```bash
+python scripts/convert_nikola_to_hugo.py
+.tools/hugo/hugo --destination public
+```
+
+## Migration notes
+
+- Original source posts remain under `posts/`
+- Hugo content is generated into `content/`
+- Static images are copied into `static/images/`
+- Tags work through Hugo taxonomies out of the box
