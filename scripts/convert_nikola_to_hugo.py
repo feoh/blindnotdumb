@@ -189,6 +189,24 @@ A chronological list of posts from Blind Not Dumb.
 ''')
 
 
+def ensure_image_aliases() -> None:
+    if not STATIC_IMAGES_DIR.exists():
+        return
+    by_lower = {p.name.lower(): p for p in STATIC_IMAGES_DIR.iterdir() if p.is_file()}
+    referenced = set()
+    for md_file in CONTENT_DIR.rglob('*.md'):
+        text = md_file.read_text(errors='ignore')
+        for ref in re.findall(r'\((/images/[^)]+)\)', text):
+            referenced.add(Path(ref).name)
+    for name in sorted(referenced):
+        target = STATIC_IMAGES_DIR / name
+        if target.exists():
+            continue
+        source = by_lower.get(name.lower())
+        if source and source.exists():
+            shutil.copy2(source, target)
+
+
 def main() -> None:
     if CONTENT_DIR.exists():
         shutil.rmtree(CONTENT_DIR)
@@ -221,6 +239,7 @@ def main() -> None:
             write_page(CONTENT_POSTS_DIR / f'{slug}.md', meta, body)
     make_home_page()
     make_posts_index()
+    ensure_image_aliases()
 
 
 if __name__ == '__main__':
