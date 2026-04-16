@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+set -exo pipefail
 
 if command -v hugo >/dev/null 2>&1; then
   HUGO=hugo
